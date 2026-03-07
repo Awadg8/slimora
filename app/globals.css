@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-gilroy);
+}
+
+.font-urbanist {
+  font-family: var(--font-urbanist);
+}
+
+.font-gilroy {
+  font-family: var(--font-gilroy);
+}
