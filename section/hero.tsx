@@ -1,5 +1,2 @@
-const hero = () => {
-  return <div>hero</div>;
-};
-
-export default hero;
+import react from "react";
+import Header from "@/component/header";
