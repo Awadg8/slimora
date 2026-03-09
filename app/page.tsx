@@ -1,11 +1,13 @@
 import { Footer } from "@/component/Footer";
+import  StepsFour  from "@/section/home/stepsFour";
 import MentalLoad from "@/section/home/mentalLoad";
 
 export default function Home() {
   return (
     <main>
       <MentalLoad />
-    <Footer/>
+      <StepsFour />
+      <Footer />
     </main>
   );
 }
