@@ -1,0 +1,159 @@
+'use client';
+import { useState } from 'react';
+import Image from 'next/image';
+
+type FormDataType = {
+  weight_kg: number,
+  height_cms: number,
+}
+
+export default function Banner() {
+  const [bmi, setBmi] = useState<number | null>(null);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [formData, setFormData] = useState<FormDataType>({
+    weight_kg: 0,
+    height_cms: 0,
+  });
+
+  const getBmiCategory = (bmiValue: number) => {
+    if (bmiValue < 18.5) return { category: 'Underweight', color: 'text-blue-400' };
+    if (bmiValue < 25) return { category: 'Normal weight', color: 'text-green-400' };
+    if (bmiValue < 30) return { category: 'Overweight', color: 'text-yellow-400' };
+    return { category: 'Obese', color: 'text-red-400' };
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const {value, name} = e.target;
+    setFormData({
+      ...formData,
+      [name]: Number(value)
+    });
+  }
+
+  const handleErrors = () => {
+    const newErrors: Record<string, string> = {};
+    const requiredFields = [
+      { id: 'weight_kg', label: 'Weight', value: formData.weight_kg },
+      { id: 'height_cms', label: 'Height', value: formData.height_cms },
+    ];
+    requiredFields.forEach((field) => {
+      if (!field.value || field.value === 0) {
+        newErrors[field.id] = `${field.label} field is required`;
+      }
+    });
+    setErrors(newErrors);
+  }
+
+  const handleCheckEligiblity = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    handleErrors();
+    
+    const newErrors: Record<string, string> = {};
+    const requiredFields = [
+      { id: 'weight_kg', label: 'Weight', value: formData.weight_kg },
+      { id: 'height_cms', label: 'Height', value: formData.height_cms },
+    ];
+    requiredFields.forEach((field) => {
+      if (!field.value || field.value === 0) {
+        newErrors[field.id] = `${field.label} field is required`;
+      }
+    });
+    
+    if (Object.keys(newErrors).length === 0) {
+      const calculatedBmi = (formData.weight_kg / Math.pow(formData.height_cms / 100, 2));
+      setBmi(calculatedBmi);
+    }
+  }
+
+  const handleReset = () => {
+    setBmi(null);
+    setFormData({
+      weight_kg: 0,
+      height_cms: 0,
+    });
+    setErrors({});
+  }
+
+  return (
+    <div className="relative">
+      <div className="relative w-full h-[60vh] sm:h-screen lg:h-[140vh]">
+        <Image
+          src={"/images/check_eligible/banner.png"}
+          fill
+          objectFit='cover'
+          alt="Check Eligiblity Banner"
+        />
+      </div>
+      <div className="relative z-10 mt-[-50%] space-y-8 md:space-y-[112px] max-w-[1280px] mx-auto px-4 md:px-6">
+        <div className="flex flex-col justify-center items-center font-urbanist text-white">
+          <p className="font-extrabold text-2xl md:text-[40px] text-center">No surgery, No endoscopy, No anesthesia.</p>
+          <p className="font-light text-sm md:text-[20px] text-center mt-2">Clinically proven to help patients lose 10–15%* of their total body weight in just 4 months</p>
+        </div>
+        
+        <form onSubmit={handleCheckEligiblity} className="border border-[#BABABA] rounded-[20px]">
+          <div className="flex flex-col md:flex-row justify-between items-center py-6 md:py-10 px-6 md:px-12 rounded-t-[20px] bg-[#8EA94D40] gap-6 md:gap-0">
+            <div className="flex flex-col items-center font-markpro text-white">
+              <span className="font-bold text-xl md:text-[28px]">Am i Eligible?</span>
+              <span className="text-sm md:text-[16px]">{bmi !== null ? 'Your BMI Result' : 'Calculate your BMI'}</span>
+            </div>
+            
+            {bmi === null ? (
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-10 text-white">
+                <div className="flex flex-col items-center space-y-[5px]">
+                  <label htmlFor="weight_kg" className="font-semibold text-base md:text-[20px]">Weight</label>
+                  <input
+                    type="number"
+                    name="weight_kg"
+                    value={formData.weight_kg || ''}
+                    onChange={handleChange}
+                    className="text-[14px] bg-white py-3 px-6 md:px-9 text-markpro placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center w-full sm:w-auto"
+                    placeholder="(Kilograms)"
+                  />
+                  {errors.weight_kg && <p className="text-xs text-red-500">{errors.weight_kg}</p>}
+                </div>
+                <div className="flex flex-col items-center space-y-[5px]">
+                  <label htmlFor="height_cms" className="font-semibold text-base md:text-[20px]">Height</label>
+                  <input
+                    type="number"
+                    name="height_cms"
+                    value={formData.height_cms || ''}
+                    onChange={handleChange}
+                    className="text-[14px] bg-white py-3 px-6 md:px-9 text-markpro placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center w-full sm:w-auto"
+                    placeholder="(Centimeters)"
+                  />
+                  {errors.height_cms && <p className="text-xs text-red-500">{errors.height_cms}</p>}
+                </div>
+              </div>
+            ) : (
+              <div className="flex flex-col md:flex-row items-center justify-center md:justify-end gap-4 md:gap-12 text-white w-full md:w-auto">
+                <div className="text-center md:text-left">
+                  <span className="font-urbanist font-extrabold text-5xl md:text-6xl text-white block">
+                    {bmi.toFixed(1)}
+                  </span>
+                  <p className={`font-markpro text-lg md:text-xl mt-1 font-semibold ${getBmiCategory(bmi).color}`}>
+                    {getBmiCategory(bmi).category}
+                  </p>
+                </div>
+
+                {bmi >= 27 && (
+                  <div className="bg-white/20 backdrop-blur-sm rounded-[20px] py-3 px-6 md:px-8 border border-white/30">
+                    <p className="text-white font-markpro text-sm md:text-base font-medium text-center">
+                      ✓ Eligible for Slimora
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+          <button 
+            type={bmi !== null ? 'button' : 'submit'} 
+            onClick={bmi !== null ? handleReset : undefined}
+            className="cursor-pointer bg-white text-[#43838E] hover:bg-[#43838E] hover:text-white text-base md:text-[20px] font-bold font-markpro p-[10px] w-full rounded-b-[20px] transition-colors"
+          >
+            {bmi !== null ? 'Calculate Again' : 'Check Eligibility'}
+          </button>
+        </form>
+      </div>
+    </div>
+  )
+}
