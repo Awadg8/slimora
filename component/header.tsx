@@ -152,7 +152,7 @@ const Header = () => {
 
               {/* Get Started Dropdown Menu */}
               <div
-                className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                className={`absolute pt-7.5 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isGetStartedOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
                 <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
@@ -192,7 +192,7 @@ const Header = () => {
 
               {/* How it Works Dropdown Menu */}
               <div
-                className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                className={`absolute pt-7.5 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isHowItWorksOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
                 <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
