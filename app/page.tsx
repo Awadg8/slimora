@@ -8,6 +8,7 @@ export default function Home() {
     <main>
       <Header />
       <Banner/>
+      <div className="h-[50vh]"></div>
       <MentalLoad />
       <StepsFour />
       <Footer />
