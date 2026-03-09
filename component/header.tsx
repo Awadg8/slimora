@@ -5,6 +5,10 @@ import Image from "next/image";
 const Header = () => {
   const [isGetStartedOpen, setIsGetStartedOpen] = useState(false);
   const [isHowItWorksOpen, setIsHowItWorksOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const [isMobileGetStartedOpen, setIsMobileGetStartedOpen] = useState(false);
+  const [isMobileHowItWorksOpen, setIsMobileHowItWorksOpen] = useState(false);
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -12,27 +16,116 @@ const Header = () => {
       <div className="w-full bg-black px-6 py-3 lg:px-16 border-b border-white/5">
         <div className="max-width flex justify-between items-center">
           {/* SlimOra Logo */}
-          <Image
-            src="/images/logo.svg"
-            alt="SlimOra Logo"
-            width={157}
-            height={31}
-            priority
-          />
+          <div className="shrink-0">
+            <Image
+              src="/images/logo.svg"
+              alt="SlimOra Logo"
+              width={157}
+              height={31}
+              className="w-[120px] lg:w-[157px] h-auto"
+              priority
+            />
+          </div>
 
-          {/* Meril Logo */}
-          <Image
-            src="/images/meril_logo.png"
-            alt="Meril Logo"
-            width={111}
-            height={66}
-            priority
-          />
+          {/* Hamburger Menu (Mobile Only) */}
+          <button
+            className="lg:hidden flex flex-col space-y-1.5 p-2 z-120"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <span className="block w-8 h-0.5 bg-white transition-all"></span>
+            <span className="block w-8 h-0.5 bg-white transition-all"></span>
+            <span className="block w-8 h-0.5 bg-white transition-all"></span>
+          </button>
+
+          {/* Meril Logo (Desktop Only) */}
+          <div className="hidden lg:block shrink-0">
+            <Image
+              src="/images/meril_logo.png"
+              alt="Meril Logo"
+              width={111}
+              height={66}
+              priority
+            />
+          </div>
         </div>
       </div>
 
-      {/* Navigation Pill Section */}
-      <div className="max-w-[1280px] flex justify-center -mb-[30px] z-100 ">
+     
+
+      {/* Mobile Menu Drawer */}
+      <div
+        className={`fixed top-[59px] right-0 h-[93%] w-[85%] max-w-[400px] bg-[#0000001F] z-106 transition-transform duration-500 lg:hidden flex flex-col backdrop-blur-xl
+          ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Drawer Header with Logo */}
+          <div className="px-8 pt-8 pb-12">
+            <Image
+              src="/images/logo.svg"
+              alt="SlimOra Logo"
+              width={160}
+              height={32}
+              className="w-[140px] h-auto"
+            />
+          </div>
+
+          {/* Menu Items */}
+          <div className="flex flex-col flex-grow">
+            <div className="px-8 flex flex-col text-white font-Urbanist">
+              <button
+                className="py-6 text-xl text-left border-b border-white/10 flex justify-between items-center"
+                onClick={() => setIsMobileGetStartedOpen(!isMobileGetStartedOpen)}
+              >
+                Get Started
+              </button>
+
+              <button
+                className="py-6 text-xl text-left border-b border-white/10"
+                onClick={() => setIsMobileHowItWorksOpen(!isMobileHowItWorksOpen)}
+              >
+                How it Works?
+              </button>
+
+              <button className="py-6 text-xl text-left border-b border-white/10">
+                Blogs
+              </button>
+
+              <button className="py-6 text-xl text-left border-b border-white/10">
+                Eligibility Check
+              </button>
+
+              <button className="py-6 text-xl text-left border-b border-white/10">
+                Find Clinic
+              </button>
+            </div>
+          </div>
+
+          {/* Footer Items */}
+          <div className="px-8 pb-12 flex flex-col items-center space-y-8">
+            <div className="flex space-x-6 items-center">
+              {/* LinkedIn Icon */}
+              <a href="#" className="text-white hover:text-[#a3d43b] transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              {/* YouTube Icon */}
+              <a href="#" className="text-white hover:text-[#a3d43b] transition-colors">
+                <svg width="30" height="24" viewBox="0 0 28 20" fill="currentColor">
+                  <path d="M27.973 3.923c-.33-1.233-1.299-2.202-2.53-2.533C23.21 1 14 1 14 1s-9.21 0-11.443.39c-1.231.331-2.2 1.3-2.531 2.533C0 6.155 0 10.835 0 10.835s0 4.68.39 6.912c.33 1.232 1.3 2.201 2.531 2.532 2.233.391 11.443.391 11.443.391s9.21 0 11.44.391c1.232-.331 2.2-1.3 2.532-2.532.39-2.232.39-6.912.39-6.912s0-4.68-.39-6.912zM11.232 14.18V7.491l5.887 3.345-5.887 3.345z" />
+                </svg>
+              </a>
+            </div>
+            <p className="text-white/60 font-Urbanist text-sm">
+              Copyright © 2025 Meril
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Navigation Pill Section (Desktop Only) */}
+      <div className="hidden lg:flex max-w-[1280px] justify-center -mb-[30px] z-100 ">
         <div className=" max-w-[952px] inline-flex items-center backdrop-blur-md px-10 pt-[18px] pb-[28px] rounded-bl-[60px] rounded-br-[60px] border border-gray-300">
           <nav className="flex items-center space-x-[80px] font-gilroy px-10">
             {/* Get Started Dropdown */}
@@ -62,7 +155,7 @@ const Header = () => {
                 className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isGetStartedOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
-                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl">
+                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
                   <div className="flex flex-col">
                     <button className="px-6 py-4 text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
                       Get Started
@@ -102,7 +195,7 @@ const Header = () => {
                 className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isHowItWorksOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
-                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl">
+                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
                   <div className="flex flex-col">
                     <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
                       How it Works
@@ -117,10 +210,6 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
-
-
-
 
             {/* Blog */}
             <button className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
@@ -142,4 +231,5 @@ const Header = () => {
 };
 
 export default Header;
+
 
