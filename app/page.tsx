@@ -1,9 +1,13 @@
 import Header from "@/component/header";
+import { Footer } from "@/component/Footer";
+import MentalLoad from "@/section/home/mentalLoad";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#aaa]">
+    <main>
       <Header />
+      <MentalLoad />
+      <Footer />
     </main>
   );
 }
