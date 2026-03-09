@@ -19,7 +19,7 @@ const CtaButton = ({ text, className, type, href }: CtaButtonProps) => {
       ) : (
         <Link
           href={href || "#"}
-          className={`bg-(--button-bg) flex justify-center items-center text-white cursor-pointer rounded-full p-3 ${className}`}
+          className={`bg-button-bg flex justify-center items-center text-white cursor-pointer rounded-full p-3 ${className}`}
         >
           {text}
         </Link>

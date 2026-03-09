@@ -10,6 +10,7 @@
 
 body {
   background: #0a1d20;
+  color: white;
   font-family: var(--font-gilroy);
 }
 
@@ -40,3 +41,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.para {
+  @apply text-base md:text-xl text-[#B5B5B5] leading-5 md:leading-6 font-normal;
+}
+
+.max-width {
+  @apply max-w-7xl mx-auto px-6 md:px-8;
+}
