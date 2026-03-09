@@ -11,7 +11,7 @@ const Header = () => {
   const [isMobileHowItWorksOpen, setIsMobileHowItWorksOpen] = useState(false);
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center sticky top-0 z-50">
       {/* Top Logo Bar */}
       <div className="w-full bg-black px-6 py-3 lg:px-16 border-b border-white/5">
         <div className="max-width flex justify-between items-center">
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
       </div>
 
-     
+
 
       {/* Mobile Menu Drawer */}
       <div
