@@ -13,7 +13,7 @@ const Header = () => {
         <div className="max-w-[1280px] mx-auto flex justify-between items-center">
           {/* SlimOra Logo */}
           <Image
-            src="/images/logo2.png"
+            src="/images/logo.svg"
             alt="SlimOra Logo"
             width={157}
             height={31}
@@ -58,20 +58,21 @@ const Header = () => {
               </div>
 
               {/* Get Started Dropdown Menu */}
-              {isGetStartedOpen && (
-                <div className="absolute top-9 -left-5 pt-4 w-[172px] z-50">
-                  <div className="bg-[#0F2F2F] border border-white/10 overflow-hidden shadow-2xl">
-                    <div className="flex flex-col">
-                      <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
-                        Get Started
-                      </button>
-                      <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors">
-                        Am I Eligible?
-                      </button>
-                    </div>
+              <div
+                className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                  ${isGetStartedOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
+              >
+                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl">
+                  <div className="flex flex-col">
+                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
+                      Get Started
+                    </button>
+                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
+                      Am I Eligible?
+                    </button>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
             {/* How it Works Dropdown */}
@@ -97,24 +98,27 @@ const Header = () => {
               </div>
 
               {/* How it Works Dropdown Menu */}
-              {isHowItWorksOpen && (
-                <div className="absolute top-9 -left-5 pt-4 w-[172px] z-50">
-                  <div className="bg-[#0F2F2F] border border-white/10 overflow-hidden shadow-2xl">
-                    <div className="flex flex-col">
-                      <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
-                        How it Works
-                      </button>
-                      <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
-                        The Programme
-                      </button>
-                      <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors">
-                        The Technology
-                      </button>
-                    </div>
+              <div
+                className={`absolute top-9 -left-5 pt-4 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                  ${isHowItWorksOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
+              >
+                <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl">
+                  <div className="flex flex-col">
+                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
+                      How it Works
+                    </button>
+                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
+                      The Programme
+                    </button>
+                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors">
+                      The Technology
+                    </button>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
+
+
 
 
 
