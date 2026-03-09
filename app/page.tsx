@@ -1,5 +1,6 @@
 import Header from "@/component/header";
-import { Footer } from "@/component/footer";
+import Footer from "@/component/footer";
+import  StepsFour  from "@/section/home/stepsFour";
 import MentalLoad from "@/section/home/mentalLoad";
 import Banner from "@/component/banner";
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Banner/>
       <MentalLoad />
+      <StepsFour />
       <Footer />
     </main>
   );
