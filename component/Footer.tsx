@@ -59,7 +59,7 @@ export const Footer = () => {
                             <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[30px] mb-[13px]">Contact Us</h3>
                             <div className="md:space-y-[15px] space-y-[9px] md:text-[15px] text-[12px] text-[#FFFFFF]">
                                 <p>E-mail: <a href="mailto:info@allurion.com" className="hover:text-[#A4B84C] transition">info@allurion.com</a></p>
-                                <p>Phone: <a href="tel:0264-xxxxx-xxx" className="hover:text-[#A4B84C] transition">0264-xxxxx-xxx</a></p>
+                                <p>Phone: <a href="tel:+91 2603 509 400" className="hover:text-[#A4B84C] transition">+91 2603 509 400</a></p>
                             </div>
                         </div>
                     </div>
