@@ -1,5 +1,5 @@
 import Header from "@/component/header";
-import { Footer } from "@/component/Footer";
+import { Footer } from "@/component/footer";
 import MentalLoad from "@/section/home/mentalLoad";
 import Banner from "@/component/banner";
 export default function Home() {
