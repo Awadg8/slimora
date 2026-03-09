@@ -10,7 +10,7 @@ const Header = () => {
     <div className="w-full flex flex-col items-center">
       {/* Top Logo Bar */}
       <div className="w-full bg-black px-6 py-3 lg:px-16 border-b border-white/5">
-        <div className="max-w-[1280px] mx-auto flex justify-between items-center">
+        <div className="max-width flex justify-between items-center">
           {/* SlimOra Logo */}
           <Image
             src="/images/logo.svg"
