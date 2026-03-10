@@ -29,17 +29,17 @@ const stepsData = [
 
 export default function StepCard() {
     return (
-        <div className='grid md:grid-cols-4 grid-cols-1 md:gap-[60px] gap-[42px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[42px]'>
             {stepsData.map((step) => (
                 <div key={step.id}>
                     <div className='relative h-[264px] w-full'>
                         <Image src={step.image} alt={step.title} fill className='object-cover rounded-[20px]' />
                     </div>
-                    <div className='md:h-[267px] h-[157px]'>
-                        <h2 className='pt-[34px] pb-[12px] md:text-[26px] text-[20px] leading-[31.46px] whitespace-nowrap font-semibold'>
+                    <div className="">
+                        <h2 className="pt-[34px] pb-[12px] text-[20px] leading-[24px] whitespace-nowrap font-bold">
                             {step.id}. {step.title}
                         </h2>
-                        <p className='md:text-[20px] text-[16px] leading-[24px] text-justify'>
+                        <p className="text-[16px] leading-[24px] text-justify text-[#B5B5B5]">
                             {step.description}
                         </p>
                     </div>

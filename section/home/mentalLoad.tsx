@@ -34,11 +34,16 @@ const MentalLoad = () => {
       <div className="[background:linear-gradient(270deg,rgba(78,181,155,0.5)_0%,rgba(142,169,77,0.5)_100%),linear-gradient(0deg,rgba(0,0,0,0.45),rgba(0,0,0,0.45))] pt-10 md:pt-18 pb-16 md:pb-40">
         <div className="max-width">
           <h2 className="text-xl md:text-[40px] md:leading-[45px] font-bold text-white md:max-w-[800px]">
-            Ease the mental load of weight loss with{" "}
-            <span className="relative pr-4">
-              SlimOra<sup className="text-[12px] absolute top-4">TM</sup>
-            </span>{" "}
-            Gastric Balloon Systems
+            <span>Ease the mental load of weight loss with </span>
+              <Image
+                src="/images/logo.svg"
+                alt="SlimOra Logo"
+                width={120}
+                height={31}
+                className="inline-block w-[120px] lg:w-[157px] h-auto align-middle"
+                priority
+              />
+              <span> Gastric Balloon Systems</span>
           </h2>
 
           <div className="pt-9 md:pt-10">
