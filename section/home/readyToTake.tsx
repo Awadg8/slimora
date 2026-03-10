@@ -1,6 +1,4 @@
-import CtaButton from "@/component/ctaButton";
 import Image from "next/image";
-import Link from "next/link";
 import CtaButton from "@/component/ctaButton";
 
 const ReadyToTake = () => {
