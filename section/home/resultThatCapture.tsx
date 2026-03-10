@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CtaButton from "@/component/ctaButton";
 
 const ResultThatCapture = () => {
     const results = [
@@ -94,7 +95,7 @@ const ResultThatCapture = () => {
                         Results that capture the value of the SlimOra Program
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {results.map((item, index) => (
                             <div
                                 key={index}
@@ -130,21 +131,20 @@ const ResultThatCapture = () => {
                         Designed to ensure you don't feel alone on your journey.
                     </h2>
 
-                    <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-[10px] md:gap-20">
                         {supportItems.map((item, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col ${item.imageLeft ? "md:flex-row-reverse" : "md:flex-row"} gap-[40px] items-center`}
+                                className={`flex flex-col ${item.imageLeft ? "md:flex-row-reverse" : "md:flex-row"} gap-[20px] md:gap-[141px] items-center`}
                             >
                                 {/* Image */}
-                                <div className="w-full md:w-[45%] shrink-0">
-                                    <div className="rounded-xl overflow-hidden">
+                                <div className="w-full md:w-[50%] shrink-0">
+                                    <div className="rounded-xl  relative h-[251px] overflow-hidden">
                                         <Image
                                             src={item.image}
                                             alt={item.title}
-                                            width={466}
-                                            height={251}
-                                            className=""
+                                           layout="fill"
+                                            className="object-cover"
                                         />
                                     </div>
                                 </div>
@@ -155,15 +155,14 @@ const ResultThatCapture = () => {
                                         {item.title}
                                     </h3>
                                     <p className="text-[#B5B5B5] text-[13px] md:text-[15px] mb-[60px] md:mb-6 leading-[20px]">
-                                        {item.description}
-                                    </p>
+                                        {item.description}                                    </p>
                                     {item.link && item.linkLabel && (
-                                        <Link
-                                            href={item.link}
-                                            className="inline-block w-full md:w-fit text-center bg-button-bg hover:bg-button-bg/90 text-white px-8 py-[10px] rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg text-[14px]"
-                                        >
-                                            {item.linkLabel}
-                                        </Link>
+                                        <CtaButton
+                                            href="#"
+                                            className=" text-center hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg w-full md:w-fit"
+                                            text="Learn More about Tools"
+                                            type="link"
+                                        />
                                     )}
                                 </div>
                             </div>
@@ -171,33 +170,33 @@ const ResultThatCapture = () => {
                     </div>
                 </div>
             </section>
-            <div className="pt-30 pb-50">
+            <div className="md:pt-30 md:pb-50">
 
-            {/* Section 1: Ready to take the 1st step? */}
-            <section className="relative overflow-hidden pt-60 pb-60 z-30">
-                <div className="absolute inset-0">
-                    <Image
-                        src="/images/home/ready_to_step.png"
-                        alt="Ready to take the 1st step"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                <div className="relative z-10 max-width flex flex-col items-center text-center">
-                    <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
-                        Ready to take the 1st step?
-                    </h2>
-                    <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
-                        We recommend checking if you're eligible before contacting a clinic
-                    </p>
-                    <Link
-                        href="#"
-                        className="bg-button-bg hover:bg-button-bg/90 text-white px-10 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-                    >
-                        Check Eligibility
-                    </Link>
-                </div>
-            </section>
+                {/* Section 1: Ready to take the 1st step? */}
+                <section className="relative overflow-hidden pt-60 pb-60 z-30">
+                    <div className="absolute inset-0">
+                        <Image
+                            src="/images/home/ready_to_step.png"
+                            alt="Ready to take the 1st step"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="relative z-10 max-width flex flex-col items-center text-center">
+                        <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
+                            Ready to take the 1st step?
+                        </h2>
+                        <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
+                            We recommend checking if you're eligible before contacting a clinic
+                        </p>
+                        <CtaButton
+                            href="#"
+                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
+                            text="Check Eligibility"
+                            type="link"
+                        />
+                    </div>
+                </section>
             </div>
         </>
     );

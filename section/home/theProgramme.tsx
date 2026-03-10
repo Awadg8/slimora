@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CtaButton from "@/component/ctaButton";
 
 const TheProgramme = () => {
     const plans = [
@@ -82,7 +83,7 @@ const TheProgramme = () => {
                         <span className="text-[#8EA94D]">SlimOra </span>
                         <span className="text-[#8EA94D]">Gastric Balloon Systems</span>
                     </h2>
-                    <p className="text-[#B5B5B5] md:text-[20px] text-[12px] max-w-xl md:leading-[24px] leading-[18px] text-justify">
+                    <p className="text-[#B5B5B5] md:text-[20px] text-[14px] max-w-xl md:leading-[24px] leading-[18px] text-justify">
                         At SlimOra, we know that every weight loss journey is different. That's why we offer a range of programme options tailored to your individual goals, preferences and needs so you can find the right path to lasting, healthy weight loss.
                     </p>
                 </div>
@@ -98,7 +99,7 @@ const TheProgramme = () => {
                                         <div className="w-12 flex justify-center shrink-0">
                                             {plan.balloonIcon}
                                         </div>
-                                        <span className="text-[#383838] font-bold md:text-[16px] text-[12px] md:leading-[22px] leading-[12px]">{plan.balloons}</span>
+                                        <span className="text-[#383838] font-bold  text-[16px] md:leading-[22px] leading-[12px]">{plan.balloons}</span>
                                     </div>
 
                                     <div className="flex items-center gap-[15px]">
@@ -139,12 +140,12 @@ const TheProgramme = () => {
                         Find a clinic near you and speak with one of our advisors. They'll help you choose the Allurion Program that best fits your goals and needs.
                     </p>
                     <div className="flex justify-center">
-                        <Link
+                        <CtaButton
                             href="#"
-                            className="bg-button-bg hover:bg-button-bg/90 text-white px-30 py-[10px] rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-                        >
-                            Find Clinic
-                        </Link>
+                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all md:w-fit w-full shadow-lg"
+                            text="Find Clinic"
+                            type="link"
+                        />
                     </div>
                 </div>
             </div>
