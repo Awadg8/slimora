@@ -154,7 +154,7 @@ const ResultThatCapture = () => {
                                     <h3 className="text-white  font-bold text-[20px] md:text-[26px] mb-4 leading-[30px] text-justify">
                                         {item.title}
                                     </h3>
-                                    <p className="text-[#B5B5B5] text-[13px] md:text-[15px] mb-6 leading-[20px]">
+                                    <p className="text-[#B5B5B5] text-[13px] md:text-[15px] mb-[60px] md:mb-6 leading-[20px]">
                                         {item.description}
                                     </p>
                                     {item.link && item.linkLabel && (
@@ -171,6 +171,34 @@ const ResultThatCapture = () => {
                     </div>
                 </div>
             </section>
+            <div className="pt-30 pb-50">
+
+            {/* Section 1: Ready to take the 1st step? */}
+            <section className="relative overflow-hidden pt-60 pb-60 z-30">
+                <div className="absolute inset-0">
+                    <Image
+                        src="/images/home/ready_to_step.png"
+                        alt="Ready to take the 1st step"
+                        fill
+                        className="object-cover"
+                    />
+                </div>
+                <div className="relative z-10 max-width flex flex-col items-center text-center">
+                    <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
+                        Ready to take the 1st step?
+                    </h2>
+                    <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
+                        We recommend checking if you're eligible before contacting a clinic
+                    </p>
+                    <Link
+                        href="#"
+                        className="bg-button-bg hover:bg-button-bg/90 text-white px-10 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
+                    >
+                        Check Eligibility
+                    </Link>
+                </div>
+            </section>
+            </div>
         </>
     );
 };
