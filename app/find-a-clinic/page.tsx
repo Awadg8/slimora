@@ -1,7 +1,7 @@
 import Header from "@/component/header";
 import Footer from "@/component/footer";
 
-const page = () => {
+export default function FindClinic(){
   return (
     <section>
       <Header />
@@ -9,5 +9,3 @@ const page = () => {
     </section>
   );
 };
-
-export default page;
