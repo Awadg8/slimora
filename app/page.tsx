@@ -4,6 +4,8 @@ import StepsFour from "@/section/home/stepsFour";
 import MentalLoad from "@/section/home/mentalLoad";
 import Banner from "@/section/home/banner";
 import GotQuestion from "@/section/home/gotQuestion";
+import ReadyToTake from "@/section/home/readyToTake";
+import TheProgramme from "@/section/home/theProgramme";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         </p>
       </div>
       <MentalLoad />
+      <TheProgramme />
+      <ReadyToTake />
       <StepsFour />
       <GotQuestion/>
       <Footer />
