@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import CtaButton from "@/component/ctaButton";
 
 const ReadyToTake = () => {
     return (
@@ -21,12 +21,12 @@ const ReadyToTake = () => {
                     <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
                         We recommend checking if you're eligible before contacting a clinic
                     </p>
-                    <Link
+                    <CtaButton
                         href="#"
-                        className="bg-button-bg hover:bg-button-bg/90 text-white px-10 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-                    >
-                        Check Eligibility
-                    </Link>
+                        className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all transform hover:scale-105 shadow-lg"
+                        text="Check Eligibility"
+                        type="link"
+                    />
                 </div>
             </section>
 
@@ -46,18 +46,18 @@ const ReadyToTake = () => {
                             Interested in joining our network? Learn how the SlimOra Program can help you offer safe, effective and non-invasive weight loss to your patients. Become part of the new standard of obesity care today.
                         </p>
                         <div className="flex justify-center lg:justify-start gap-4 lg:gap-[100px] xl:gap-[171px]">
-                            <Link
-                                href="#"
-                                className="bg-button-bg hover:bg-button-bg/90 text-white px-4 text-sm  xl:text-md xl:px-8 py-3.5 rounded-full font-semibold transition-all transform hover:scale-105"
-                            >
-                                Become a Partner
-                            </Link>
-                            <Link
-                                href="#"
-                                className="bg-button-bg hover:bg-button-bg/90 text-white px-4 text-sm  xl:text-md xl:px-8 py-3.5 rounded-full font-semibold transition-all transform hover:scale-105"
-                            >
-                                Learn about SlimOra
-                            </Link>
+                            <CtaButton
+                            href="#"
+                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all shadow-lg"
+                            text="Become a Partner"
+                            type="link"
+                        />
+                            <CtaButton
+                            href="#"
+                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
+                            text="Learn about SlimOra"
+                            type="link"
+                        />
                         </div>
                     </div>
                 </div>
@@ -82,16 +82,16 @@ const ReadyToTake = () => {
                             Are you already a patient?
                         </h2>
                     </div>
-                    <div className="md:w-1/2 lg:w-3/5 flex flex-col items-center md:items-start text-center md:text-left">
-                        <p className="text-white/70 font-urbanist text-lg mb-10 leading-relaxed max-w-2xl">
+                    <div className="md:w-1/2 lg:w-3/5 flex flex-col items-center text-center md:text-left">
+                        <p className="text-white/70 text-[20px] mb-10 leading-relaxed max-w-2xl">
                             Download the SlimOra App to track your progress, connect your devices and access support—all in one place. Browse patient guides, troubleshoot issues or contact our team directly.
                         </p>
-                        <Link
+                        <CtaButton
+                            text="View Patient Dashboard"
+                            className="text-[16px] lg:text-[20px] font-medium w-[298px]"
+                            type="link"
                             href="#"
-                            className="bg-button-bg hover:bg-button-bg/90 text-white px-10 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-                        >
-                            View Patient Dashboard
-                        </Link>
+                        />
                     </div>
                 </div>
             </section>

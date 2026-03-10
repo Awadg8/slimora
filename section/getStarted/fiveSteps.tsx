@@ -36,11 +36,11 @@ const fiveSteps = () => {
 
   return (
     <div className='max-width pt-25 pb-50'>
-      <div className='flex items-center gap-4 pl-10 mb-8'>
-        <h3 className='font-bold text-5xl lg:text-5xl text-white'>
+      <div className='flex items-center md:gap-2 pl-12.5 mb-8'>
+        <h3 className='font-bold text-xl lg:text-[50px] text-white'>
           5 steps to start your
         </h3>
-        <Image src="/images/logo.svg" alt="" className='w-36 h-9' height={73} width={282} />
+        <Image src="/images/logo.svg" alt="" className='w-36 h-9 md:w-70.5 md:h-18' height={73} width={282} />
       </div>
       <div className='grid grid-row md:grid-cols-5 gap-4  pt-24.5'>
         {steps.map((step) => (

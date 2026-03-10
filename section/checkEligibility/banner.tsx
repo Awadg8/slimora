@@ -72,19 +72,18 @@ export default function Banner() {
         {/* Gradient overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-t from-[#0A1D20] via-[#0a1d2065] to-transparent" />
       </div>
-      <div className="absolute hidden sm:flex top-[15%] sm:top-[30%] left-[50%] translate-x-[-50%] flex-col items-center justify-center space-y-8 md:space-y-[112px] max-w-[810px] w-full mx-auto px-6">
-        <div className="flex flex-col justify-center items-center font-urbanist text-white">
-          <p className="font-extrabold text-2xl md:text-[40px] text-center">No surgery, No endoscopy, No anesthesia.</p>
-          <p className="font-light text-sm md:text-[20px] text-center mt-2">Clinically proven to help patients lose 10–15%* of their total body weight in just 4 months</p>
+      <div className="absolute hidden sm:flex top-[15%] sm:top-[30%] left-[50%] translate-x-[-50%] flex-col items-center justify-center space-y-8 max-w-[1024px] w-full mx-auto px-6">
+        <div className="flex flex-col justify-center items-center font-urbanist">
+          <p className="font-bold text-2xl md:text-[40px] text-center text-white">
+            Check if you're eligible for the SlimOra Program
+          </p>
+          <p className="font-light text-sm md:text-[20px] text-center mt-6 text-[#b5b5b5]">
+            Start your journey with a quick BMI check and a few simple questions. This helps us understand if the SlimOra Gastric Balloon is a good fit for your health goals.It only takes a minute and could be your first step towards safe, effective and lasting weight loss -
+            <span className="font-bold text-white"> with support at every stage.</span>
+          </p>
         </div>
-
-        <div className="border border-[#BABABA] rounded-[20px] w-full">
-          <div className="flex flex-col md:flex-row justify-between items-center py-6 md:py-8 px-6 md:px-8 rounded-t-[20px] bg-[#8EA94D40] gap-8">
-            <div className="flex flex-col items-center font-markpro text-white">
-              <span className="font-bold text-[20px]">Am i Eligible?</span>
-              <span className="text-[14px]">{bmi !== null ? 'Your BMI Result' : 'Calculate your BMI'}</span>
-            </div>
-
+        <div className="w-full flex justify-between gap-12 items-end">
+          <div className="flex justify-between items-center gap-8">
             {bmi === null ? (
               <div className="flex flex-row gap-4 text-white">
                 <div className="flex flex-col items-center space-y-[5px]">
@@ -136,25 +135,24 @@ export default function Banner() {
           <button
             type="button"
             onClick={bmi !== null ? handleReset : handleCheckEligiblity}
-            className="cursor-pointer bg-white text-[#43838E] hover:bg-[#43838E] hover:text-white text-[16px] font-bold font-markpro p-[10px] w-full rounded-b-[20px] transition-colors"
+            className="cursor-pointer bg-button-bg text-white rounded-full p-3 transition-colors w-full"
           >
             {bmi !== null ? 'Calculate Again' : 'Check Eligibility'}
           </button>
         </div>
       </div>
-      <div className="relative flex sm:hidden flex-col items-center justify-center space-y-8 md:space-y-[112px] max-w-[810px] w-full mx-auto px-6 pb-25">
-        <div className="flex flex-col justify-center items-center font-urbanist text-white">
-          <p className="font-extrabold text-2xl md:text-[40px] text-center font-urbanist">No surgery, No endoscopy, No anesthesia.</p>
-          <p className="font-light text-sm md:text-[20px] text-center mt-2 font-urbanist">Clinically proven to help patients lose <span className="font-bold">10–15%*</span> of their total body weight in just 4 months</p>
+      <div className="relative flex sm:hidden flex-col items-center justify-center space-y-8 max-w-[810px] w-full mx-auto px-6 pb-25">
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-2xl md:text-[40px] text-center font-urbanist text-white">
+            Check if you're eligible for the SlimOra Program
+          </p>
+          <p className="font-light text-sm md:text-[20px] text-center mt-6 text-[#b5b5b5]">
+            Start your journey with a quick BMI check and a few simple questions. This helps us understand if the SlimOra Gastric Balloon is a good fit for your health goals.It only takes a minute and could be your first step towards safe, effective and lasting weight loss -
+            <span className="font-bold text-white">with support at every stage.</span>
+          </p>
         </div>
-
-        <div className="border border-[#BABABA] rounded-[20px] w-full">
-          <div className="flex flex-col md:flex-row justify-between items-center py-8 px-6 md:px-8 rounded-t-[20px] bg-[#8EA94D40] gap-8">
-            <div className="flex flex-col items-center font-markpro text-white">
-              <span className="font-bold text-[20px]">Am i Eligible?</span>
-              <span className="text-[14px]">{bmi !== null ? 'Your BMI Result' : 'Calculate your BMI'}</span>
-            </div>
-
+        <div className="w-full flex flex-col md:flex-row justify-between gap-12 items-end">
+          <div className="flex flex-row justify-between items-center gap-10">
             {bmi === null ? (
               <div className="flex flex-row gap-4 text-white">
                 <div className="flex flex-col items-center space-y-[5px]">
@@ -206,7 +204,7 @@ export default function Banner() {
           <button
             type="button"
             onClick={bmi !== null ? handleReset : handleCheckEligiblity}
-            className="cursor-pointer bg-white text-[#43838E] hover:bg-[#43838E] hover:text-white text-[16px] font-bold font-markpro p-[10px] w-full rounded-b-[20px] transition-colors"
+            className="bg-button-bg text-white cursor-pointer rounded-full p-3 transition-colors w-full"
           >
             {bmi !== null ? 'Calculate Again' : 'Check Eligibility'}
           </button>
