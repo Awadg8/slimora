@@ -42,7 +42,7 @@ export default function HowItHelps() {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 pt-[69px] gap-[21px]'>
                     {helpCards.map((card, index) => (
-                        <div key={index} className="rounded-[20px] opacity-[0.5px] bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(180deg,#143338_0%,#2D4C3D_23.56%,#8EA94D_100%)] md:h-[244px] h-[185px] px-[10px] justify-center flex flex-col">
+                        <div key={index} className="rounded-[20px] opacity-[0.5px] bg-[linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),linear-gradient(180deg,#143338_0%,#2D4C3D_23.56%,#8EA94D_100%)] md:h-[244px] py-[30px] md:py-[40px] px-[10px] justify-center flex flex-col">
                             <div className='gap-[20px] md:gap-[28px] flex flex-col'>
                                 <h1 className='text-[#FFFFFF] text-center text-[24px] font-semibold'>{card.title}</h1>
                                 <p className='text-[12px] md:text-[18px] text-[#B5B5B5] leading-[18.271px] md:leading-[24px] text-center'>{card.description}</p>
