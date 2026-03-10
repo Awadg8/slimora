@@ -3,6 +3,7 @@ import Footer from "@/component/footer";
 import StepsFour from "@/section/home/stepsFour";
 import MentalLoad from "@/section/home/mentalLoad";
 import Banner from "@/section/home/banner";
+import GotQuestion from "@/section/home/gotQuestion";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <MentalLoad />
       <StepsFour />
+      <GotQuestion/>
       <Footer />
     </main>
   );
