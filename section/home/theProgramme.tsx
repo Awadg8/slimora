@@ -49,10 +49,10 @@ const TheProgramme = () => {
 
     const stethoscopeIcon = (color: string) => (
         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-            <path d="M17.25 27.2832V32.5828C17.25 35.1244 18.2597 37.562 20.0569 39.3592C21.8541 41.1565 24.2917 42.1661 26.8333 42.1661H28.5238C30.2436 42.1658 31.9163 41.604 33.2876 40.5661C34.659 39.5283 35.654 38.0711 36.1215 36.4161" stroke={color} stroke-width="3" />
-            <path d="M10.4043 5.75H10.2279C9.62803 5.75 9.32711 5.75 9.07603 5.773C7.73134 5.89194 6.47136 6.48022 5.5168 7.43477C4.56225 8.38933 3.97398 9.6493 3.85503 10.994C3.83203 11.247 3.83203 11.546 3.83203 12.144V13.869C3.83203 17.4273 5.24557 20.8399 7.76168 23.356C10.2778 25.8721 13.6904 27.2857 17.2487 27.2857C18.9388 27.2857 20.6123 26.9527 22.1737 26.3059C23.7351 25.6591 25.1538 24.711 26.3488 23.5159C27.5438 22.3207 28.4916 20.9019 29.1382 19.3404C29.7848 17.7789 30.1174 16.1053 30.1172 14.4152V12.1459C30.1172 11.546 30.1172 11.2451 30.0961 10.994C29.9772 9.6493 29.3889 8.38933 28.4343 7.43477C27.4798 6.48022 26.2198 5.89194 24.8751 5.773C24.6221 5.75 24.3212 5.75 23.7213 5.75H23.5469" stroke={color} stroke-width="3" stroke-linecap="round" />
-            <path d="M36.4141 36.418C39.5897 36.418 42.1641 33.8436 42.1641 30.668C42.1641 27.4923 39.5897 24.918 36.4141 24.918C33.2384 24.918 30.6641 27.4923 30.6641 30.668C30.6641 33.8436 33.2384 36.418 36.4141 36.418Z" stroke={color} stroke-width="3" />
-            <path d="M23 3.83398V7.66732M11.5 3.83398V7.66732" stroke={color} stroke-width="3" stroke-linecap="round" />
+            <path d="M17.25 27.2832V32.5828C17.25 35.1244 18.2597 37.562 20.0569 39.3592C21.8541 41.1565 24.2917 42.1661 26.8333 42.1661H28.5238C30.2436 42.1658 31.9163 41.604 33.2876 40.5661C34.659 39.5283 35.654 38.0711 36.1215 36.4161" stroke={color} strokeWidth="3" />
+            <path d="M10.4043 5.75H10.2279C9.62803 5.75 9.32711 5.75 9.07603 5.773C7.73134 5.89194 6.47136 6.48022 5.5168 7.43477C4.56225 8.38933 3.97398 9.6493 3.85503 10.994C3.83203 11.247 3.83203 11.546 3.83203 12.144V13.869C3.83203 17.4273 5.24557 20.8399 7.76168 23.356C10.2778 25.8721 13.6904 27.2857 17.2487 27.2857C18.9388 27.2857 20.6123 26.9527 22.1737 26.3059C23.7351 25.6591 25.1538 24.711 26.3488 23.5159C27.5438 22.3207 28.4916 20.9019 29.1382 19.3404C29.7848 17.7789 30.1174 16.1053 30.1172 14.4152V12.1459C30.1172 11.546 30.1172 11.2451 30.0961 10.994C29.9772 9.6493 29.3889 8.38933 28.4343 7.43477C27.4798 6.48022 26.2198 5.89194 24.8751 5.773C24.6221 5.75 24.3212 5.75 23.7213 5.75H23.5469" stroke={color} strokeWidth="3" stroke-linecap="round" />
+            <path d="M36.4141 36.418C39.5897 36.418 42.1641 33.8436 42.1641 30.668C42.1641 27.4923 39.5897 24.918 36.4141 24.918C33.2384 24.918 30.6641 27.4923 30.6641 30.668C30.6641 33.8436 33.2384 36.418 36.4141 36.418Z" stroke={color} strokeWidth="3" />
+            <path d="M23 3.83398V7.66732M11.5 3.83398V7.66732" stroke={color} strokeWidth="3" stroke-linecap="round" />
         </svg>
     );
 
@@ -67,55 +67,55 @@ const TheProgramme = () => {
 
     const devicesIcon = (color: string) => (
         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="40" viewBox="0 0 56 40" fill="none">
-            <path d="M30.8333 4.16602H9.16667C8.24619 4.16602 7.5 4.91221 7.5 5.83268V34.166C7.5 35.0865 8.24619 35.8327 9.16667 35.8327H30.8333C31.7538 35.8327 32.5 35.0865 32.5 34.166V5.83268C32.5 4.91221 31.7538 4.16602 30.8333 4.16602Z" stroke={color} stroke-width="2.5" />
-            <path d="M18.332 30H21.6654" stroke={color} stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M46.5986 13.7773C47.3416 13.7775 48.0538 14.0733 48.5791 14.5986C49.1044 15.124 49.4003 15.8362 49.4004 16.5791V34.4189C49.4004 35.162 49.1045 35.875 48.5791 36.4004C48.0538 36.9255 47.3414 37.2206 46.5986 37.2207H38.4014C37.6586 37.2206 36.9462 36.9255 36.4209 36.4004C35.8955 35.875 35.5996 35.162 35.5996 34.4189V16.5791C35.5997 15.8362 35.8956 15.124 36.4209 14.5986C36.9462 14.0733 37.6584 13.7775 38.4014 13.7773H46.5986ZM38.4014 15.5244C37.8192 15.5246 37.3469 15.9969 37.3467 16.5791V34.4189C37.3468 35.0013 37.8191 35.4744 38.4014 35.4746H46.5986C47.1809 35.4744 47.6532 35.0013 47.6533 34.4189V16.5791C47.6531 15.9969 47.1808 15.5246 46.5986 15.5244H38.4014ZM44.1875 32.0996C44.4189 32.0996 44.641 32.191 44.8047 32.3545C44.9684 32.5183 45.0605 32.7411 45.0605 32.9727C45.0605 33.2041 44.9684 33.4262 44.8047 33.5898C44.6409 33.7535 44.419 33.8457 44.1875 33.8457H40.8125C40.581 33.8457 40.3591 33.7535 40.1953 33.5898C40.0316 33.4262 39.9395 33.2041 39.9395 32.9727C39.9395 32.7411 40.0316 32.5183 40.1953 32.3545C40.359 32.191 40.5811 32.0996 40.8125 32.0996H44.1875Z" fill={color} stroke={color} stroke-width="0.3" />
+            <path d="M30.8333 4.16602H9.16667C8.24619 4.16602 7.5 4.91221 7.5 5.83268V34.166C7.5 35.0865 8.24619 35.8327 9.16667 35.8327H30.8333C31.7538 35.8327 32.5 35.0865 32.5 34.166V5.83268C32.5 4.91221 31.7538 4.16602 30.8333 4.16602Z" stroke={color} strokeWidth="2.5" />
+            <path d="M18.332 30H21.6654" stroke={color} strokeWidth="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M46.5986 13.7773C47.3416 13.7775 48.0538 14.0733 48.5791 14.5986C49.1044 15.124 49.4003 15.8362 49.4004 16.5791V34.4189C49.4004 35.162 49.1045 35.875 48.5791 36.4004C48.0538 36.9255 47.3414 37.2206 46.5986 37.2207H38.4014C37.6586 37.2206 36.9462 36.9255 36.4209 36.4004C35.8955 35.875 35.5996 35.162 35.5996 34.4189V16.5791C35.5997 15.8362 35.8956 15.124 36.4209 14.5986C36.9462 14.0733 37.6584 13.7775 38.4014 13.7773H46.5986ZM38.4014 15.5244C37.8192 15.5246 37.3469 15.9969 37.3467 16.5791V34.4189C37.3468 35.0013 37.8191 35.4744 38.4014 35.4746H46.5986C47.1809 35.4744 47.6532 35.0013 47.6533 34.4189V16.5791C47.6531 15.9969 47.1808 15.5246 46.5986 15.5244H38.4014ZM44.1875 32.0996C44.4189 32.0996 44.641 32.191 44.8047 32.3545C44.9684 32.5183 45.0605 32.7411 45.0605 32.9727C45.0605 33.2041 44.9684 33.4262 44.8047 33.5898C44.6409 33.7535 44.419 33.8457 44.1875 33.8457H40.8125C40.581 33.8457 40.3591 33.7535 40.1953 33.5898C40.0316 33.4262 39.9395 33.2041 39.9395 32.9727C39.9395 32.7411 40.0316 32.5183 40.1953 32.3545C40.359 32.191 40.5811 32.0996 40.8125 32.0996H44.1875Z" fill={color} stroke={color} strokeWidth="0.3" />
         </svg>
     );
 
     return (
-        <section className="bg-[#051111] pt-24 px-6 md:px-12 lg:px-24">
-            <div className="max-w-7xl mx-auto">
+        <section className="bg-[#051111] pt-24 px-6">
+            <div className="max-width">
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-[117px] gap-8">
-                    <h2 className="text-4xl md:text-[40px] font-urbanist font-semibold max-w-2xl">
+                    <h2 className="text-4xl md:text-[40px] text-[24px] font-urbanist font-semibold max-w-2xl">
                         <span className="text-[#8EA94D]">Customize your </span>
                         <span className="text-[#8EA94D]">SlimOra </span>
                         <span className="text-[#8EA94D]">Gastric Balloon Systems</span>
                     </h2>
-                    <p className="text-[#B5B5B5] text-[20px] max-w-xl leading-[24px] text-justify">
+                    <p className="text-[#B5B5B5] md:text-[20px] text-[12px] max-w-xl md:leading-[24px] leading-[18px] text-justify">
                         At SlimOra, we know that every weight loss journey is different. That's why we offer a range of programme options tailored to your individual goals, preferences and needs so you can find the right path to lasting, healthy weight loss.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-1 gap-[50px]">
                     {plans.map((plan, index) => (
-                        <div key={index} className="bg-white rounded-none overflow-hidden flex flex-col h-full shadow-2xl border border-gray-100">
-                            <div className="p-10 pb-[50px] grow">
-                                <span className="text-[20px] text-[#383838] mb-[38px] block  leading-[34px] text-justify">What's included</span>
+                        <div key={index} className="bg-white rounded-none overflow-hidden flex flex-col h-full">
+                            <div className="p-5 pb-[50px] grow">
+                                <span className="md:text-[20px] text-[14px] text-[#383838] mb-[20px] block leading-[34px] text-justify">What's included</span>
 
-                                <div className="space-y-[33px]">
-                                    <div className="flex items-center gap-[20px]">
+                                <div className="space-y-[25px]">
+                                    <div className="flex items-center gap-[15px]">
                                         <div className="w-12 flex justify-center shrink-0">
                                             {plan.balloonIcon}
                                         </div>
-                                        <span className="text-[#383838] font-bold text-[20px] leading-[22px] ">{plan.balloons}</span>
+                                        <span className="text-[#383838] font-bold md:text-[16px] text-[12px] md:leading-[22px] leading-[12px]">{plan.balloons}</span>
                                     </div>
 
-                                    <div className="flex items-center gap-[20px]">
+                                    <div className="flex items-center gap-[15px]">
                                         <div className="w-12 flex justify-center shrink-0 pt-1">
                                             {stethoscopeIcon(index === 1 ? "#43838E" : "#8EA94D")}
                                         </div>
                                         <span className="text-[#383838] font-bold text-[16px] leading-[22px]">{plan.support}</span>
                                     </div>
 
-                                    <div className="flex items-center gap-[20px]">
+                                    <div className="flex items-center gap-[15px]">
                                         <div className="w-12 flex justify-center shrink-0 pt-1">
                                             {carrotIcon(index === 1 ? "#43838E" : "#8EA94D")}
                                         </div>
                                         <span className="text-[#383838] font-bold text-[16px] leading-[22px]">{plan.coaching}</span>
                                     </div>
 
-                                    <div className="flex items-center gap-[20px]">
+                                    <div className="flex items-center gap-[15px]">
                                         <div className="w-12 flex justify-center shrink-0">
                                             {devicesIcon(index === 1 ? "#43838E" : "#8EA94D")}
                                         </div>
@@ -126,16 +126,16 @@ const TheProgramme = () => {
                             </div>
 
                             <div className={`${plan.bgBottom} py-[36px] px-[40px] text-white min-h-[170px] flex flex-col justify-center`}>
-                                <h3 className="text-[49px] mb-0 leading-[34px] font-bold">{plan.months}</h3>
-                                <p className="text-[30px] text-justify leading-[34px] font-bold">{plan.name}</p>
+                                <h3 className="md:text-[49px] text-[32px] mb-0 md:leading-[34px] leading-[32px] font-bold">{plan.months}</h3>
+                                <p className="md:text-[30px] text-[22px] text-justify md:leading-[34px] leading-[28px] font-bold">{plan.name}</p>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="text-center max-w-4xl mx-auto pt-[96px] pb-[120px]">
-                    <h3 className="text-[48px] md:text-[50px] font-bold text-white mb-[14px] leading-tight font-Urbanist">Not sure which program is for you?</h3>
-                    <p className="text-[#B5B5B5] text-[20px] mb-12 leading-[24px]">
+                    <h3 className="text-[22px] md:text-[50px] font-bold text-white mb-[14px] font-Urbanist">Not sure which program is for you?</h3>
+                    <p className="text-[#B5B5B5] md:text-[20px] text-[16px] mb-12 md:leading-[24px] leading-[31px]">
                         Find a clinic near you and speak with one of our advisors. They'll help you choose the Allurion Program that best fits your goals and needs.
                     </p>
                     <div className="flex justify-center">
