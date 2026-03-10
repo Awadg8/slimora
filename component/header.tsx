@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="w-full flex flex-col items-center sticky top-0 z-50">
       {/* Top Logo Bar */}
-      <div className="w-full bg-black px-6 py-3 lg:px-16 border-b border-white/5">
+      <div className="w-full bg-[#0A1D20B8] px-6 py-3 lg:px-16 border-b border-white/5">
         <div className="max-width flex justify-between items-center">
           {/* SlimOra Logo */}
           <div className="shrink-0">
