@@ -1,12 +1,14 @@
 import Header from "@/component/header";
 import Footer from "@/component/footer";
+import TheProgramme from "@/section/home/theProgramme";
 
 const page = () => {
   return (
-    <section>
+    <main>
       <Header />
+      <TheProgramme />
       <Footer />
-    </section>
+    </main>
   );
 };
 
