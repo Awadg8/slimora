@@ -40,7 +40,7 @@ const fiveSteps = () => {
         <h3 className='font-bold text-5xl lg:text-5xl text-white'>
           5 steps to start your
         </h3>
-        <Image src="/images/logo2.svg" alt="" className='w-36 h-9' height={72} width={282} />
+        <Image src="/images/logo.svg" alt="" className='w-36 h-9' height={73} width={282} />
       </div>
       <div className='grid grid-row md:grid-cols-5 gap-4  pt-24.5'>
         {steps.map((step) => (
