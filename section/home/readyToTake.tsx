@@ -1,3 +1,4 @@
+import CtaButton from "@/component/ctaButton";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -82,16 +83,16 @@ const ReadyToTake = () => {
                             Are you already a patient?
                         </h2>
                     </div>
-                    <div className="md:w-1/2 lg:w-3/5 flex flex-col items-center md:items-start text-center md:text-left">
-                        <p className="text-white/70 font-urbanist text-lg mb-10 leading-relaxed max-w-2xl">
+                    <div className="md:w-1/2 lg:w-3/5 flex flex-col items-center text-center md:text-left">
+                        <p className="text-white/70 text-[20px] mb-10 leading-relaxed max-w-2xl">
                             Download the SlimOra App to track your progress, connect your devices and access support—all in one place. Browse patient guides, troubleshoot issues or contact our team directly.
                         </p>
-                        <Link
+                        <CtaButton
+                            text="View Patient Dashboard"
+                            className="text-[16px] lg:text-[20px] font-medium w-[298px]"
+                            type="link"
                             href="#"
-                            className="bg-button-bg hover:bg-button-bg/90 text-white px-10 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-                        >
-                            View Patient Dashboard
-                        </Link>
+                        />
                     </div>
                 </div>
             </section>
