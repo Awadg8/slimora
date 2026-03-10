@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Footer(){
+const Footer = () =>{
   return (
       <div>
         <div className="bg-[radial-gradient(circle,#142D31,#0A1D20)]">
@@ -74,3 +74,5 @@ export default function Footer(){
       </div>
   );
 };
+
+export default Footer;
