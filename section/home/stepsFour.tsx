@@ -7,7 +7,7 @@ export default function StepsFour() {
     <div className="bg-[#0A1D20]">
       <div className="max-width">
         <div className="md:pt-[136px] pt-[80px] md:pb-[78px] pb-[46px]">
-          <p className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
+          <h4 className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
             <span>4 steps to kickstart your personalized weight-loss journey with </span>
             <Image
               src="/images/logo.svg"
@@ -18,7 +18,7 @@ export default function StepsFour() {
               priority
             />
             <span> Gastric Balloon Systems</span>
-          </p>
+          </h4>
         </div>
         <StepCard />
         <div className="flex justify-center md:mb-[90px] mb-[34px] mt-[42px]">
