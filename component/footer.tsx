@@ -1,0 +1,161 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const Footer = () => {
+  return (
+    <div>
+      <div className="bg-[radial-gradient(circle,#142D31,#0A1D20)]">
+        <div className="max-width md:py-[37px] py-[49px]">
+          <div className="flex justify-between">
+            <Link
+              href="/"
+              className="relative md:h-[46px] md:w-[165px] h-[33px] w-[119px]"
+            >
+              <Image
+                alt="Logo"
+                src="/images/logo.svg"
+                fill
+                className="object-cover"
+              />
+            </Link>
+            <div className="relative md:h-[61px] md:w-[125px] w-[80px] h-[38px]">
+              <Image
+                alt="Logo"
+                src="/images/meril_logo.png"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="md:pt-[52px] pt-[23px] md:pb-[39px] pb-[48px]">
+            <hr className="w-full border-[#8EA94D]" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-10 md:gap-12 gap-[44px]">
+            {/* Get In Touch */}
+            <div className="md:col-span-4">
+              <h1 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-6 mb-2">
+                Get In Touch
+              </h1>
+              <div className="flex gap-[19px]">
+                <input
+                  type="email"
+                  placeholder="Enter Your E-mail ID"
+                  className="w-full bg-[#1A3438] p-[10px] text-[#FFFFFF] placeholder:text-gray-400 md:text-[12px] text-[7.48px] focus:outline-none focus:ring-1 focus:ring-[#8EA94D]"
+                />
+                <button className="bg-[#8EA94D] md:text-[12px] text-[8px] p-2.5 hover:bg-[#8fa03d] transition whitespace-nowrap">
+                  Submit
+                </button>
+              </div>
+            </div>
+
+            {/* Quick Links and Contact Us Container */}
+            <div className="md:col-span-6">
+              <div className="flex justify-center md:gap-20 gap-[42px]">
+                  {/* Quick Links */}
+                  <div>
+                    <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[35px] mb-[17px]">
+                      Quick Links
+                    </h3>
+                    <div className="flex justify-center gap-12">
+                      <div className="space-y-[15px]">
+                        <Link
+                          href="/get-started"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                        >
+                          Get Started
+                        </Link>
+                        <Link
+                          href="/am-i-eligible"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                        >
+                          Am I Eligible ?
+                        </Link>
+                        <Link
+                          href="/find-a-clinic"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                        >
+                          Find a Clinic
+                        </Link>
+                        <Link
+                          href="/blog"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                        >
+                          Blog
+                        </Link>
+                      </div>
+
+                      <div className="space-y-[15px]">
+                        <Link
+                          href="/how-it-works"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                        >
+                          How It Works
+                        </Link>
+                        <Link
+                          href="/the-programme"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                        >
+                          The Programme
+                        </Link>
+                        <Link
+                          href="/the-technology"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                        >
+                          The Technology
+                        </Link>
+                        <Link
+                          href="/eligibility-check"
+                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                        >
+                          Eligibility Check
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contact Us */}
+                  <div>
+                    <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[30px] mb-[13px]">
+                      Contact Us
+                    </h3>
+                    <div className="md:space-y-[15px] space-y-[9px] md:text-[15px] text-[12px] text-[#FFFFFF]">
+                      <p>
+                        E-mail:{" "}
+                        <a
+                          href="mailto:info@allurion.com"
+                          className="hover:text-[#A4B84C] transition"
+                        >
+                          info@allurion.com
+                        </a>
+                      </p>
+                      <p>
+                        Phone:{" "}
+                        <a
+                          href="tel:+91 2603 509 400"
+                          className="hover:text-[#A4B84C] transition"
+                        >
+                          +91 2603 509 400
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:pt-[65px] pt-[32px]">
+            <hr className="w-full border-[#8EA94D]" />
+          </div>
+
+          <p className="text-[#8EA94D] text-[16px] text-center md:pt-[10px] pt-[16px]">
+            © SlimOra 2026
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
