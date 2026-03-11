@@ -37,7 +37,7 @@ export default function MentalLoad() {
       <div className="pt-10 md:pt-18 pb-16 md:pb-40">
         <div className="max-width">
           <div className="pt-9 md:pt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
               {data.map((item, index) => (
                 <div
                   key={index}

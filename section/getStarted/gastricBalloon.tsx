@@ -4,7 +4,7 @@ import CtaButton from '@/component/ctaButton'
 
 export default function GastricBalloon() {
     return (
-        <div className='pt-30 pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
+        <div className='pb-30 pt-15 sm:pt-30 sm:pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
             <div
                 className='hidden md:block absolute -left-50  z-0 '
                 style={{
@@ -25,7 +25,7 @@ export default function GastricBalloon() {
                 }}
             >
             </div>
-            <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8 '>
+            <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8'>
 
                 {/* Left Section - Text */}
                 <div className=' md:w-[25%] z-1'>
@@ -35,7 +35,7 @@ export default function GastricBalloon() {
                 </div>
 
                 {/* Center Section - Image with Button */}
-                <div className='relative md:w-[50%]'>
+                <div className='relative md:w-[50%] space-y-8 sm:space-y-0'>
                     <div className='relative rounded-[22px] md:rounded-[44px] overflow-hidden'>
                         <Image
                             src='/images/get_started/learn_more.jpg'

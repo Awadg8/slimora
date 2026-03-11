@@ -56,7 +56,7 @@ export default function CheckIf() {
         <div className="relative w-full bg-[#2C5D6B]">
 
             {/* MOBILE + TABLET IMAGE — shown below lg breakpoint only */}
-            <div className="relative w-full h-52 sm:h-72 lg:hidden">
+            <div className="relative w-full h-82 sm:h-92 lg:h-72 lg:hidden">
                 <Image
                     src="/images/get_started/check_if.jpg"
                     alt="SlimOra Balloon"
@@ -77,11 +77,11 @@ export default function CheckIf() {
 
                         {/* TEXT */}
                         <div className="flex flex-col font-urbanist">
-                            <p className="font-bold text-xl sm:text-2xl md:text-[30px] lg:text-[40px] text-white leading-snug">
+                            <p className="font-bold font-urbanist text-xl sm:text-2xl md:text-[30px] lg:text-[40px] text-white text-center lg:text-left">
                                 Check if you're eligible for the SlimOra Program
                             </p>
 
-                            <p className="font-light text-sm sm:text-base md:text-[17px] lg:text-[20px] mt-4 md:mt-5 text-[#b5b5b5]">
+                            <p className="font-light text-sm sm:text-base md:text-[17px] lg:text-[20px] mt-4 md:mt-5 text-[#b5b5b5] text-center lg:text-left">
                                 Start your journey with a quick BMI check and a few simple questions.
                                 This helps us understand if the SlimOra Gastric Balloon is a good fit
                                 for your health goals. It only takes a minute and could be your first
@@ -98,7 +98,7 @@ export default function CheckIf() {
 
                                 {bmi === null ? (
                                     /* INPUT FIELDS */
-                                    <div className="flex flex-col sm:flex-row items-stretch sm:items-end gap-4 text-white w-full sm:w-auto">
+                                    <div className="flex flex-row items-stretch sm:items-end gap-4 text-white w-full sm:w-auto">
 
                                         {/* WEIGHT */}
                                         <div className="flex flex-col items-center space-y-[5px]">
