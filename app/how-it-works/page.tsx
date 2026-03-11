@@ -6,6 +6,7 @@ import HowBalloonPlaced from "@/section/howItWork/howBalloonPlaced";
 import BalloonRemovalAndEligibility from "@/section/howItWork/balloonRemovalAndEligibility";
 import MoreThanBalloon from "@/section/howItWork/moreThanBalloon";
 import ReadyToTake from "@/component/readyToTake";
+import Disclaimer from "@/component/dislaimer";
 
 const page = () => {
   return (
@@ -16,7 +17,8 @@ const page = () => {
       <HowBalloonPlaced />
       <BalloonRemovalAndEligibility />
       <MoreThanBalloon />
-      <ReadyToTake/>
+      <ReadyToTake />
+      <Disclaimer />
       <Footer />
     </section>
   );
