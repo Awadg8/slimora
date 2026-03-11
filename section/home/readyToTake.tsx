@@ -28,13 +28,13 @@ const ReadyToTake = () => {
                         <div className="flex justify-center lg:justify-start gap-4 lg:gap-[100px] xl:gap-[171px]">
                             <CtaButton
                             href="#"
-                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all shadow-lg"
+                            className="hover:bg-button-bg/90 text-[12px] lg:text-[16px] px-4 lg:px-10 py-4 font-semibold transition-all shadow-lg"
                             text="Become a Partner"
                             type="link"
                         />
                             <CtaButton
                             href="#"
-                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
+                            className="hover:bg-button-bg/90 text-[12px] lg:text-[16px] px-4 lg:px-10 py-4 font-semibold transition-all  shadow-lg"
                             text="Learn about SlimOra"
                             type="link"
                         />

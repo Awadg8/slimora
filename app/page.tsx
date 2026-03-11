@@ -16,8 +16,8 @@ export default function Home() {
       <Others/>
       <MentalLoad />
       {/* <TheProgramme /> */}
-      <ReadyToTake />
       <StepsFour />
+      <ReadyToTake />
       <GotQuestion />
       <Footer />
     </main>

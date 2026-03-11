@@ -31,7 +31,7 @@ const data = [
 const MentalLoad = () => {
   return (
     <section>
-      <div className="[background:linear-gradient(270deg,rgba(78,181,155,0.5)_0%,rgba(142,169,77,0.5)_100%),linear-gradient(0deg,rgba(0,0,0,0.45),rgba(0,0,0,0.45))] pt-10 md:pt-18 pb-16 md:pb-40">
+      <div className="[background:linear-gradient(0deg,rgba(0,0,0,0.45)_0%,rgba(0,0,0,0.45)_100%),linear-gradient(270deg,rgba(78,181,155,0.50)_0%,rgba(142,169,77,0.50)_100%)] pt-10 md:pt-18 pb-16 md:pb-40">
         <div className="max-width">
           <h4 className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
             Ease the mental load of weight loss with SlimOra<span className="font-thin">™</span> Gastric Balloon Systems
