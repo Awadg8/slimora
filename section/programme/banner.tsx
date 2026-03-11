@@ -43,7 +43,7 @@ export default function Banner() {
                     </p>
                     <div className="flex flex-row flex-wrap justify-start gap-3 md:gap-4 mt-2">
                         <Link
-                            href="/am-i-eligible"
+                            href="/eligibility-check"
                             className="px-6 md:px-8 py-3 rounded-full border border-[#8EA94D]/30 lg:border-[#8EA94D] text-[#8EA94D] font-Urbanist text-[14px] md:text-[16px] font-semibold hover:bg-[#8EA94D] hover:text-white transition-all whitespace-nowrap"
                         >
                             Check Eligibility
