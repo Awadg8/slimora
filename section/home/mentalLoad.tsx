@@ -7,7 +7,7 @@ const data = [
     title: "Take control of your appetite",
     description:
       "As part of SlimOra Gastric Balloon Systems, our procedure-less gastric balloon occupies space in the stomach. It has the same mechanism of action as other intragastric balloons to promote satiety and reduce food consumption.",
-    link: "#",
+    link: "/how-it-works",
     linkText: "Balloon",
   },
   {
@@ -15,7 +15,7 @@ const data = [
     title: "Get expert support, on every step",
     description:
       "Receive personalised guidance from a multidisciplinary team of healthcare professionals, including dieticians, doctors and behaviour change experts. The programme runs for at least six months and is designed to help you build sustainable habits, improve outcomes and take control of your health.",
-    link: "#",
+    link: "/the-programme",
     linkText: "our Solutions",
   },
   {

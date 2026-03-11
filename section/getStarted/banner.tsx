@@ -27,7 +27,7 @@ export default function Banner() {
             <CtaButton
               text="Book a Consultation"
               type="link"
-              href="#"
+              href="/eligibility-check"
               className="text-sm sm:text-lg font-medium w-[180px] sm:w-[240px]"
             />
           </div>
