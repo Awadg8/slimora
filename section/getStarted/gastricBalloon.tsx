@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import CtaButton from '@/component/ctaButton'
+import Image from 'next/image';
+import CtaButton from '@/component/ctaButton';
 
 
 export default function GastricBalloon() {
     return (
-        <div className='pb-30 pt-15 sm:pt-30 sm:pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
+        <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8 pt-30 pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
             <div
                 className='hidden md:block absolute -left-50  z-0 '
                 style={{

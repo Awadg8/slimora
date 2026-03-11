@@ -23,7 +23,7 @@ const data = [
     title: "A digital ecosystem built around you",
     description:
       "Track your weight, body composition and activity in real time with the SlimOra Connected Scale and your smart watch. Your data flows directly into your care team's dashboard, helping them tailor your support. With Coach Iris, our AI-powered assistant, you have expert guidance and motivation whenever you need it.",
-    link: "#",
+    link: "/the-technology",
     linkText: "our Technology",
   },
 ];
@@ -38,7 +38,7 @@ const MentalLoad = () => {
           </h4>
 
           <div className="pt-9 md:pt-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
               {data.map((item, index) => (
                 <div
                   key={index}
