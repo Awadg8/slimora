@@ -25,7 +25,7 @@ export default function GotQuestion() {
 
     return (
         <div className="bg-[#0A1D20]">
-            <div className='max-w-7xl mx-auto pt-[120px] md:pt-[400px] pb-[80px] md:pb-[230] px-6'>
+            <div className='max-width'>
                 <div className='space-y-[19px] md:space-y-[17px]'>
                     <h2 className='text-[24px] md:text-[50px] leading-[100%] md:leading-[57px] font-bold text-center md:text-left'>
                         Got questions? We've got <br className='block md:hidden' />answers.
