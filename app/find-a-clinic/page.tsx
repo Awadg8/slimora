@@ -4,7 +4,7 @@ import StepCard from "@/component/stepCard";
 import Footer from "@/component/footer";
 import Link from "next/link";
 
-const page = () => {
+export default function FindClinic(){
   return (
     <section className="max-w-[2560px] mx-auto">
       <Header />
@@ -43,5 +43,3 @@ const page = () => {
     </section>
   );
 };
-
-export default page;

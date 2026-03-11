@@ -160,7 +160,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Pill Section (Desktop Only) */}
-      <div className="hidden lg:flex max-w-[1280px] justify-center -mb-[30px] z-100 ">
+      <div className="hidden absolute top-[78.4px] left-[50%] translate-x-[-50%] lg:flex max-w-[1280px] justify-center z-100 ">
         <div className=" max-w-[952px] inline-flex items-center backdrop-blur-md px-10 py-6 rounded-bl-[60px] rounded-br-[60px] border border-white/10">
           <nav className="flex items-center space-x-[80px] font-gilroy px-10">
             {/* Get Started Dropdown */}
@@ -173,7 +173,7 @@ const Header = () => {
                 onClick={() => setIsGetStartedOpen(!isGetStartedOpen)}
               >
                 <button
-                  className=" flex items-center text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist pointer-events-none hover:text-[#a3d43b] transition-all"
+                  className=" flex items-center text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist pointer-events-none hover:text-[#a3d43b] transition-all whitespace-nowrap"
                 >
                   Get Started
                 </button>
@@ -213,7 +213,7 @@ const Header = () => {
                 onClick={() => setIsHowItWorksOpen(!isHowItWorksOpen)}
               >
                 <button
-                  className="flex items-center text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist pointer-events-none hover:text-[#a3d43b] transition-all"
+                  className="flex items-center text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist pointer-events-none hover:text-[#a3d43b] transition-all whitespace-nowrap"
                 >
                   How it Works
                 </button>
@@ -255,7 +255,7 @@ const Header = () => {
             </svg>
 
             {/* Eligibility Check */}
-            <Link href="/eligibility-check" className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
+            <Link href="/eligibility-check" className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all whitespace-nowrap">
               Eligibility Check
             </Link>
           </nav>

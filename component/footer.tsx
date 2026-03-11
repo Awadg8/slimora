@@ -42,9 +42,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter Your E-mail ID"
-                  className="w-full bg-[#1A3438] p-[10px] text-[#FFFFFF] placeholder:text-gray-400 md:text-[12px] text-[7.48px] focus:outline-none focus:ring-1 focus:ring-[#8EA94D]"
+                  className="w-full bg-[#1A3438] p-2 md:p-[10px] text-[#FFFFFF] placeholder:text-gray-400 md:text-[12px] text-[7.48px] focus:outline-none focus:ring-1 focus:ring-[#8EA94D]"
                 />
-                <button className="bg-[#8EA94D] md:text-[12px] text-[8px] p-2.5 hover:bg-[#8fa03d] transition whitespace-nowrap">
+                <button className="bg-[#8EA94D] md:text-[12px] text-[8px] p-2 md:p-2.5 hover:bg-[#8fa03d] transition whitespace-nowrap">
                   Submit
                 </button>
               </div>
@@ -52,13 +52,13 @@ const Footer = () => {
 
             {/* Quick Links and Contact Us Container */}
             <div className="md:col-span-6">
-              <div className="flex justify-center md:gap-20 gap-[42px]">
+              <div className="flex flex-col md:flex-row justify-center md:gap-20 gap-[42px]">
                   {/* Quick Links */}
                   <div>
                     <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[35px] mb-[17px]">
                       Quick Links
                     </h3>
-                    <div className="flex justify-center gap-12">
+                    <div className="flex md:justify-center gap-12">
                       <div className="space-y-[15px]">
                         <Link
                           href="/get-started"
