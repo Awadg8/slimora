@@ -23,12 +23,12 @@ const programmeFeatures = [
 
 export default function MoreThanBalloon() {
     return (
-        <div className='bg-[#0A1D20] py-[60px] md:py-[100px]'>
-            <div className='max-width'>
-                <h2 className='text-[#FFFFFF] text-[24px] md:text-[50px] font-bold text-center mb-[60px] md:mb-[100px]'>
+        <div className="bg-[#0A1D20] pt-0 sm:py-[60px] md:py-[100px]">
+            <div className="max-width">
+                <h2 className="text-[#FFFFFF] text-[24px] md:text-[50px] font-bold text-center mb-[60px] md:mb-[100px]">
                     SlimOra Gastric Balloon is more than just a balloon
                 </h2>
-                <div className='space-y-[60px] md:space-y-[100px]'>
+                <div className="space-y-[60px] md:space-y-[100px]">
                     {programmeFeatures.map((feature, index) => (
                         <ImageTextCard
                             key={index}
