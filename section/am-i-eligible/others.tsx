@@ -6,7 +6,7 @@ export default function Others() {
       <div className="max-width py-12 md:py-18 lg:py-24 space-y-[78px]">
         <div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0">
           <p className="text-[14px] leading-[18px] sm:text-[24px] sm:leading-[28px] lg:text-[28px] lg:leading-[32px] md:w-[38%] text-justify md:text-left">
-            Use our <span className="font-bold text-[20px] sm:text-[24px] sm:leading-[28px] lg:text-[28px] lg:leading-[32px]">BMI Calculator</span> to see if you could be eligible for the SlimOra Gastric Balloon:.
+            Use our <span className="font-bold text-[20px] sm:text-[24px] sm:leading-[28px] lg:text-[30px] lg:leading-[32px]">BMI Calculator</span> to see if you could be eligible for the SlimOra Gastric Balloon:.
           </p>
           <p className="text-[14px] leading-[20px] lg:text-[16px] lg:leading-[22px] text-justify md:w-[52%] text-white">
             The Allurion Gastric Balloon is a medical device. Before placing it, your doctor will carefully review your medical history to confirm your eligibility and ensure there are no contraindications. The weight loss programme with the Allurion Gastric Balloon can be offered to individuals who meet the criteria below. This list is not exhaustive; the full list of contraindications is available in the device’s instructions for use, which is provided to doctors4.
