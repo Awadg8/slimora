@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FiveSteps(){
+export default function FiveSteps() {
   const steps = [
     {
       number: 1,
@@ -35,9 +35,9 @@ export default function FiveSteps(){
   ]
 
   return (
-    <div className="max-width pt-20 pb-37.5">
-      <div className="flex items-center md:gap-2 pl-12.5">
-        <h3 className="font-bold font-urbanist text-xl lg:text-[50px] text-white">
+    <div className='max-width pt-20 pb-25 md:pb-37.5'>
+      <div className='flex items-center md:gap-2 pl-12.5'>
+        <h3 className='font-bold font-urbanist text-xl lg:text-[50px] text-white'>
           5 steps to start your
         </h3>
         <Image src="/images/logo.svg" alt="logo" className="w-36 h-9 md:w-70.5 md:h-18" height={73} width={282} />
@@ -55,11 +55,11 @@ export default function FiveSteps(){
                     {step.description}
                   </p>
                 </div>
-                <Image src={step.image} alt={step.title} height={192} width={289}/>
+                <Image src={step.image} alt={step.title} height={192} width={289} />
               </>
             ) : (
               <>
-                <Image src={step.image} alt={step.title} height={192.37} width={289.01}/>
+                <Image src={step.image} alt={step.title} height={192.37} width={289.01} />
                 <div>
                   <h3 className="text-xl">{step.title}</h3>
                   <p className="text-[#B5B5B5] text-[15px] pt-3">
