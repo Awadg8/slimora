@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import CtaButton from '@/component/ctaButton';
 export default function Banner() {
     return (
-        <div className="relative w-full h-[600px] lg:h-screen flex items-center overflow-hidden bg-[#0A1D20]">
+        <div className="relative w-full h-[700px] lg:h-screen flex items-center overflow-hidden bg-[#0A1D20]">
             {/* Background Spotlight Overlay */}
             <div
-                className="absolute top-[-100px] left-[-100px] w-[685px] h-[685px] pointer-events-none z-10"
+                className="absolute top-[-350px] md:top-[-100px] md:left-[-100px] left-[-350px] w-[685px] h-[685px] pointer-events-none z-10"
                 style={{
                     borderRadius: '342.5px',
                     background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, rgba(142, 169, 77, 0.8) 0%, rgba(67, 131, 142, 0.8) 100%)',
@@ -17,13 +17,13 @@ export default function Banner() {
             />
 
             {/* Background Image on Right */}
-            <div className="absolute top-0 right-0 w-full lg:w-[65%] h-full z-0">
+            <div className="absolute top-0 right-0 w-full lg:w-[65%] md:h-full h-[500px] z-0">
                 <div className="relative w-full h-full">
                     <Image
                         src="/images/the_programme/banner.png"
                         alt="Happy people"
                         fill
-                        className="object-cover object-right opacity-70 lg:opacity-100"
+                        className="object-cover object-right"
                     />
                     {/* Fade to left on desktop */}
                     <div className="hidden lg:block absolute inset-0 bg-linear-to-r from-[#0A1D20] via-[#0a1d20]/50 to-transparent" />
@@ -33,8 +33,8 @@ export default function Banner() {
             </div>
 
             {/* Content Section */}
-            <div className="max-width w-full relative z-20 px-6 lg:px-0">
-                <div className="max-w-[750px] flex flex-col items-start text-left gap-6 lg:gap-8">
+            <div className="max-width w-full z-20 px-6 lg:px-0 absolute md:relative md:bottom-none bottom-0 md:left-none left-6">
+                <div className="max-w-[750px] flex flex-col justify-end items-start text-left gap-6 lg:gap-8">
                     <h1 className="text-white text-[32px] md:text-[48px] lg:text-[64px] font-bold font-Urbanist leading-tight">
                         What is the SlimOra Program?
                     </h1>
@@ -48,12 +48,14 @@ export default function Banner() {
                         >
                             Check Eligibility
                         </Link>
-                        <Link
+
+                        <CtaButton
+                            text="Find Clinic"
+                            className="text-[16px] lg:text-[20px] font-medium w-[142px] md:w-[220px]"
+                            type="link"
                             href="/find-a-clinic"
-                            className="px-6 md:px-8 py-3 rounded-full bg-[#8EA94D] text-[#0A1D20] font-Urbanist text-[14px] md:text-[16px] font-semibold hover:bg-[#7e9742] transition-all whitespace-nowrap"
-                        >
-                            Find Clinic
-                        </Link>
+                        />
+
                     </div>
                 </div>
             </div>
