@@ -5,6 +5,7 @@ import Discover from "@/section/theTechnology/discover";
 import Journey from "@/section/theTechnology/journey";
 import Connected from "@/section/theTechnology/connected";
 import Banner from "@/section/theTechnology/banner";
+import Disclaimer from "@/component/dislaimer";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Discover />
       <Journey />
       <Connected />
+      <Disclaimer />
       <Footer />
     </section>
   );
