@@ -27,7 +27,7 @@ export default function GastricBalloon() {
             </div>
             <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8 '>
 
-                {/* Left Section - Text */}
+                {/* Left Section - Text  */}
                 <div className=' md:w-[25%] z-1'>
                     <p className='text-[12px] md:text-[18px] text-center text-[#B5B5B5] '>
                         <span className='font-bold '>The SlimOra Gastric Balloon </span> is a regulated health product that bears the CE marking in accordance with this regulation.
