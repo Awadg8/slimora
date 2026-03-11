@@ -1,11 +1,10 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import CtaButton from "@/component/ctaButton";
 
 
 
+import ImageTextCard from "@/component/imageTextCard";
 
 const TheProgramme = () => {
     const plans = [
@@ -136,6 +135,8 @@ const TheProgramme = () => {
                         </div>
                     ))}
                 </div>
+
+
 
                 <div className="text-center max-w-4xl mx-auto pt-[96px] pb-[120px]">
                     <h3 className="text-[22px] md:text-[50px] font-bold text-white mb-[14px] font-Urbanist">Not sure which program is for you?</h3>
