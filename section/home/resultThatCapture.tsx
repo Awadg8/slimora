@@ -82,7 +82,7 @@ const ResultThatCapture = () => {
                 "On the day of your balloon placement, you will receive the SlimOra Connected Scale and the SlimOra App. Use them to track your progress, share updates with your care team, and get support when you need it. They help you stay on track throughout your SlimOra Program.",
             image: "/images/how_it_works/more_than3.jpg",
             imageLeft: false,
-            link: "#",
+            link: "/the-technology",
             linkLabel: "Learn More about Tools",
         },
     ];
@@ -90,7 +90,7 @@ const ResultThatCapture = () => {
     return (
         <>
             {/* Section 1: Results */}
-            <section className="bg-[#0A1D20] py-20 px-6">
+            <section className="bg-[#0A1D20] py-20">
                 <div className="max-width">
                     <h2 className="text-center text-white text-[24px] md:text-[40px] font-bold font-urbanist mb-14">
                         Results that capture the value of the SlimOra Program
@@ -126,7 +126,7 @@ const ResultThatCapture = () => {
             </section>
 
             {/* Section 2: Support */}
-            <section className="bg-[#0A1D20] py-20 px-6">
+            <section className="bg-[#0A1D20] py-20">
                 <div className="max-width">
                     <h2 className="text-center text-white text-[24px] md:text-[40px] font-bold font-urbanist mb-20">
                         Designed to ensure you don't feel alone on your journey.
@@ -159,7 +159,7 @@ const ResultThatCapture = () => {
                                         {item.description}                                    </p>
                                     {item.link && item.linkLabel && (
                                         <CtaButton
-                                            href="#"
+                                            href="/the-technology"
                                             className=" text-center hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg w-full md:w-fit"
                                             text="Learn More about Tools"
                                             type="link"

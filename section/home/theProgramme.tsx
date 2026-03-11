@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import CtaButton from "@/component/ctaButton";
 
+
+
+
 const TheProgramme = () => {
     const plans = [
         {
@@ -69,13 +72,13 @@ const TheProgramme = () => {
     const devicesIcon = (color: string) => (
         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="40" viewBox="0 0 56 40" fill="none">
             <path d="M30.8333 4.16602H9.16667C8.24619 4.16602 7.5 4.91221 7.5 5.83268V34.166C7.5 35.0865 8.24619 35.8327 9.16667 35.8327H30.8333C31.7538 35.8327 32.5 35.0865 32.5 34.166V5.83268C32.5 4.91221 31.7538 4.16602 30.8333 4.16602Z" stroke={color} strokeWidth="2.5" />
-            <path d="M18.332 30H21.6654" stroke={color} strokeWidth="2.5" strokeLinecap="round" stroke-linejoin="round" />
+            <path d="M18.332 30H21.6654" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M46.5986 13.7773C47.3416 13.7775 48.0538 14.0733 48.5791 14.5986C49.1044 15.124 49.4003 15.8362 49.4004 16.5791V34.4189C49.4004 35.162 49.1045 35.875 48.5791 36.4004C48.0538 36.9255 47.3414 37.2206 46.5986 37.2207H38.4014C37.6586 37.2206 36.9462 36.9255 36.4209 36.4004C35.8955 35.875 35.5996 35.162 35.5996 34.4189V16.5791C35.5997 15.8362 35.8956 15.124 36.4209 14.5986C36.9462 14.0733 37.6584 13.7775 38.4014 13.7773H46.5986ZM38.4014 15.5244C37.8192 15.5246 37.3469 15.9969 37.3467 16.5791V34.4189C37.3468 35.0013 37.8191 35.4744 38.4014 35.4746H46.5986C47.1809 35.4744 47.6532 35.0013 47.6533 34.4189V16.5791C47.6531 15.9969 47.1808 15.5246 46.5986 15.5244H38.4014ZM44.1875 32.0996C44.4189 32.0996 44.641 32.191 44.8047 32.3545C44.9684 32.5183 45.0605 32.7411 45.0605 32.9727C45.0605 33.2041 44.9684 33.4262 44.8047 33.5898C44.6409 33.7535 44.419 33.8457 44.1875 33.8457H40.8125C40.581 33.8457 40.3591 33.7535 40.1953 33.5898C40.0316 33.4262 39.9395 33.2041 39.9395 32.9727C39.9395 32.7411 40.0316 32.5183 40.1953 32.3545C40.359 32.191 40.5811 32.0996 40.8125 32.0996H44.1875Z" fill={color} stroke={color} strokeWidth="0.3" />
         </svg>
     );
 
     return (
-        <section className="bg-[#0A1D20] pt-24 px-6">
+        <section className="bg-[#0A1D20] pt-24 ">
             <div className="max-width">
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-[117px] gap-8">
                     <h2 className="text-4xl md:text-[40px] text-[24px] font-urbanist font-semibold max-w-2xl">
@@ -141,7 +144,7 @@ const TheProgramme = () => {
                     </p>
                     <div className="flex justify-center">
                         <CtaButton
-                            href="#"
+                            href="/find-a-clinic"
                             className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all md:w-fit w-full shadow-lg"
                             text="Find Clinic"
                             type="link"
@@ -152,5 +155,7 @@ const TheProgramme = () => {
         </section>
     );
 };
+
+
 
 export default TheProgramme;

@@ -28,7 +28,7 @@ const ReadyToTake = () => {
                     We recommend checking if you're eligible before contacting a clinic
                 </p>
                 <CtaButton
-                    href="#"
+                    href="/eligibility-check"
                     className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
                     text="Check Eligibility"
                     type="link"
