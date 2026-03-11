@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CtaButton from "@/component/ctaButton";
+import ReadyToTake from "@/component/readyToTake";
 
 const ResultThatCapture = () => {
     const results = [
@@ -81,7 +82,7 @@ const ResultThatCapture = () => {
                 "On the day of your balloon placement, you will receive the SlimOra Connected Scale and the SlimOra App. Use them to track your progress, share updates with your care team, and get support when you need it. They help you stay on track throughout your SlimOra Program.",
             image: "/images/how_it_works/more_than3.jpg",
             imageLeft: false,
-            link: "#",
+            link: "/the-technology",
             linkLabel: "Learn More about Tools",
         },
     ];
@@ -89,7 +90,7 @@ const ResultThatCapture = () => {
     return (
         <>
             {/* Section 1: Results */}
-            <section className="bg-[#0A1D20] py-20 px-6">
+            <section className="bg-[#0A1D20] py-20">
                 <div className="max-width">
                     <h2 className="text-center text-white text-[24px] md:text-[40px] font-bold font-urbanist mb-14">
                         Results that capture the value of the SlimOra Program
@@ -125,7 +126,7 @@ const ResultThatCapture = () => {
             </section>
 
             {/* Section 2: Support */}
-            <section className="bg-[#0A1D20] py-20 px-6">
+            <section className="bg-[#0A1D20] py-20">
                 <div className="max-width">
                     <h2 className="text-center text-white text-[24px] md:text-[40px] font-bold font-urbanist mb-20">
                         Designed to ensure you don't feel alone on your journey.
@@ -158,7 +159,7 @@ const ResultThatCapture = () => {
                                         {item.description}                                    </p>
                                     {item.link && item.linkLabel && (
                                         <CtaButton
-                                            href="#"
+                                            href="/the-technology"
                                             className=" text-center hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg w-full md:w-fit"
                                             text="Learn More about Tools"
                                             type="link"
@@ -173,30 +174,7 @@ const ResultThatCapture = () => {
             <div className="md:pt-30 md:pb-50">
 
                 {/* Section 1: Ready to take the 1st step? */}
-                <section className="relative overflow-hidden pt-60 pb-60 z-30">
-                    <div className="absolute inset-0">
-                        <Image
-                            src="/images/home/ready_to_step.png"
-                            alt="Ready to take the 1st step"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-                    <div className="relative z-10 max-width flex flex-col items-center text-center">
-                        <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
-                            Ready to take the 1st step?
-                        </h2>
-                        <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
-                            We recommend checking if you're eligible before contacting a clinic
-                        </p>
-                        <CtaButton
-                            href="#"
-                            className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
-                            text="Check Eligibility"
-                            type="link"
-                        />
-                    </div>
-                </section>
+                <ReadyToTake />
             </div>
         </>
     );

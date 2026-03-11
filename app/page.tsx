@@ -15,7 +15,7 @@ export default function Home() {
       <Banner />
       <Others/>
       <MentalLoad />
-      <TheProgramme />
+      {/* <TheProgramme /> */}
       <ReadyToTake />
       <StepsFour />
       <GotQuestion />

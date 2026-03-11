@@ -14,21 +14,21 @@ export default function Others() {
           </p>
         </div>
       </div>
-      <div className="max-width pb-24 flex flex-col items-center md:items-end space-y-8">
+      <div className="max-width pb-24 flex flex-col items-center space-y-8">
         <div className="flex flex-col md:items-end space-y-5 md:space-y-3 w-full">
           <p className="text-[28px] lg:text-[40px] lg:leading-[48px] font-bold text-left md:text-right">
             <span className="text-[#8EA94D]">Obesity is complex.</span> Your solution shouldn’t be.
           </p>
-          <p className="text-[14px] leading-[20px] lg:text-[20px] lg:leading-[24px] text-[#B5B5B5] text-left md:text-right font-bold">
+          <p className="text-[14px] leading-[20px] lg:text-[20px] lg:leading-[24px] text-[#B5B5B5] text-center md:text-right font-bold">
             Find your path to effective weight management
-          </p>
-        </div>
         <CtaButton
           text="Find a Clinic"
-          className="text-[16px] lg:text-[20px] font-medium w-[142px] md:w-[220px]"
+          className="text-[16px] lg:text-[20px] font-medium w-[142px] md:w-[220px] mt-[24px]  mx-auto md:mx-0"
           type="link"
-          href="#"
+          href="/find-a-clinic"
         />
+          </p>
+        </div>
       </div>
     </div>
   )
