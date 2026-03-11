@@ -42,9 +42,9 @@ const fiveSteps = () => {
         </h3>
         <Image src="/images/logo.svg" alt="" className='w-36 h-9 md:w-70.5 md:h-18' height={73} width={282} />
       </div>
-      <div className='grid grid-row md:grid-cols-5 gap-4  pt-24.5'>
+      <div className='grid grid-row md:grid-cols-5 gap-4  pt-12.5'>
         {steps.map((step) => (
-          <div key={step.number} className={`text-white  bg-[#2C5D6B]/50 text-center col-span-1 p-3 hover:shadow-[0px_0px_41px_0px_#000000B2] flex justify-between items-center flex-col gap-5 ${step.number === 4 ? 'pb-10' : ''}`}>
+          <div key={step.number} className={`text-white  bg-[#2C5D6B]/50 text-center col-span-1 p-4  hover:shadow-[0px_0px_41px_0px_#000000B2] flex justify-between items-center flex-col gap-5 ${step.number === 4 ? 'pb-10' : ''}`}>
             {step.number === 1 || step.number === 3 || step.number === 5 ? (
               <>
                 <div>
@@ -53,7 +53,7 @@ const fiveSteps = () => {
                     {step.description}
                   </p>
                 </div>
-                <Image src={step.image} alt={step.title} height={192.37} width={289.01} className='' />
+                <Image src={step.image} alt={step.title} height={192} width={289} className='' />
               </>
             ) : (
               <>
