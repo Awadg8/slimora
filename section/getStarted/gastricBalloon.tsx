@@ -2,7 +2,7 @@ import Image from 'next/image'
 import CtaButton from '@/component/ctaButton'
 
 
-export default function GastricBalloon(){
+export default function GastricBalloon() {
     return (
         <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8 pt-30 pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
             <div
@@ -45,7 +45,7 @@ export default function GastricBalloon(){
                     />
                     {/* Learn More Button */}
                     <div className='absolute inset-0 flex items-center justify-center'>
-                        <CtaButton text='Learn More' type='link' href='#' className='w-62.5 text-[18px] font-medium' />
+                        <CtaButton text='Learn More' type='link' href='#' className='w-[145px] sm:w-62.5 tex-[12px] sm:text-[18px] text-[#b5b5b5] font-medium' />
                     </div>
                 </div>
             </div>

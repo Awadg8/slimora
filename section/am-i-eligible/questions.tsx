@@ -7,7 +7,7 @@ const data = [
     title: "How much does the SlimOra Program cost?",
     description: "Every weight-loss journey is unique. The price of the SlimOra Programme may vary depending on your needs, goals, and the clinics.",
     link: "#",
-    linkText: "Balloon",
+    linkText: "Check the price of a 6-month SlimOra Programme",
   },
   {
     img_url: "/images/am_i_eligible/slimora_program.jpg",
@@ -20,7 +20,7 @@ const data = [
     </ul>
     `,
     link: "/the-programme",
-    linkText: "our Solutions",
+    linkText: "The SlimOra Programme",
   },
   {
     img_url: "/images/am_i_eligible/find_a_clinic.jpg",
@@ -67,7 +67,7 @@ export default function MentalLoad() {
                     href={item.link}
                     className="block text-center py-3 md:py-4 font-bold text-xs md:text-base bg-[#2C5D6B]"
                   >
-                    Learn More about {item.linkText}
+                    {item.linkText}
                   </Link>
                 </div>
               ))}
