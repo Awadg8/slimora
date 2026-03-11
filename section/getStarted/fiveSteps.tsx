@@ -35,7 +35,7 @@ const fiveSteps = () => {
   ]
 
   return (
-    <div className='max-width pt-12'>
+    <div className='max-width pt-20 pb-37.5'>
       <div className='flex items-center md:gap-2 pl-12.5'>
         <h3 className='font-bold font-urbanist text-xl lg:text-[50px] text-white'>
           5 steps to start your

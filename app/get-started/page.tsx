@@ -13,7 +13,7 @@ const page = () => {
       <Banner/>
       <FiveSteps/>
       <CheckIf/>
-    <div className='pt-50'>
+    <div className='pt-37.5'>
         <GotQuestion/>
     </div>
       <GastricBalloon/>

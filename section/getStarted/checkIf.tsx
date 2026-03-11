@@ -71,7 +71,7 @@ export default function CheckIf() {
                     mobile/tablet: full-width with normal padding, no right offset
                     desktop (lg+): add right padding to make room for the absolute image
                 */}
-                <div className="max-w-[1280px] mx-auto py-8 px-5 sm:px-8 md:px-10 md:py-12 lg:pl-8 lg:pr-[460px] lg:py-12">
+                <div className="max-w-[1280px] mx-auto py-8 px-5 sm:px-8 md:px-10 md:py-12 lg:pl-8 lg:pr-[460px] lg:py-12 ">
 
                     <div className="w-full flex flex-col items-start">
 
