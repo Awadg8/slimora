@@ -20,7 +20,7 @@ export default function Banner() {
           alt="Am i eligible mobile banner image"
         />
       </div>
-      <div className="absolute bottom-10 min-[1025px]:relative flex flex-col items-start md:items-center min-[1025px]:items-start min-[1025px]:mt-0 w-full min-[1025px]:w-[40%] px-6">
+      <div className="absolute bottom-10 min-[1025px]:relative flex flex-col items-start min-[1025px]:items-start min-[1025px]:mt-0 w-full min-[1025px]:w-[40%] px-6">
         <p className="text-[#8EA94D] font-urbanist text-[32px] sm:text-[40px] font-light">
           Start your <span className="font-semibold">weight-loss</span> journey
         </p>
