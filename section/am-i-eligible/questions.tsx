@@ -7,7 +7,7 @@ const data = [
     title: "How much does the SlimOra Program cost?",
     description: "Every weight-loss journey is unique. The price of the SlimOra Programme may vary depending on your needs, goals, and the clinics.",
     link: "#",
-    linkText: "Balloon",
+    linkText: "Check the price of a 6-month SlimOra Programme",
   },
   {
     img_url: "/images/am_i_eligible/slimora_program.jpg",
@@ -20,7 +20,7 @@ const data = [
     </ul>
     `,
     link: "/the-programme",
-    linkText: "our Solutions",
+    linkText: "The SlimOra Programme",
   },
   {
     img_url: "/images/am_i_eligible/find_a_clinic.jpg",
@@ -37,7 +37,7 @@ export default function MentalLoad() {
       <div className="pt-10 md:pt-18 pb-16 md:pb-40">
         <div className="max-width">
           <div className="pt-9 md:pt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
               {data.map((item, index) => (
                 <div
                   key={index}
@@ -67,7 +67,7 @@ export default function MentalLoad() {
                     href={item.link}
                     className="block text-center py-3 md:py-4 font-bold text-xs md:text-base bg-[#2C5D6B]"
                   >
-                    Learn More about {item.linkText}
+                    {item.linkText}
                   </Link>
                 </div>
               ))}
