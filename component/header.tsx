@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [isGetStartedOpen, setIsGetStartedOpen] = useState(false);
@@ -13,10 +14,10 @@ const Header = () => {
   return (
     <div className="w-full flex flex-col items-center sticky top-0 z-50">
       {/* Top Logo Bar */}
-      <div className="w-full bg-[#0A1D20B8] px-6 py-3 lg:px-16 border-b border-white/5">
+      <div className="w-full bg-[#0A1D20B8] py-3 lg:px-16 border-b border-white/5">
         <div className="max-width flex justify-between items-center">
           {/* SlimOra Logo */}
-          <div className="shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
               src="/images/logo.svg"
               alt="SlimOra Logo"
@@ -25,16 +26,16 @@ const Header = () => {
               className="w-[120px] lg:w-[157px] h-auto"
               priority
             />
-          </div>
+          </Link>
 
           {/* Hamburger Menu (Mobile Only) */}
           <button
-            className="lg:hidden flex flex-col space-y-1.5 p-2 z-120"
+            className="lg:hidden flex flex-col space-y-1.5 md:p-2 z-120"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <span className="block w-8 h-0.5 bg-white transition-all"></span>
-            <span className="block w-8 h-0.5 bg-white transition-all"></span>
-            <span className="block w-8 h-0.5 bg-white transition-all"></span>
+            <span className="block w-6 h-0.5 bg-white transition-all"></span>
+            <span className="block w-6 h-0.5 bg-white transition-all"></span>
+            <span className="block w-6 h-0.5 bg-white transition-all"></span>
           </button>
 
           {/* Meril Logo (Desktop Only) */}
@@ -50,8 +51,6 @@ const Header = () => {
         </div>
       </div>
 
-
-
       {/* Mobile Menu Drawer */}
       <div
         className={`fixed top-[59px] right-0 h-[93%] w-[85%] max-w-[400px] bg-[#0000001F] z-106 transition-transform duration-500 lg:hidden flex flex-col backdrop-blur-xl
@@ -59,7 +58,7 @@ const Header = () => {
       >
         <div className="flex flex-col h-full">
           {/* Drawer Header with Logo */}
-          <div className="px-8 pt-8 pb-12">
+          <Link href="/" className="px-8 pt-8 pb-12">
             <Image
               src="/images/logo.svg"
               alt="SlimOra Logo"
@@ -67,36 +66,36 @@ const Header = () => {
               height={32}
               className="w-[140px] h-auto"
             />
-          </div>
+          </Link>
 
           {/* Menu Items */}
           <div className="flex flex-col flex-grow">
             <div className="px-8 flex flex-col text-white font-Urbanist">
-              <button
+              <Link href="/get-started"
                 className="py-6 text-xl text-left border-b border-white/10 flex justify-between items-center"
                 onClick={() => setIsMobileGetStartedOpen(!isMobileGetStartedOpen)}
               >
                 Get Started
-              </button>
+              </Link>
 
-              <button
+              <Link href="/how-it-works"
                 className="py-6 text-xl text-left border-b border-white/10"
                 onClick={() => setIsMobileHowItWorksOpen(!isMobileHowItWorksOpen)}
               >
                 How it Works?
-              </button>
+              </Link>
 
-              <button className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/blog" className="py-6 text-xl text-left border-b border-white/10">
                 Blogs
-              </button>
+              </Link>
 
-              <button className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/eligibility-check" className="py-6 text-xl text-left border-b border-white/10">
                 Eligibility Check
-              </button>
+              </Link>
 
-              <button className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/find-a-clinic" className="py-6 text-xl text-left border-b border-white/10">
                 Find Clinic
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -123,10 +122,9 @@ const Header = () => {
         </div>
       </div>
 
-
       {/* Navigation Pill Section (Desktop Only) */}
       <div className="hidden lg:flex max-w-[1280px] justify-center -mb-[30px] z-100 ">
-        <div className=" max-w-[952px] inline-flex items-center backdrop-blur-md px-10 pt-[18px] pb-[28px] rounded-bl-[60px] rounded-br-[60px] border border-gray-300">
+        <div className=" max-w-[952px] inline-flex items-center backdrop-blur-md px-10 py-6 rounded-bl-[60px] rounded-br-[60px] border border-white/10">
           <nav className="flex items-center space-x-[80px] font-gilroy px-10">
             {/* Get Started Dropdown */}
             <div
@@ -152,17 +150,17 @@ const Header = () => {
 
               {/* Get Started Dropdown Menu */}
               <div
-                className={`absolute pt-7.5 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                className={`absolute pt-7 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isGetStartedOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
                 <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
                   <div className="flex flex-col">
-                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
+                    <Link href="/get-started" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
                       Get Started
-                    </button>
-                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
+                    </Link>
+                    <Link href="/eligibility-check" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
                       Am I Eligible?
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -192,37 +190,37 @@ const Header = () => {
 
               {/* How it Works Dropdown Menu */}
               <div
-                className={`absolute pt-7.5 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
+                className={`absolute pt-7 -left-5 w-[172px] z-50 transition-all duration-500 ease-in-out grid
                   ${isHowItWorksOpen ? "grid-rows-[1fr] opacity-100 visible translate-y-0" : "grid-rows-[0fr] opacity-0 invisible -translate-y-2"}`}
               >
                 <div className="overflow-hidden bg-[#143338] border border-white/10 shadow-2xl theme-font">
                   <div className="flex flex-col">
-                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
+                    <Link href="/how-it-works" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
                       How it Works
-                    </button>
-                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
+                    </Link>
+                    <Link href="/the-programme" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors border-b border-white/5">
                       The Programme
-                    </button>
-                    <button className="px-6 py-4 text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors">
+                    </Link>
+                    <Link href="/the-technology" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[16px] hover:bg-white/10 transition-colors">
                       The Technology
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Blog */}
-            <button className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
+            <Link href="/blog" className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
               Blog
-            </button>
+            </Link>
             <svg xmlns="http://www.w3.org/2000/svg" width="1" height="18" viewBox="0 0 1 18" fill="none">
               <path d="M0.5 0V17.5" stroke="white" />
             </svg>
 
             {/* Eligibility Check */}
-            <button className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
+            <Link href="/eligibility-check" className="text-[#FFF] text-[20px] lg:text-[15px] font-Urbanist cursor-pointer hover:text-[#a3d43b] transition-all">
               Eligibility Check
-            </button>
+            </Link>
           </nav>
         </div>
       </div>
