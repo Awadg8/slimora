@@ -11,7 +11,9 @@ const page = () => {
         <Header/>
       <FiveSteps/>
       <CheckIf/>
-      <GotQuestion/>
+    <div className='pt-50'>
+        <GotQuestion/>
+    </div>
       <GastricBalloon/>
       <Footer />
     </div>

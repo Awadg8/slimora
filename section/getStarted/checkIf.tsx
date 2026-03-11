@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 const checkIf = () => {
     return (
-        <div className='flex flex-col md:flex-row w-full'>
+        <div className='flex flex-col md:flex-row w-full pt-37.5'>
             {/* Image Section - Top on mobile */}
-            <div className='w-full md:w-[25%] relative h-64 md:h-auto md:hidden'>
+            <div className='w-full md:w-[25%] relative h-80 md:h-auto md:hidden'>
                 <Image
                     src='/images/get_started/check_if.jpg'
                     alt='SlimOra Balloon'
@@ -16,7 +16,7 @@ const checkIf = () => {
             {/* Text Section */}
             <div className='w-full md:w-[75%] bg-[#2C5D6B] flex flex-col items-center md:items-start'>
                 <div className='max-w-[85%] md:ml-auto md:pr-10 px-4'>
-                    <h2 className='text-[20px] text-center md:text-left font-Urbanist md:text-[32px] font-bold text-white pt-12.5'>
+                    <h2 className='text-[24px] text-center md:text-left font-urbanist md:text-[32px] font-bold text-white pt-12.5'>
                         Check if you're eligible for the SlimOra™ Program
                     </h2>
                     <p className='text-[12px] text-center md:text-left leading-4.5 md:text-sm text-[#B5B5B5] pt-5'>

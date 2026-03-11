@@ -18,7 +18,9 @@ export default function Home() {
       <TheProgramme />
       <ReadyToTake />
       <StepsFour />
-      <GotQuestion />
+      <div className="pt-[120px] md:pt-[400px] pb-[80px] md:pb-[230]">
+        <GotQuestion />
+      </div>
       <Footer />
     </main>
   );
