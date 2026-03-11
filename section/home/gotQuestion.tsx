@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-export default function GotQuestion(){
+export default function GotQuestion() {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     const toggleAccordion = (index: number) => {
@@ -61,6 +61,10 @@ export default function GotQuestion(){
                     ))}
                 </div>
             </div>
+
         </div>
+
+
+
     )
 }

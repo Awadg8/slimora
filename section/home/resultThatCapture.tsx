@@ -135,11 +135,11 @@ const ResultThatCapture = () => {
                         {supportItems.map((item, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col ${item.imageLeft ? "md:flex-row-reverse" : "md:flex-row"} gap-[20px] md:gap-[141px] items-center`}
+                                className={`flex flex-col ${item.imageLeft ? "md:flex-row-reverse" : "md:flex-row"} gap-[20px] md:gap-[40px] lg:gap-[80px] items-center`}
                             >
                                 {/* Image */}
-                                <div className="w-full md:w-[50%] shrink-0">
-                                    <div className="rounded-xl  relative h-[251px] overflow-hidden">
+                                <div className="w-full md:w-[35%] shrink-0">
+                                    <div className="rounded-xl relative h-[200px] lg:h-[251px] overflow-hidden">
                                         <Image
                                             src={item.image}
                                             alt={item.title}
@@ -150,7 +150,7 @@ const ResultThatCapture = () => {
                                 </div>
 
                                 {/* Text */}
-                                <div className="w-full md:w-[50%]">
+                                <div className="w-full md:w-[65%]">
                                     <h3 className="text-white  font-bold text-[20px] md:text-[26px] mb-4 leading-[30px] text-justify">
                                         {item.title}
                                     </h3>
