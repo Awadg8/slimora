@@ -1,34 +1,14 @@
 import Image from "next/image";
 import CtaButton from "@/component/ctaButton";
+import ReadyToTakeComponent from "@/component/readyToTake";
 
 const ReadyToTake = () => {
     return (
         <div className="flex flex-col bg-[#0A1D20]">
             {/* Section 1: Ready to take the 1st step? */}
-            <section className="relative overflow-hidden pt-32 pb-48  z-30">
-                <div className="absolute inset-0">
-                    <Image
-                        src="/images/home/ready_to_step.png"
-                        alt="Ready to take the 1st step"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
-                <div className="relative z-10 max-width flex flex-col items-center text-center">
-                    <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
-                        Ready to take the 1st step?
-                    </h2>
-                    <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
-                        We recommend checking if you're eligible before contacting a clinic
-                    </p>
-                    <CtaButton
-                        href="#"
-                        className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all transform hover:scale-105 shadow-lg"
-                        text="Check Eligibility"
-                        type="link"
-                    />
-                </div>
-            </section>
+            <div>
+                <ReadyToTakeComponent />
+            </div>
 
             {/* Section 2: Are you a healthcare professional? */}
             <section className="bg-[#0A1D20] pt-20 pb-20 md:pt-32 md:pb-32 relative z-20 ">
