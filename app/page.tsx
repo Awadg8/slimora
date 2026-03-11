@@ -4,8 +4,6 @@ import StepsFour from "@/section/home/stepsFour";
 import MentalLoad from "@/section/home/mentalLoad";
 import Banner from "@/section/home/banner";
 import GotQuestion from "@/section/home/gotQuestion";
-import ReadyToTake from "@/section/home/readyToTake";
-import TheProgramme from "@/section/home/theProgramme";
 import Others from "@/section/home/others";
 
 export default function Home() {
@@ -15,10 +13,10 @@ export default function Home() {
       <Banner />
       <Others/>
       <MentalLoad />
-      {/* <TheProgramme /> */}
       <StepsFour />
-      <ReadyToTake />
-      <GotQuestion />
+      <div className="pt-[120px] md:pt-[400px] pb-[80px] md:pb-[230]">
+        <GotQuestion />
+      </div>
       <Footer />
     </main>
   );
