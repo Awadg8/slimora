@@ -1,22 +1,22 @@
-import FiveSteps from '@/section/getStarted/fiveSteps'
-import Header from '@/component/header'
-import Footer from '@/component/footer'
-import CheckIf from '@/section/getStarted/checkIf'
-import GastricBalloon from '@/section/getStarted/gastricBalloon'
-import Banner from '@/section/getStarted/banner'
-import GotQuestion from '@/section/home/gotQuestion'
+import FiveSteps from "@/section/getStarted/fiveSteps";
+import Header from "@/component/header";
+import Footer from "@/component/footer";
+import CheckIf from "@/section/getStarted/checkIf";
+import GastricBalloon from "@/section/getStarted/gastricBalloon";
+import Banner from "@/section/getStarted/banner";
+import GotQuestion from "@/section/home/gotQuestion";
 
 const page = () => {
   return (
     <div>
-        <Header/>
-      <Banner/>
-      <FiveSteps/>
-      <CheckIf/>
-    <div className='pt-50'>
-        <GotQuestion/>
-    </div>
-      <GastricBalloon/>
+      <Header />
+      <Banner />
+      <FiveSteps />
+      <CheckIf />
+      <div className="pt-37.5">
+        <GotQuestion />
+      </div>
+      <GastricBalloon />
       <Footer />
     </div>
   )
