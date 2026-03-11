@@ -17,7 +17,7 @@ export default function StepsFour() {
             text="Find a Clinic"
             className="text-[16px] lg:text-[20px] font-medium md:w-[588px] w-full"
             type="link"
-            href="#"
+            href="/find-a-clinic"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function FiveSteps(){
+export default function FiveSteps() {
   const steps = [
     {
       number: 1,
@@ -55,11 +55,11 @@ export default function FiveSteps(){
                     {step.description}
                   </p>
                 </div>
-                <Image src={step.image} alt={step.title} height={192} width={289}/>
+                <Image src={step.image} alt={step.title} height={192} width={289} />
               </>
             ) : (
               <>
-                <Image src={step.image} alt={step.title} height={192.37} width={289.01}/>
+                <Image src={step.image} alt={step.title} height={192.37} width={289.01} />
                 <div>
                   <h3 className="text-xl">{step.title}</h3>
                   <p className="text-[#B5B5B5] text-[15px] pt-3">
