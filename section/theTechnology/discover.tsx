@@ -123,7 +123,7 @@ const Discover = () => {
               />
             </div>
           </div>
-          <div className="w-full md:w-1/2 space-y-3 md:-space-y-5">
+          <div className="w-full md:w-1/2 space-y-3 md:space-y-5">
             <h3 className="text-xl md:text-[40px] text-center md:text-left font-urbanist font-bold">
               SlimOra Application
             </h3>
