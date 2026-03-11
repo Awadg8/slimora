@@ -4,7 +4,7 @@ import StepCard from "@/component/stepCard";
 import Footer from "@/component/footer";
 import Link from "next/link";
 
-export default function FindClinic(){
+export default function FindClinic() {
   return (
     <section className="max-w-[2560px] mx-auto">
       <Header />
@@ -12,20 +12,20 @@ export default function FindClinic(){
       <div className="max-width">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 py-10 md:py-28">
           <div className="col-span-2">
-            <h3 className="text-[24px] md:text-[32px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF]">
+            <h3 className="text-[24px] md:text-[32px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] text-center">
               Not sure if the SlimOra Program is right for you?
             </h3>
           </div>
           <div className="col-span-3">
-            <p className="text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-[#FFFFFF]">
+            <p className="text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-[#FFFFFF] text-center">
               Start with a quick eligibility check to see if you're a good fit - before booking a consultation.</p>
-            <Link className="flex justify-center md:justify-start my-4 w-fit" href={"/eligibility-check"}>
+            <Link className="flex justify-center mx-auto md:mx-0 my-4 w-fit" href={"/eligibility-check"}>
               <button className="cursor-pointer bg-transparent border border-[#8EA94D] text-[#8EA94D] px-8 py-2 rounded-full text-[12px] md:text-[16px] leading-[16px] md:leading-[24px]">Check Eligibility</button>
             </Link>
           </div>
         </div>
       </div>
-      <div className="bg-[#8EA94D]">
+      <div style={{ background: "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #8EA94D" }}>
         <p className="text-white text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-center p-4">This Clinic Locator is provided by SlimOra Technologies as a value-added service. SlimOra, at its sole and absolute discretion, may modify the Clinic Locator at any time.
         </p>
       </div>
@@ -42,4 +42,4 @@ export default function FindClinic(){
       <Footer />
     </section>
   );
-};
+}
