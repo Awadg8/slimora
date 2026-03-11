@@ -35,9 +35,9 @@ export default function FiveSteps() {
   ]
 
   return (
-    <div className='max-width pt-20 pb-25 md:pb-37.5'>
-      <div className='flex items-center gap-3 md:gap-2 pl-3 md:pl-12.5'>
-        <h3 className='font-bold font-urbanist text-[20px] lg:text-[50px] text-white'>
+    <div className='max-width md:pt-20 pt-36 pb-25 md:pb-37.5'>
+      <div className='flex items-center md:gap-2 pl-12.5'>
+        <h3 className='font-bold font-urbanist text-xl lg:text-[50px] text-white'>
           5 steps to start your
         </h3>
         <Image src="/images/logo.svg" alt="" className='w-30 h-9 md:w-70.5 md:h-18' height={73} width={282} />
