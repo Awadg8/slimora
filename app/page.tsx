@@ -15,7 +15,7 @@ export default function Home() {
       <Banner />
       <Others/>
       <MentalLoad />
-      <TheProgramme />
+      {/* <TheProgramme /> */}
       <ReadyToTake />
       <StepsFour />
       <div className="pt-[120px] md:pt-[400px] pb-[80px] md:pb-[230]">

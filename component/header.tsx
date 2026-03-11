@@ -71,29 +71,66 @@ const Header = () => {
           {/* Menu Items */}
           <div className="flex flex-col flex-grow">
             <div className="px-8 flex flex-col text-white font-Urbanist">
-              <Link href="/get-started"
-                className="py-6 text-xl text-left border-b border-white/10 flex justify-between items-center"
-                onClick={() => setIsMobileGetStartedOpen(!isMobileGetStartedOpen)}
-              >
-                Get Started
-              </Link>
+              {/* Get Started Dropdown */}
+              <div className="border-b border-white/10">
+                <button
+                  className="w-full py-6 text-xl text-left flex justify-between items-center"
+                  onClick={() => setIsMobileGetStartedOpen(!isMobileGetStartedOpen)}
+                >
+                  Get Started
+                  <svg
+                    className={`transition-transform duration-300 ${isMobileGetStartedOpen ? "rotate-180" : ""}`}
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 9 5" fill="none"
+                  >
+                    <path d="M4.7758 4.61389C4.39167 4.97215 3.79583 4.97215 3.4117 4.61389L0.32093 1.73131C-0.342952 1.11214 0.0951777 0 1.00298 0H7.18452C8.09232 0 8.53045 1.11214 7.86657 1.73131L4.7758 4.61389Z" fill="#D9D9D9" />
+                  </svg>
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ${isMobileGetStartedOpen ? "max-h-[200px] mb-4" : "max-h-0"}`}>
+                  <Link href="/get-started" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                    Get Started
+                  </Link>
+                  <Link href="/am-i-eligible" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                    Am I Eligible?
+                  </Link>
+                </div>
+              </div>
 
-              <Link href="/how-it-works"
-                className="py-6 text-xl text-left border-b border-white/10"
-                onClick={() => setIsMobileHowItWorksOpen(!isMobileHowItWorksOpen)}
-              >
-                How it Works?
-              </Link>
+              {/* How it Works Dropdown */}
+              <div className="border-b border-white/10">
+                <button
+                  className="w-full py-6 text-xl text-left flex justify-between items-center"
+                  onClick={() => setIsMobileHowItWorksOpen(!isMobileHowItWorksOpen)}
+                >
+                  How it Works?
+                  <svg
+                    className={`transition-transform duration-300 ${isMobileHowItWorksOpen ? "rotate-180" : ""}`}
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 9 5" fill="none"
+                  >
+                    <path d="M4.7758 4.61389C4.39167 4.97215 3.79583 4.97215 3.4117 4.61389L0.32093 1.73131C-0.342952 1.11214 0.0951777 0 1.00298 0H7.18452C8.09232 0 8.53045 1.11214 7.86657 1.73131L4.7758 4.61389Z" fill="#D9D9D9" />
+                  </svg>
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ${isMobileHowItWorksOpen ? "max-h-[300px] mb-4" : "max-h-0"}`}>
+                  <Link href="/how-it-works" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                    How it Works
+                  </Link>
+                  <Link href="/the-programme" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                    The Programme
+                  </Link>
+                  <Link href="/the-technology" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                    The Technology
+                  </Link>
+                </div>
+              </div>
 
-              <Link href="/blog" className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/blog" className="py-6 text-xl text-left border-b border-white/10" onClick={() => setIsMobileMenuOpen(false)}>
                 Blogs
               </Link>
 
-              <Link href="/eligibility-check" className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/eligibility-check" className="py-6 text-xl text-left border-b border-white/10" onClick={() => setIsMobileMenuOpen(false)}>
                 Eligibility Check
               </Link>
 
-              <Link href="/find-a-clinic" className="py-6 text-xl text-left border-b border-white/10">
+              <Link href="/find-a-clinic" className="py-6 text-xl text-left border-b border-white/10" onClick={() => setIsMobileMenuOpen(false)}>
                 Find Clinic
               </Link>
             </div>
@@ -158,7 +195,7 @@ const Header = () => {
                     <Link href="/get-started" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
                       Get Started
                     </Link>
-                    <Link href="/eligibility-check" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
+                    <Link href="/am-i-eligible" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
                       Am I Eligible?
                     </Link>
                   </div>
