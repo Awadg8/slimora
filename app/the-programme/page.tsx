@@ -6,6 +6,7 @@ import ResultThatCapture from "@/section/home/resultThatCapture";
 const page = () => {
   return (
     <main>
+      
       <Header />
       <TheProgramme />
       <ResultThatCapture />
