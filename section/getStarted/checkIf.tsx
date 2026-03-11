@@ -98,10 +98,10 @@ export default function CheckIf() {
 
                                 {bmi === null ? (
                                     /* INPUT FIELDS */
-                                    <div className="flex flex-row items-stretch sm:items-end gap-4 text-white w-full sm:w-auto">
+                                    <div className="flex flex-row items-stretch sm:items-end gap-4 text-white w-full sm:w-auto ">
 
                                         {/* WEIGHT */}
-                                        <div className="flex flex-col items-center space-y-[5px]">
+                                        <div className="flex flex-col items-center space-y-[5px] w-full">
                                             <label htmlFor="weight_kg" className="font-semibold text-[16px]">
                                                 Weight
                                             </label>
@@ -119,7 +119,7 @@ export default function CheckIf() {
                                         </div>
 
                                         {/* HEIGHT */}
-                                        <div className="flex flex-col items-center space-y-[5px]">
+                                        <div className="flex flex-col items-center space-y-[5px] w-full">
                                             <label htmlFor="height_cms" className="font-semibold text-[16px]">
                                                 Height
                                             </label>
