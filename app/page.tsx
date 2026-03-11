@@ -6,26 +6,19 @@ import Banner from "@/section/home/banner";
 import GotQuestion from "@/section/home/gotQuestion";
 import ReadyToTake from "@/section/home/readyToTake";
 import TheProgramme from "@/section/home/theProgramme";
+import Others from "@/section/home/others";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[2560px] mx-auto">
       <Header />
       <Banner />
-      <div className="flex flex-col md:flex-row justify-between">
-        <p className="text-[34px] leading-[38px] font-bold">
-          Obesity isn’t a failure of willpower. It’s a chronic condition influenced by biology, environment, and behavior.
-        </p>
-        <p className="text-[20px] leading-[24px] text-justify">
-          That’s why we built the SlimOra Gastric Balloon Systems: the world's first and only swallowable gastric balloon combined with expert nutrition support and comprehensive digital tools. It's clinically proven, easy to get started with, and designed to deliver safe and lasting metabolically healthy weight loss.
-          We're setting the new standard of obesity care - inspiring, enabling, and empowering patients to transform their lives, for good.
-        </p>
-      </div>
+      <Others/>
       <MentalLoad />
-      <TheProgramme />
+      {/* <TheProgramme /> */}
       <ReadyToTake />
       <StepsFour />
-      <GotQuestion/>
+      <GotQuestion />
       <Footer />
     </main>
   );

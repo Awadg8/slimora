@@ -11,13 +11,13 @@ const fiveSteps = () => {
     {
       number: 2,
       title: 'Step 2',
-      description: 'Discuss your health history, weight loss goals, medications with your doctor, who will address any condition, review your questions to determine the best option for you.',
+      description: 'Discuss your health history, weight-loss goals, and motivations with your doctor, who will evaluate your condition, review your medical records, and answer your questions to determine the best option for you.',
       image: '/images/get_started/step2.jpg'
     },
     {
       number: 3,
       title: 'Step 3',
-      description: 'If you are eligible for SlimOra Gastric Balloon and the procedure is deemed the best option for you after reviewing the benefits and risks, you can then schedule the balloon placement date together.',
+      description: 'If you are eligible for SlimOra Gastric Balloon Systems and the programme is deemed the best option for you after evaluating the benefits and risks, you can then schedule the balloon placement date together.',
       image: '/images/get_started/step3.jpg'
     },
     {
@@ -36,20 +36,20 @@ const fiveSteps = () => {
 
   return (
     <div className='max-width pt-25 pb-50'>
-      <div className='flex items-center gap-4 pl-10 mb-8'>
-        <h3 className='font-bold text-5xl lg:text-5xl text-white'>
+      <div className='flex items-center md:gap-2 pl-12.5 mb-8'>
+        <h3 className='font-bold text-xl lg:text-[50px] text-white'>
           5 steps to start your
         </h3>
-        <Image src="/images/logo.svg" alt="" className='w-36 h-9' height={73} width={282} />
+        <Image src="/images/logo.svg" alt="" className='w-36 h-9 md:w-70.5 md:h-18' height={73} width={282} />
       </div>
       <div className='grid grid-row md:grid-cols-5 gap-4  pt-24.5'>
         {steps.map((step) => (
-          <div key={step.number} className='text-white  bg-[#2C5D6B]/50 text-center col-span-1 p-3 hover:shadow-[0px_0px_41px_0px_#000000B2] flex justify-between items-center flex-col  gap-5'>
+          <div key={step.number} className={`text-white  bg-[#2C5D6B]/50 text-center col-span-1 p-3 hover:shadow-[0px_0px_41px_0px_#000000B2] flex justify-between items-center flex-col gap-5 ${step.number === 4 ? 'pb-10' : ''}`}>
             {step.number === 1 || step.number === 3 || step.number === 5 ? (
               <>
               <div>
                 <h3 className='text-xl'>{step.title}</h3>
-                <p className='text-[#B5B5B5] text-sm pt-3'>
+                <p className='text-[#B5B5B5] text-[15px] pt-3'>
                   {step.description}
                 </p>
                 </div>
@@ -57,10 +57,10 @@ const fiveSteps = () => {
               </>
             ) : (
               <>
-                <Image src={step.image} alt={step.title} height={192} width={289} className='' />
+                <Image src={step.image} alt={step.title} height={192.37} width={289.01} className='' />
                 <div>
                   <h3 className='text-xl'>{step.title}</h3>
-                <p className='text-[#B5B5B5] text-sm pt-3'>
+                <p className='text-[#B5B5B5] text-[15px] pt-3'>
                   {step.description}
                 </p>
                 </div>
