@@ -1,11 +1,10 @@
-import React from "react";
 import Image from "next/image";
 
 const Journey = () => {
   return (
     <section className="relative overflow-hidden">
       {/* Top Section - Light Background */}
-      <div className="relative z-2">
+      <div className="relative z-2 hidden md:block">
         <div className="relative z-0 overflow-hidden">
           <Image
             src="/images/the_technology/journey.png"
@@ -31,6 +30,7 @@ const Journey = () => {
       </div>
 
       <div
+        className="hidden md:block"
         style={{
           position: "absolute",
           top: "35%",
@@ -44,18 +44,40 @@ const Journey = () => {
         }}
       />
 
+      <div className="block md:hidden">
+        <div className="relative w-full h-[240px]">
+          <Image
+            src="/images/the_technology/journey_mobile.png"
+            alt="SlimOra Journey"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="max-width pt-10 space-y-3">
+          <h2 className="text-[19px] leading-6 text-left font-urbanist font-semibold text-[#8ea94d]">
+            You're never alone in the SlimOra journey
+          </h2>
+          <p className="text-xs text-white text-justify">
+            Your care team has real-time access to your health data. That
+            empowers them to adapt the programme to your individual progress,
+            offering more tailored support and ensuring they’re on hand when you
+            need them the most.
+          </p>
+        </div>
+      </div>
+
       {/* Bottom Section - Dark Background */}
-      <div className="py-16 md:py-28 relative z-2">
+      <div className="pt-16 md:pt-28 relative z-2">
         <div className="max-width">
           {/* Left Column */}
-          <div className="flex flex-col lg:flex-row justify-between items-start mb-25 gap-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start mb-16 md:mb-25 gap-3 md:gap-8">
             <div className="lg:w-[45%]">
-              <h2 className="text-[24px] md:text-[36px] leading-6 md:leading-[50px] text-left font-urbanist font-semibold text-[#8ea94d]">
+              <h2 className="text-[19px] md:text-[36px] leading-6 md:leading-[50px] text-left font-urbanist font-semibold text-[#8ea94d]">
                 A library of content for you, right at your fingertips.
               </h2>
             </div>
-            <div className="lg:w-[50%] pt-4">
-              <p className="text-sm md:text-[18px] text-white text-justify">
+            <div className="lg:w-[50%] md:pt-4">
+              <p className="text-xs md:text-[18px] text-white text-justify">
                 Get timely and relevant content through the SlimOra App such as
                 pre/post-placement guidance, actionable tips, symptom management
                 and more.
@@ -64,20 +86,20 @@ const Journey = () => {
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col lg:flex-row justify-between items-center mb-25 gap-8">
+          <div className="flex flex-col-reverse lg:flex-row justify-between md:items-center mb-20 md:mb-28 gap-3 md:gap-8">
             <div className="lg:w-[50%]">
-              <p className="text-sm md:text-[18px] text-white text-justify">
+              <p className="text-xs md:text-[18px] text-white text-justify">
                 Our proprietary software, developed by Allurion and powered by
                 artificial intelligence, helps your care team understand your
                 progress and challenges.
               </p>
-              <p className="text-sm md:text-[18px] text-white text-justify pt-3">
+              <p className="text-xs md:text-[18px] text-white text-justify pt-3">
                 For you, this means more tailored support that can maximize the
                 success of your weight-loss journey.
               </p>
             </div>
             <div className="lg:w-[45%]">
-              <h2 className="text-[24px] md:text-[36px] leading-6 md:leading-[50px] text-left font-urbanist font-semibold text-[#8ea94d]">
+              <h2 className="text-[19px] md:text-[36px] leading-6 md:leading-[50px] text-left font-urbanist font-semibold text-[#8ea94d]">
                 Harnessing the power of AI
               </h2>
             </div>
