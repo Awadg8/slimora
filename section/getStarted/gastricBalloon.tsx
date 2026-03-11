@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import CtaButton from '@/component/ctaButton'
 
-const gastricBalloon = () => {
+
+export default function GastricBalloon(){
     return (
         <div className='max-width flex flex-col md:flex-row items-center justify-between gap-8 pt-30 pb-30 md:pt-50 md:pb-50 relative overflow-hidden '>
             <div
@@ -58,5 +59,3 @@ const gastricBalloon = () => {
         </div >
     )
 }
-
-export default gastricBalloon
