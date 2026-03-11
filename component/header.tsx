@@ -89,7 +89,7 @@ const Header = () => {
                   <Link href="/get-started" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
                     Get Started
                   </Link>
-                  <Link href="/eligibility-check" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href="/am-i-eligible" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
                     Am I Eligible?
                   </Link>
                 </div>
@@ -195,7 +195,7 @@ const Header = () => {
                     <Link href="/get-started" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
                       Get Started
                     </Link>
-                    <Link href="/eligibility-check" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
+                    <Link href="/am-i-eligible" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
                       Am I Eligible?
                     </Link>
                   </div>
