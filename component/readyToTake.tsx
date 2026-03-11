@@ -21,15 +21,15 @@ const ReadyToTake = () => {
                 />
             </div>
             <div className="relative z-10 max-width flex flex-col items-center text-center">
-                <h2 className="text-3xl md:text-[50px] font-bold text-white mb-[7px] leading-tight">
+                <h2 className="text-[22px] sm:text-3xl md:text-[50px] font-bold font-urbanist text-white mb-[7px] leading-tight">
                     Ready to take the 1st step?
                 </h2>
-                <p className="text-white/90 text-lg md:text-[20px] font-Urbanist mb-[28px] max-w-[700px]">
+                <p className="text-[#cfcfcf] text-[12px] sm:text-lg font-light md:text-[20px] mb-[28px] max-w-[700px]">
                     We recommend checking if you're eligible before contacting a clinic
                 </p>
                 <CtaButton
                     href="/eligibility-check"
-                    className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all  shadow-lg"
+                    className="hover:bg-button-bg/90 px-10 py-4 font-semibold transition-all shadow-lg text-[12px] sm:text-[20px]"
                     text="Check Eligibility"
                     type="link"
                 />

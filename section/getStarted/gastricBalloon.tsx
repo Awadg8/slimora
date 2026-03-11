@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import CtaButton from '@/component/ctaButton'
+import Image from 'next/image';
+import CtaButton from '@/component/ctaButton';
 
 
 export default function GastricBalloon() {

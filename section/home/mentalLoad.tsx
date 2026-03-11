@@ -38,7 +38,7 @@ const MentalLoad = () => {
           </h4>
 
           <div className="pt-9 md:pt-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
               {data.map((item, index) => (
                 <div
                   key={index}
