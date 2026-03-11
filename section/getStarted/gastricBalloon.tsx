@@ -16,9 +16,9 @@ const gastricBalloon = () => {
             </div>
 
             {/* Left Section - Text */}
-            <div className='flex-1 md:w-[25%] pb-7.5 md:pb-0'>
-                <p className='text-[14px] md:text-[20px] text-center text-[#B5B5B5]'>
-                    <span className='font-bold'>The SlimOra Gastric Balloon </span> is a regulated health product that bears the CE marking in accordance with this regulation.
+            <div className='flex-1 md:w-[25%] pb-7.5 md:pb-0 '>
+                <p className='text-[14px] md:text-[20px] text-center text-[#B5B5B5] '>
+                    <span className='font-bold '>The SlimOra Gastric Balloon </span> is a regulated health product that bears the CE marking in accordance with this regulation.
                 </p>
             </div>
 
