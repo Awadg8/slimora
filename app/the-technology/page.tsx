@@ -3,6 +3,7 @@ import Footer from "@/component/footer";
 import CuttingEdge from "@/section/theTechnology/cuttingEdge";
 import Discover from "@/section/theTechnology/discover";
 import Journey from "@/section/theTechnology/journey";
+import Connected from "@/section/theTechnology/connected";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <CuttingEdge />
       <Discover />
       <Journey />
+      <Connected />
       <Footer />
     </section>
   );
