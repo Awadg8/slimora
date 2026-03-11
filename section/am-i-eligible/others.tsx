@@ -3,7 +3,7 @@ import React from 'react';
 export default function Others() {
   return (
     <div className="">
-      <div className="max-width py-24 space-y-[78px]">
+      <div className="max-width py-12 md:py-18 lg:py-24 space-y-[78px]">
         <div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0">
           <p className="text-[14px] leading-[18px] sm:text-[24px] sm:leading-[28px] lg:text-[28px] lg:leading-[32px] md:w-[38%] text-justify md:text-left">
             Use our <span className="font-bold text-[20px] sm:text-[24px] sm:leading-[28px] lg:text-[28px] lg:leading-[32px]">BMI Calculator</span> to see if you could be eligible for the SlimOra Gastric Balloon:.
