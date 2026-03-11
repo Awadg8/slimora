@@ -158,7 +158,7 @@ const Header = () => {
                     <Link href="/get-started" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors border-b border-white/5">
                       Get Started
                     </Link>
-                    <Link href="/eligibility-check" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
+                    <Link href="/am_i_eligible" className="px-6 py-4 cursor-pointer text-left text-white font-Urbanist text-[18px] hover:bg-white/10 transition-colors">
                       Am I Eligible?
                     </Link>
                   </div>
