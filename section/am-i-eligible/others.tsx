@@ -13,18 +13,18 @@ export default function Others() {
           </p>
         </div>
         {/* <div className="flex justify-between"> */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-4 place-items-center">
-          <div className="size-[200px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
-            <p className="text-[16px] leading-[20px]">Aged 18 and above</p>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-4 place-items-center">
+          <div className="size-[180px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
+            <p className="text-[12px] md:text-[16px] leading-[20px]">Aged 18 and above</p>
           </div>
-          <div className="size-[200px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
-            <p className="text-[16px] leading-[20px]">BMI 27 and above</p>
+          <div className="size-[180px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
+            <p className="text-[12px] md:text-[16px] leading-[20px]">BMI 27 and above</p>
           </div>
-          <div className="size-[200px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
-            <p className="text-[16px] leading-[20px]">Not currently pregnant or breastfeeding</p>
+          <div className="size-[180px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
+            <p className="text-[12px] md:text-[16px] leading-[20px]">Not currently pregnant or breastfeeding</p>
           </div>
-          <div className="size-[200px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
-            <p className="text-[16px] leading-[20px]">Have not had stomach or esophageal surgery</p>
+          <div className="size-[180px] lg:size-[221px] border flex justify-center items-center border-[#8EA94D] rounded-full px-[22px] py-[80px] text-center">
+            <p className="text-[12px] md:text-[16px] leading-[20px]">Have not had stomach or esophageal surgery</p>
           </div>
         </div>
       </div>
