@@ -71,7 +71,7 @@ export default function CheckIf() {
                     mobile/tablet: full-width with normal padding, no right offset
                     desktop (lg+): add right padding to make room for the absolute image
                 */}
-                <div className="max-w-[1280px] mx-auto py-8 px-5 sm:px-8 md:px-10 md:py-12 lg:pl-8 lg:pr-[460px] lg:py-12">
+                <div className="max-w-[1280px] mx-auto py-8 px-6 sm:px-8 md:px-10 md:py-12 lg:pl-8 lg:pr-[460px] lg:py-12">
 
                     <div className="w-full flex flex-col items-start">
 
@@ -94,11 +94,11 @@ export default function CheckIf() {
 
                         {/* FORM */}
                         <div className="w-full mt-6 md:mt-8">
-                            <div className="flex flex-col sm:flex-row items-stretch sm:items-end gap-4 sm:gap-5 md:gap-6 lg:gap-10">
+                            <div className="flex flex-col min-[1025px]:flex-row items-center min-[1025px]:items-end gap-4 sm:gap-5 md:gap-6">
 
-                                {bmi === null ? (
+                                {bmi === null && (
                                     /* INPUT FIELDS */
-                                    <div className="flex flex-row items-stretch sm:items-end gap-4 text-white w-full sm:w-auto ">
+                                    <div className="flex min-[1025px]:items-end gap-4 text-white w-full min-[1025px]:w-auto">
 
                                         {/* WEIGHT */}
                                         <div className="flex flex-col items-center space-y-[5px] w-full">
@@ -110,7 +110,7 @@ export default function CheckIf() {
                                                 name="weight_kg"
                                                 value={formData.weight_kg || ''}
                                                 onChange={handleChange}
-                                                className="w-full sm:w-[140px] md:w-[160px] text-[14px] bg-white py-3 px-6 placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center"
+                                                className="w-full min-[1025px]:w-[160px] text-[14px] bg-white py-3 px-6 placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center"
                                                 placeholder="(Kilograms)"
                                             />
                                             {errors.weight_kg && (
@@ -128,7 +128,7 @@ export default function CheckIf() {
                                                 name="height_cms"
                                                 value={formData.height_cms || ''}
                                                 onChange={handleChange}
-                                                className="w-full sm:w-[140px] md:w-[160px] text-[14px] bg-white py-3 px-6 placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center"
+                                                className="w-full min-[1025px]:w-[160px] text-[14px] bg-white py-3 px-6 placeholder:text-[#BABABA] placeholder:text-center text-black/80 border-none outline-none rounded-[31px] text-center"
                                                 placeholder="(Centimeters)"
                                             />
                                             {errors.height_cms && (
@@ -136,33 +136,82 @@ export default function CheckIf() {
                                             )}
                                         </div>
                                     </div>
-                                ) : (
-                                    /* BMI RESULT */
-                                    <div className="flex flex-row items-center gap-4 sm:gap-6 text-white">
-                                        <div className="text-left">
-                                            <span className="font-urbanist font-extrabold text-5xl md:text-6xl text-white block">
-                                                {bmi.toFixed(1)}
-                                            </span>
-                                            <p className={`font-markpro text-base sm:text-lg mt-1 font-semibold ${getBmiCategory(bmi).color}`}>
-                                                {getBmiCategory(bmi).category}
-                                            </p>
-                                        </div>
-
-                                        {bmi >= 27 && (
-                                            <div className="bg-white/20 backdrop-blur-sm rounded-[20px] py-3 px-4 sm:px-6 border border-white/30">
-                                                <p className="text-white font-markpro text-sm font-medium text-center whitespace-nowrap">
-                                                    ✓ Eligible for Slimora
-                                                </p>
-                                            </div>
-                                        )}
-                                    </div>
                                 )}
+
+                                {
+                                    bmi !== null && (
+                                        /* BMI RESULT */
+                                        <div className="flex flex-col items-center min-[1025px]:items-start gap-3 text-white w-full min-[1025px]:w-auto">
+
+                                            {/* BMI score row */}
+                                            <div className="flex items-center min-[1025px]:items-end gap-4 sm:gap-5">
+
+                                                {/* Score pill */}
+                                                <div className="flex flex-col items-center justify-center bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl px-5 py-3 min-w-[90px]">
+                                                    <span className="font-urbanist font-extrabold text-4xl md:text-5xl text-white leading-none tracking-tight">
+                                                        {bmi.toFixed(1)}
+                                                    </span>
+                                                    <span className="font-markpro text-[11px] uppercase tracking-widest text-white/60 mt-1">
+                                                        BMI
+                                                    </span>
+                                                </div>
+
+                                                {/* Category + eligibility stacked */}
+                                                <div className="flex flex-col gap-2">
+                                                    <p className={`font-markpro text-sm sm:text-base font-semibold ${getBmiCategory(bmi).color}`}>
+                                                        {getBmiCategory(bmi).category}
+                                                    </p>
+
+                                                    {bmi >= 27 ? (
+                                                        <div
+                                                            className="relative inline-flex items-center gap-2 overflow-hidden rounded-full px-4 py-[7px]"
+                                                            style={{
+                                                                background: 'linear-gradient(135deg, rgba(142,169,77,0.30) 0%, rgba(142,169,77,0.12) 100%)',
+                                                                border: '1px solid rgba(142,169,77,0.55)',
+                                                                boxShadow: '0 0 14px rgba(142,169,77,0.20)',
+                                                            }}
+                                                        >
+                                                            {/* shimmer sweep */}
+                                                            <span
+                                                                aria-hidden="true"
+                                                                className="pointer-events-none absolute inset-0"
+                                                                style={{
+                                                                    background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.14) 50%, transparent 65%)',
+                                                                    backgroundSize: '200% 100%',
+                                                                    animation: 'shimmer 2.6s ease-in-out infinite',
+                                                                }}
+                                                            />
+                                                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                                                                <path d="M2 6.5L5.2 10L11 3" stroke="#8ea94d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                            </svg>
+                                                            <span className="font-markpro text-xs font-semibold text-white whitespace-nowrap">
+                                                                Eligible for Slimora
+                                                            </span>
+                                                        </div>
+                                                    ) : (
+                                                        <div
+                                                            className="inline-flex items-center gap-2 rounded-full px-4 py-[7px]"
+                                                            style={{
+                                                                background: 'rgba(255,255,255,0.07)',
+                                                                border: '1px solid rgba(255,255,255,0.18)',
+                                                            }}
+                                                        >
+                                                            <span className="font-markpro text-xs font-medium text-white/70 whitespace-nowrap">
+                                                                BMI &lt; 27 — not eligible yet
+                                                            </span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                }
 
                                 {/* BUTTON */}
                                 <button
                                     type="button"
                                     onClick={bmi !== null ? handleReset : handleCheckEligiblity}
-                                    className="flex-1 w-full sm:w-auto cursor-pointer bg-button-bg text-white rounded-full px-8 py-3 transition-colors whitespace-nowrap"
+                                    className="flex-1 w-full min-[1025px]:w-auto cursor-pointer bg-button-bg text-white rounded-full px-8 py-3 transition-colors whitespace-nowrap"
                                 >
                                     {bmi !== null ? 'Calculate Again' : 'Check Eligibility'}
                                 </button>

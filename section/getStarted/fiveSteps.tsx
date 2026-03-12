@@ -35,14 +35,14 @@ export default function FiveSteps() {
   ]
 
   return (
-    <div className='max-width pt-20 pb-25 md:pb-37.5'>
-      <div className='flex items-center md:gap-2 pl-12.5'>
-        <h3 className='font-bold font-urbanist text-xl lg:text-[50px] text-white'>
+    <div className='max-width md:pt-20 pt-36 pb-25 md:pb-37.5'>
+      <div className='flex items-center md:gap-2 md:pl-12.5'>
+        <span className='font-bold font-urbanist text-xl lg:text-[50px] text-white pr-2 sm:pr-0'>
           5 steps to start your
-        </h3>
-        <Image src="/images/logo.svg" alt="logo" className="w-36 h-9 md:w-70.5 md:h-18" height={73} width={282} />
+        </span>
+        <Image src="/images/logo.svg" alt="" className='inline-block align-middle w-30 h-9 md:w-70.5 md:h-18' height={73} width={282} />
       </div>
-      <div className="grid grid-row md:grid-cols-5 gap-4 pt-12.5">
+      <div className='grid grid-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 pt-12.5'>
         {steps.map((step) => (
           <div key={step.number} className={`text-white  bg-[#2C5D6B]/50 text-center col-span-1 p-4 hover:shadow-[0px_0px_41px_0px_#000000B2] flex justify-between items-center flex-col gap-5 ${step.number === 4 ? "pb-10" : ""}`}>
             {step.number === 1 || step.number === 3 || step.number === 5 ? (
