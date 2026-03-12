@@ -48,3 +48,9 @@ input[type=number] {
 .max-width {
   @apply max-w-7xl mx-auto px-6 md:px-8;
 }
+
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
