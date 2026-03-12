@@ -5,6 +5,7 @@ import CheckIf from "@/section/getStarted/checkIf";
 import GastricBalloon from "@/section/getStarted/gastricBalloon";
 import Banner from "@/section/getStarted/banner";
 import GotQuestion from "@/section/home/gotQuestion";
+import Disclaimer from "@/component/dislaimer";
 
 const page = () => {
   return (
@@ -13,10 +14,11 @@ const page = () => {
       <Banner />
       <FiveSteps />
       <CheckIf />
-      <div className="pt-37.5">
+      <div className="pt-30 sm:py-37.5">
         <GotQuestion />
       </div>
       <GastricBalloon />
+      <Disclaimer />
       <Footer />
     </div>
   )

@@ -53,94 +53,94 @@ const Footer = () => {
             {/* Quick Links and Contact Us Container */}
             <div className="md:col-span-6">
               <div className="flex flex-col md:flex-row justify-center md:gap-20 gap-[42px]">
-                  {/* Quick Links */}
-                  <div>
-                    <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[35px] mb-[17px]">
-                      Quick Links
-                    </h3>
-                    <div className="flex md:justify-center gap-12">
-                      <div className="space-y-[15px]">
-                        <Link
-                          href="/get-started"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                        >
-                          Get Started
-                        </Link>
-                        <Link
-                          href="/am-i-eligible"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                        >
-                          Am I Eligible ?
-                        </Link>
-                        <Link
-                          href="/find-a-clinic"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                        >
-                          Find a Clinic
-                        </Link>
-                        <Link
-                          href="/blog"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                        >
-                          Blog
-                        </Link>
-                      </div>
+                {/* Quick Links */}
+                <div>
+                  <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[35px] mb-[17px]">
+                    Quick Links
+                  </h3>
+                  <div className="flex md:justify-center gap-12">
+                    <div className="space-y-[15px]">
+                      <Link
+                        href="/get-started"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                      >
+                        Get Started
+                      </Link>
+                      <Link
+                        href="/am-i-eligible"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                      >
+                        Am I Eligible ?
+                      </Link>
+                      <Link
+                        href="/find-a-clinic"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                      >
+                        Find a Clinic
+                      </Link>
+                      <Link
+                        href="/blog"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                      >
+                        Blog
+                      </Link>
+                    </div>
 
-                      <div className="space-y-[15px]">
-                        <Link
-                          href="/how-it-works"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                        >
-                          How It Works
-                        </Link>
-                        <Link
-                          href="/the-programme"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                        >
-                          The Programme
-                        </Link>
-                        <Link
-                          href="/the-technology"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                        >
-                          The Technology
-                        </Link>
-                        <Link
-                          href="/eligibility-check"
-                          className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                        >
-                          Eligibility Check
-                        </Link>
-                      </div>
+                    <div className="space-y-[15px]">
+                      <Link
+                        href="/how-it-works"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                      >
+                        How It Works
+                      </Link>
+                      <Link
+                        href="/the-programme"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                      >
+                        The Programme
+                      </Link>
+                      <Link
+                        href="/the-technology"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                      >
+                        The Technology
+                      </Link>
+                      <Link
+                        href="/eligibility-check"
+                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
+                      >
+                        Eligibility Check
+                      </Link>
                     </div>
                   </div>
+                </div>
 
-                  {/* Contact Us */}
-                  <div>
-                    <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[30px] mb-[13px]">
-                      Contact Us
-                    </h3>
-                    <div className="md:space-y-[15px] space-y-[9px] md:text-[15px] text-[12px] text-[#FFFFFF]">
-                      <p>
-                        E-mail:{" "}
-                        <a
-                          href="mailto:info@allurion.com"
-                          className="hover:text-[#A4B84C] transition"
-                        >
-                          info@allurion.com
-                        </a>
-                      </p>
-                      <p>
-                        Phone:{" "}
-                        <a
-                          href="tel:+91 2603 509 400"
-                          className="hover:text-[#A4B84C] transition"
-                        >
-                          +91 2603 509 400
-                        </a>
-                      </p>
-                    </div>
+                {/* Contact Us */}
+                <div>
+                  <h3 className="text-[#8EA94D] md:text-[20px] text-[12px] font-semibold md:mb-[30px] mb-[13px]">
+                    Contact Us
+                  </h3>
+                  <div className="md:space-y-[15px] space-y-[9px] md:text-[15px] text-[12px] text-[#FFFFFF]">
+                    <p>
+                      E-mail:{" "}
+                      <a
+                        href="mailto:info@allurion.com"
+                        className="hover:text-[#A4B84C] transition"
+                      >
+                        info@allurion.com
+                      </a>
+                    </p>
+                    <p>
+                      Phone:{" "}
+                      <a
+                        href="tel:+91 2603 509 400"
+                        className="hover:text-[#A4B84C] transition"
+                      >
+                        +91 2603 509 400
+                      </a>
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -149,9 +149,12 @@ const Footer = () => {
             <hr className="w-full border-[#8EA94D]" />
           </div>
 
-          <p className="text-[#8EA94D] text-[16px] text-center md:pt-[10px] pt-[16px]">
-            © SlimOra 2026
-          </p>
+          <div className="flex justify-between items-center pt-4">
+            <Image src="/images/digital_experience33.png" alt="" width={200} height={35} className="w-[84px] sm:w-[200px] h-[15px] sm:h-[35px]" />
+            <p className="text-[#8EA94D] text-[16px] text-center md:pt-[10px] pt-[16px]">
+              © SlimOra 2026
+            </p>
+          </div>
         </div>
       </div>
     </div>

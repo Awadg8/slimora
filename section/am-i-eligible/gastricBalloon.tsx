@@ -1,17 +1,18 @@
 import Image from "next/image";
 import CtaButton from "@/component/ctaButton";
-import InteractionRight from "@/component/microInteractionRight";
+import Questions from "@/section/am-i-eligible/questions";
 import InteractionLeft from "@/component/microInteractionLeft";
 import Interaction from "@/component/microInteraction";
+import InteractionRight from "@/component/microInteractionRight";
 
 export default function GastricBalloon() {
   return (
-    <div className="pt-30 sm:pt-0 pb-30 lg:pb-50 relative overflow-hidden">
+    <div className="py-20 sm:py-30 lg:py-50 relative overflow-hidden">
       <div
         className="hidden lg:block"
         style={{
           position: "absolute",
-          top: "40%",
+          top: "60%",
           left: "-40%",
           background:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #8EA94D 0%, #2C5D6B 100%)",
@@ -26,7 +27,7 @@ export default function GastricBalloon() {
         className="hidden lg:block"
         style={{
           position: "absolute",
-          top: "50%",
+          top: "60%",
           right: "-40%",
           background:
             "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #8EA94D 0%, #2C5D6B 100%)",
@@ -36,11 +37,14 @@ export default function GastricBalloon() {
           zIndex: 0,
         }}
       ></div>
+      <div className="pb-30 lg:pb-50">
+        <Questions />
+      </div>
       <div className="max-width flex flex-col lg:flex-row items-center justify-between gap-8 ">
         {/* Left Section - Text  */}
-        <div className=" lg:w-[25%] z-1">
+        <div className="lg:w-[25%] z-1">
           <InteractionLeft>
-            <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5]">
+            <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5] ">
               <span className="font-bold ">The SlimOra Gastric Balloon </span>{" "}
               is a regulated health product that bears the CE marking in
               accordance with this regulation.

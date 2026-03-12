@@ -1,6 +1,7 @@
 import Header from "@/component/header";
 import Banner from "@/section/findClinic/banner";
 import StepCard from "@/component/stepCard";
+import Disclaimer from "@/component/dislaimer";
 import Footer from "@/component/footer";
 import Link from "next/link";
 
@@ -39,6 +40,7 @@ export default function FindClinic() {
         </div>
         <StepCard />
       </div>
+      <Disclaimer />
       <Footer />
     </section>
   );
