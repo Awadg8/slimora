@@ -1,3 +1,6 @@
+import Interaction from "@/component/microInteraction";
+import Interaction2 from "@/component/microInteraction2";
+
 export default function Guidance() {
   return (
     <section className="flex flex-col">
@@ -11,9 +14,11 @@ export default function Guidance() {
       >
         <div className="max-width flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-20">
           <div className="lg:w-[55%]">
-            <h2 className="text-white font-urbanist text-2xl sm:text-[40px] font-bold text-center">
-              In a clinical study involving 1,770 Allurion patients:1
-            </h2>
+            <Interaction>
+              <h2 className="text-white font-urbanist text-2xl sm:text-[40px] font-bold text-center">
+                In a clinical study involving 1,770 Allurion patients:1
+              </h2>
+            </Interaction>
           </div>
           <div className="lg:w-[45%] flex flex-col gap-4 md:gap-6 w-full">
             <div className="bg-[#254B55] p-4 rounded-[20px] flex flex-col items-center text-center">
@@ -43,9 +48,11 @@ export default function Guidance() {
         }}
       >
         <div className="max-width text-center">
-          <h2 className="text-white font-urbanist text-2xl sm:text-3xl lg:text-[40px] font-bold">
-            Guidance on when to contact physician for any untoward symptoms
-          </h2>
+          <Interaction>
+            <h2 className="text-white font-urbanist text-2xl sm:text-3xl lg:text-[40px] font-bold">
+              Guidance on when to contact physician for any untoward symptoms
+            </h2>
+          </Interaction>
         </div>
       </div>
 
@@ -53,14 +60,19 @@ export default function Guidance() {
       <div className="py-25 sm:pt-30 sm:pb-40">
         <div className="max-width">
           <div className="max-w-6xl mx-auto text-center mb-8">
-            <h3 className="text-white font-urbanist text-2xl sm:text-[32px] font-bold mb-2.5">
-              Allurion gastric balloons may cause gastrointestinal complications
-              that may require endoscopic or surgical intervention.
-            </h3>
-            <p className="text-[#B5B5B5] text-xs sm:text-lg">
-              Watch out for certain adverse effects that require immediately
-              consulting the doctor who placed your device, such as:
-            </p>
+            <Interaction>
+              <h3 className="text-white font-urbanist text-2xl sm:text-[32px] font-bold mb-2.5">
+                Allurion gastric balloons may cause gastrointestinal
+                complications that may require endoscopic or surgical
+                intervention.
+              </h3>
+            </Interaction>
+            <Interaction2>
+              <p className="text-[#B5B5B5] text-xs sm:text-lg">
+                Watch out for certain adverse effects that require immediately
+                consulting the doctor who placed your device, such as:
+              </p>
+            </Interaction2>
           </div>
 
           <div className="mb-10 sm:mb-8 px-6">

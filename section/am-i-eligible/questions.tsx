@@ -1,11 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const data = [
   {
     img_url: "/images/am_i_eligible/check_price.png",
     title: "How much does the SlimOra Program cost?",
-    description: "Every weight-loss journey is unique. The price of the SlimOra Programme may vary depending on your needs, goals, and the clinics.",
+    description:
+      "Every weight-loss journey is unique. The price of the SlimOra Programme may vary depending on your needs, goals, and the clinics.",
     link: "#",
     linkText: "Check the price of a 6-month SlimOra Programme",
   },
@@ -25,7 +28,8 @@ const data = [
   {
     img_url: "/images/am_i_eligible/find_a_clinic.jpg",
     title: "Where is my nearest SlimOra clinic?",
-    description: "More than 1600 clinics offer the SlimOra Programme worldwide. Find the clinic nearest you.",
+    description:
+      "More than 1600 clinics offer the SlimOra Programme worldwide. Find the clinic nearest you.",
     link: "/find-a-clinic",
     linkText: "Find a Clinic",
   },
@@ -52,13 +56,36 @@ export default function Questions() {
                   />
                 </div>
                 <div className="py-4 px-7 flex-1">
-                  <h3 className="text-lg md:text-[23px] md:leading-[30px] pb-2 font-semibold">
-                    {item.title}
-                  </h3>
-                  <div
-                    className="text-xs md:text-[15px] md:leading-[18px] text-justify [&_ul]:list-disc [&_ul]:pl-5 tracking-[-0.18px]"
-                    dangerouslySetInnerHTML={{ __html: item.description }}
-                  />
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      ease: "easeInOut",
+                      duration: 0.5,
+                      delay: index * 0.2,
+                    }}
+                  >
+                    <h3 className="text-lg md:text-[23px] md:leading-[30px] pb-2 font-semibold">
+                      {item.title}
+                    </h3>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      ease: "easeInOut",
+                      duration: 0.7,
+                      delay: index * 0.3,
+                    }}
+                  >
+                    <div
+                      className="text-xs md:text-[15px] md:leading-[18px] text-justify [&_ul]:list-disc [&_ul]:pl-5 tracking-[-0.18px]"
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
+                  </motion.div>
                 </div>
               </div>
               <Link
@@ -73,4 +100,4 @@ export default function Questions() {
       </div>
     </section>
   );
-};
+}
