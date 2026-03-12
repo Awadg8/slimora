@@ -1,3 +1,5 @@
+import Interaction from "@/component/microInteraction";
+import Interaction2 from "@/component/microInteraction2";
 import Image from "next/image";
 
 const Journey = () => {
@@ -16,15 +18,19 @@ const Journey = () => {
         </div>
         <div className="absolute inset-0 z-10 flex items-center justify-center max-width">
           <div className="space-y-2 max-w-[700px] ml-auto">
+            <Interaction>
             <h2 className="text-3xl md:text-[36px] font-bold font-urbanist text-[#8EA94D]">
               You&apos;re never alone in the SlimOra journey
             </h2>
+            </Interaction>
+            <Interaction2>
             <p className="text-[#383838] text-base md:text-lg text-justify">
               Your care team has real-time access to your health data. That
               empowers them to adapt the programme to your individual progress,
               offering more tailored support and ensuring they&apos;re on hand
               when you need them the most.
             </p>
+            </Interaction2>
           </div>
         </div>
       </div>
@@ -54,15 +60,19 @@ const Journey = () => {
           />
         </div>
         <div className="max-width pt-10 space-y-3">
-          <h2 className="text-[19px] leading-6 text-left font-urbanist font-semibold text-[#8ea94d]">
-            You're never alone in the SlimOra journey
-          </h2>
-          <p className="text-xs text-white text-justify">
-            Your care team has real-time access to your health data. That
-            empowers them to adapt the programme to your individual progress,
-            offering more tailored support and ensuring they’re on hand when you
-            need them the most.
-          </p>
+          <Interaction>
+            <h2 className="text-[19px] leading-6 text-left font-urbanist font-semibold text-[#8ea94d]">
+              You're never alone in the SlimOra journey
+            </h2>
+          </Interaction>
+          <Interaction2>
+            <p className="text-xs text-white text-justify">
+              Your care team has real-time access to your health data. That
+              empowers them to adapt the programme to your individual progress,
+              offering more tailored support and ensuring they’re on hand when
+              you need them the most.
+            </p>
+          </Interaction2>
         </div>
       </div>
 

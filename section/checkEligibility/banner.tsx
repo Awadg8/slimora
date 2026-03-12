@@ -1,6 +1,8 @@
-'use client';
-import { useCallback, useMemo, useState } from 'react';
-import Image from 'next/image';
+"use client";
+import { useCallback, useMemo, useState } from "react";
+import Image from "next/image";
+import Interaction from "@/component/microInteraction";
+import Interaction2 from "@/component/microInteraction2";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -254,13 +256,17 @@ export default function Banner() {
 function BannerCopy() {
   return (
     <div className="flex flex-col justify-center items-center font-urbanist">
-      <p className="font-bold text-2xl md:text-[40px] text-center text-white">
-        Check if you're eligible for the SlimOra Program
-      </p>
-      <p className="font-light text-sm md:text-[20px] text-center mt-6 text-[#b5b5b5]">
-        Start your journey with a quick BMI check and a few simple questions. This helps us understand if the SlimOra Gastric Balloon is a good fit for your health goals. It only takes a minute and could be your first step towards safe, effective and lasting weight loss —{' '}
-        <span className="font-bold text-white">with support at every stage.</span>
-      </p>
+      <Interaction>
+        <p className="font-bold text-2xl md:text-[40px] text-center text-white">
+          Check if you're eligible for the SlimOra Program
+        </p>
+      </Interaction>
+      <Interaction2>
+        <p className="font-light text-sm md:text-[20px] text-center mt-6 text-[#b5b5b5]">
+          Start your journey with a quick BMI check and a few simple questions. This helps us understand if the SlimOra Gastric Balloon is a good fit for your health goals. It only takes a minute and could be your first step towards safe, effective and lasting weight loss —{' '}
+          <span className="font-bold text-white">with support at every stage.</span>
+        </p>
+      </Interaction2>
     </div>
   );
 }

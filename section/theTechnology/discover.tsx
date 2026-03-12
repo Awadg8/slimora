@@ -1,3 +1,5 @@
+import Interaction from "@/component/microInteraction";
+import Interaction2 from "@/component/microInteraction2";
 import Image from "next/image";
 
 const Discover = () => {
@@ -5,9 +7,11 @@ const Discover = () => {
     <section className="overflow-hidden">
       <div className="max-width relative pt-18 md:pt-0">
         {/* Main Heading */}
-        <h2 className="text-2xl md:text-[50px] font-urbanist font-bold text-center mb-20 md:mb-50">
-          Discover the SlimOra Virtual Care Suite
-        </h2>
+        <Interaction>
+          <h2 className="text-2xl md:text-[50px] font-urbanist font-bold text-center mb-20 md:mb-50">
+            Discover the SlimOra Virtual Care Suite
+          </h2>
+        </Interaction>
 
         <div
           className="block md:hidden"
@@ -68,16 +72,20 @@ const Discover = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 space-y-3 md:space-y-5">
-            <h3 className="text-xl md:text-[40px] font-urbanist text-center md:text-left font-bold">
-              SlimOra Connected Scale
-            </h3>
-            <p className="text-[#B5B5B5] text-base md:text-lg leading-5 md:leading-7 text-justify lg:max-w-[95%]">
-              The SlimOra Connected Scale offers a complete weight tracking
-              experience, allowing you to monitor your weight, BMI and body
-              composition with ease. Stay motivated as you witness tangible
-              results and make informed decisions about your health. The scale
-              syncs seamlessly with the SlimOra App.
-            </p>
+            <Interaction>
+              <h3 className="text-xl md:text-[40px] font-urbanist text-center md:text-left font-bold">
+                SlimOra Connected Scale
+              </h3>
+            </Interaction>
+            <Interaction2>
+              <p className="text-[#B5B5B5] text-base md:text-lg leading-5 md:leading-7 text-justify lg:max-w-[95%]">
+                The SlimOra Connected Scale offers a complete weight tracking
+                experience, allowing you to monitor your weight, BMI and body
+                composition with ease. Stay motivated as you witness tangible
+                results and make informed decisions about your health. The scale
+                syncs seamlessly with the SlimOra App.
+              </p>
+            </Interaction2>
           </div>
         </div>
 
@@ -124,18 +132,22 @@ const Discover = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 space-y-3 md:space-y-5">
-            <h3 className="text-xl md:text-[40px] text-center md:text-left font-urbanist font-bold">
-              SlimOra Application
-            </h3>
-            <p className="text-[#B5B5B5] text-base md:text-lg leading-5 md:leading-7  text-justify lg:max-w-[95%]">
-              With the SlimOra App, view all your trends at a glance, monitor
-              your progress, and stay connected with your care team via instant
-              messaging or 1:1 video telehealth. Reach out for day-to-day
-              advice, ask for information on nutrition, enjoy personalized
-              content. Works with Apple Health (iOS) and Health Connect
-              (Android), so you can record your activity and sleep data using
-              your favourite tracker.
-            </p>
+            <Interaction>
+              <h3 className="text-xl md:text-[40px] text-center md:text-left font-urbanist font-bold">
+                SlimOra Application
+              </h3>
+            </Interaction>
+            <Interaction2>
+              <p className="text-[#B5B5B5] text-base md:text-lg leading-5 md:leading-7  text-justify lg:max-w-[95%]">
+                With the SlimOra App, view all your trends at a glance, monitor
+                your progress, and stay connected with your care team via
+                instant messaging or 1:1 video telehealth. Reach out for
+                day-to-day advice, ask for information on nutrition, enjoy
+                personalized content. Works with Apple Health (iOS) and Health
+                Connect (Android), so you can record your activity and sleep
+                data using your favourite tracker.
+              </p>
+            </Interaction2>
           </div>
         </div>
 

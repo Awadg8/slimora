@@ -1,5 +1,9 @@
 import Image from "next/image";
 import CtaButton from "@/component/ctaButton";
+import Interaction2 from "@/component/microInteraction2";
+import Interaction from "@/component/microInteraction";
+import { div } from "framer-motion/client";
+import Interaction3 from "@/component/microInteraction3";
 
 const Connected = () => {
   return (
@@ -11,21 +15,27 @@ const Connected = () => {
 
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
           <div className="w-full md:w-1/2">
-            <h3 className="text-xl md:text-[50px] font-bold font-urbanist">
-              Am I Eligible?
-            </h3>
-            <p className="text-base md:text-lg text-[#B5B5B5] pt-3 md:pt-5 text-justify">
-              If you have a BMI of 27 or above, you may be eligible. Quickly
-              calculate your BMI to see if the Allurion Balloon could be right
-              for you.
-            </p>
+            <Interaction>
+              <h3 className="text-xl md:text-[50px] font-bold font-urbanist">
+                Am I Eligible?
+              </h3>
+            </Interaction>
+            <Interaction2>
+              <p className="text-base md:text-lg text-[#B5B5B5] pt-3 md:pt-5 text-justify">
+                If you have a BMI of 27 or above, you may be eligible. Quickly
+                calculate your BMI to see if the Allurion Balloon could be right
+                for you.
+              </p>
+            </Interaction2>
             <div className="pt-8 md:pt-10">
-              <CtaButton
-                text="Check Eligibility"
-                type="link"
-                href="/eligibility-check"
-                className="text-xs md:text-xl font-medium w-full md:w-[300px]"
-              />
+              <Interaction3>
+                <CtaButton
+                  text="Check Eligibility"
+                  type="link"
+                  href="/eligibility-check"
+                  className="text-xs md:text-xl font-medium w-full md:w-[300px]"
+                />
+              </Interaction3>
             </div>
           </div>
 

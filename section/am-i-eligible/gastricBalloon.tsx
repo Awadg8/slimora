@@ -1,6 +1,9 @@
 import Image from "next/image";
 import CtaButton from "@/component/ctaButton";
-import Questions from '@/section/am-i-eligible/questions';
+import Questions from "@/section/am-i-eligible/questions";
+import InteractionLeft from "@/component/microInteractionLeft";
+import Interaction from "@/component/microInteraction";
+import InteractionRight from "@/component/microInteractionRight";
 
 export default function GastricBalloon() {
   return (
@@ -38,12 +41,15 @@ export default function GastricBalloon() {
         <Questions />
       </div>
       <div className="max-width flex flex-col lg:flex-row items-center justify-between gap-8 ">
-
         {/* Left Section - Text  */}
-        <div className=" lg:w-[25%] z-1">
-          <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5] ">
-            <span className="font-bold ">The SlimOra Gastric Balloon </span> is a regulated health product that bears the CE marking in accordance with this regulation.
-          </p>
+        <div className="lg:w-[25%] z-1">
+          <InteractionLeft>
+            <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5] ">
+              <span className="font-bold ">The SlimOra Gastric Balloon </span>{" "}
+              is a regulated health product that bears the CE marking in
+              accordance with this regulation.
+            </p>
+          </InteractionLeft>
         </div>
 
         {/* Center Section - Image with Button */}
@@ -56,18 +62,30 @@ export default function GastricBalloon() {
               height={386}
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <CtaButton text="Learn More" type="link" href="/learn-more" className="w-62.5 text-[18px] font-medium" />
+              <Interaction>
+                <CtaButton
+                  text="Learn More"
+                  type="link"
+                  href="/learn-more"
+                  className="w-62.5 text-[18px] font-medium"
+                />
+              </Interaction>
             </div>
           </div>
         </div>
 
         {/* Right Section - Text */}
         <div className="lg:w-[25%] z-1">
-          <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5]">
-            To learn more about the <span className="font-bold">SlimOra Gastric Balloon,</span> assess the risks and benefits of this solution, read the important safety information, and discuss it with your doctor.
-          </p>
+          <InteractionRight>
+            <p className="text-[12px] sm:text-[18px] text-center text-[#B5B5B5]">
+              To learn more about the{" "}
+              <span className="font-bold">SlimOra Gastric Balloon,</span> assess
+              the risks and benefits of this solution, read the important safety
+              information, and discuss it with your doctor.
+            </p>
+          </InteractionRight>
         </div>
       </div>
-    </div >
-  )
+    </div>
+  );
 }
