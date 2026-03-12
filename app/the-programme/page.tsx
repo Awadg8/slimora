@@ -7,7 +7,6 @@ import Disclaimer from "@/component/dislaimer";
 const page = () => {
   return (
     <main>
-
       <Header />
       <Banner />
       <TheProgramme />

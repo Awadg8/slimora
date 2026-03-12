@@ -1,3 +1,4 @@
+import Interaction from "@/component/microInteraction";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,9 +34,12 @@ const MentalLoad = () => {
     <section>
       <div className="[background:linear-gradient(0deg,rgba(0,0,0,0.45)_0%,rgba(0,0,0,0.45)_100%),linear-gradient(270deg,rgba(78,181,155,0.50)_0%,rgba(142,169,77,0.50)_100%)] pt-10 md:pt-18 pb-16 md:pb-40">
         <div className="max-width">
-          <h4 className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
-            Ease the mental load of weight loss with SlimOra<span className="font-thin">™</span> Gastric Balloon Systems
-          </h4>
+          <Interaction>
+            <h4 className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
+              Ease the mental load of weight loss with SlimOra
+              <span className="font-thin">™</span> Gastric Balloon Systems
+            </h4>
+          </Interaction>
 
           <div className="pt-9 md:pt-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5">
@@ -58,7 +62,9 @@ const MentalLoad = () => {
                     <h3 className="text-center text-lg md:text-[19px] pb-2 font-bold">
                       {item.title}
                     </h3>
-                    <p className="text-xs md:text-sm text-justify">{item.description}</p>
+                    <p className="text-xs md:text-sm text-justify">
+                      {item.description}
+                    </p>
                   </div>
                   <Link
                     href={item.link}
