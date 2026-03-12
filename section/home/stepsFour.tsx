@@ -16,11 +16,11 @@ export default function StepsFour() {
           </Interaction>
         </div>
         <StepCard />
-        <div className="flex justify-center md:mb-[90px] mb-[34px] mt-[42px]">
+        <div className="flex justify-center mt-[42px]">
           <Interaction3>
             <CtaButton
               text="Find a Clinic"
-              className="text-[16px] lg:text-[20px] font-medium md:w-[588px] w-full"
+              className="text-[16px] lg:text-[20px] font-medium w-[300px] sm:w-[588px]"
               type="link"
               href="/find-a-clinic"
             />
