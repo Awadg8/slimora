@@ -4,6 +4,7 @@ import StepCard from "@/component/stepCard";
 import Disclaimer from "@/component/dislaimer";
 import Footer from "@/component/footer";
 import Link from "next/link";
+import StepsFour from "@/section/home/stepsFour";
 
 export default function FindClinic() {
   return (
@@ -30,15 +31,8 @@ export default function FindClinic() {
         <p className="text-white text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-center p-4">This Clinic Locator is provided by SlimOra Technologies as a value-added service. SlimOra, at its sole and absolute discretion, may modify the Clinic Locator at any time.
         </p>
       </div>
-      <div className="max-width md:pt-20 pt-10 pb-10 md:pb-32">
-        <div className="md:pb-16 pb-10">
-          <h4 className="text-[25px] md:text-[40px] leading-[30px] md:leading-[45px] font-bold text-[#FFFFFF] max-w-[750px]">
-            <span>4 steps to kickstart your personalized weight-loss journey with </span>
-            SlimOra
-            <span> Gastric Balloon Systems</span>
-          </h4>
-        </div>
-        <StepCard />
+      <div className="py-20 md:py-32">
+        <StepsFour />
       </div>
       <Disclaimer />
       <Footer />

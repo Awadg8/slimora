@@ -49,13 +49,13 @@ export default function SlimOraPartner() {
                 <div className="flex gap-2.5 md:gap-7 pt-[44px] md:pt-[54px]">
                   <button
                     onClick={() => setIsModalOpen(true)}
-                    className="cursor-pointer border border-[#8EA94D] text-[#8EA94D] py-2 px-2 rounded-[39px] text-[9.21px] lg:text-[18px] md:text-[11px] w-full text-center hover:bg-[#8EA94D] hover:text-white transition-all"
+                    className="cursor-pointer border border-[#8EA94D] text-[#8EA94D] py-2 px-2 rounded-[39px] text-[12px] lg:text-[18px] md:text-[11px] w-full text-center hover:bg-[#8EA94D] hover:text-white transition-all"
                   >
                     Become a SlimOra Partner
                   </button>
                   <Link
-                    href="/find-a-clinic"
-                    className="bg-[#8EA94D] text-[#FFFFFF] text-[9.21px] lg:text-[18px] whitespace-nowrap inline-block w-full text-center py-2 px-2 rounded-[39px]"
+                    href="/the-programme"
+                    className="bg-[#8EA94D] text-[#FFFFFF] text-[12px] lg:text-[18px] whitespace-nowrap inline-block w-full text-center py-2 px-2 rounded-[39px]"
                   >
                     Learn more about Program
                   </Link>
@@ -67,7 +67,7 @@ export default function SlimOraPartner() {
                 {statsData.map((stat, index) => (
                   <div
                     key={index}
-                    className="rounded-[7px] md:rounded-[15.226px] opacity-60 bg-[linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),linear-gradient(180deg,#143338_0%,#2D4C3D_23.56%,#8EA94D_100%)] text-center md:p-6 p-2.5"
+                    className="rounded-[7px] md:rounded-[15.226px] bg-[linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),linear-gradient(180deg,#143338_0%,#2D4C3D_23.56%,#8EA94D_100%)] text-center md:p-6 p-2.5"
                   >
                     <h2 className="text-[#FFFFFF] text-[15px] lg:text-[32px] md:text-[17px]">
                       {stat.value}

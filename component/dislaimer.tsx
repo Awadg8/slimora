@@ -1,5 +1,7 @@
+"use client"
 import Interaction from "./microInteraction";
 import Interaction2 from "./microInteraction2";
+import { motion } from "framer-motion";
 
 const Disclaimer = () => {
   const infoList = [
@@ -22,12 +24,22 @@ const Disclaimer = () => {
 
         <ul className="space-y-2 mb-6">
           {infoList.map((item, index) => (
-            <li key={index} className="flex gap-4">
+            <motion.li
+              key={index} className="flex gap-4"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                ease: "easeInOut",
+                duration: 0.5,
+                delay: index * 0.2,
+              }}
+            >
               <span className="text-[#B5B5B5] mt-2 block w-1.5 h-1.5 rounded-full bg-[#B5B5B5] shrink-0"></span>
               <p className="text-[#B5B5B5] text-sm md:text-[16px] leading-relaxed">
                 {item}
               </p>
-            </li>
+            </motion.li>
           ))}
         </ul>
 

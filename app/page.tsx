@@ -15,7 +15,9 @@ export default function Home() {
       <Banner />
       <Others />
       <MentalLoad />
-      <StepsFour />
+      <div className="py-20 md:py-32">
+        <StepsFour />
+      </div>
       <ReadyToTake />
       <div className="py-30">
         <GotQuestion />
