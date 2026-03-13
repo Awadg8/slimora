@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Interaction from "@/component/microInteraction"
+import Interaction2 from "@/component/microInteraction2"
 
 const statsData = [
     {
@@ -25,16 +27,23 @@ export default function SlimOraPartner() {
             <div className='bg-[#0A1D20]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 pt-[96px] lg:pt-[248px] md:pt-[100px] gap-[44px] justify-center items-center'>
                     <div className=''>
-                        <h1 className='text-[#FFFFFF] text-[20px] lg:text-[45px] md:text-[30px] md:font-extrabold font-bold text-center md:text-left'>Become an SlimOra Partner</h1>
-                        <p className='text-[#FFFFFF] text-[12px] lg:text-[22px] md:text-[18px] leading-[18px] md:leading-[121.188%] font-light text-center md:text-justify'>Support your patients with proven, non-invasive, weight loss programme that combines medical innovation, digital tools and end-to-end clinic support.</p>
+                        <Interaction>
+                            <h1 className='text-[#FFFFFF] text-[20px] lg:text-[45px] md:text-[30px] md:font-extrabold font-bold text-center md:text-left'>Become an SlimOra Partner</h1>
+                        </Interaction>
+                        <Interaction2>
+                            <p className='text-[#FFFFFF] text-[12px] lg:text-[22px] md:text-[18px] leading-[18px] md:leading-[121.188%] font-light text-center md:text-justify'>Support your patients with proven, non-invasive, weight loss programme that combines medical innovation, digital tools and end-to-end clinic support.</p>
+                        </Interaction2>
                         <div className='flex gap-2.5 md:gap-[31px] pt-[44px] md:pt-[54px]'>
-                            <Link href="/eligibility-check" className='border border-[#8EA94D] text-[#8EA94D] py-2 rounded-[39px] text-[9.21px] lg:text-[18px] md:text-[11px] w-full text-center'>
-                                Become a SlimOra Partner
-                            </Link>
-
-                            <Link href="/find-a-clinic" className='bg-[#8EA94D] text-[#FFFFFF] text-[9.21px] lg:text-[18px] md:text-[11px] py-2 rounded-[39px] w-full text-center'>
-                                Learn more about Program
-                            </Link>
+                            <Interaction2>
+                                <Link href="/eligibility-check" className='border border-[#8EA94D] text-[#8EA94D] py-2 rounded-[39px] text-[9.21px] lg:text-[18px] px-8 whitespace-nowrap inline-block w-full text-center'>
+                                    Become a SlimOra Partner
+                                </Link>
+                            </Interaction2>
+                            <Interaction2>
+                                <Link href="/find-a-clinic" className='bg-[#8EA94D] text-[#FFFFFF] text-[9.21px] lg:text-[18px] px-8 whitespace-nowrap inline-block w-full text-center py-2 rounded-[39px]'>
+                                    Learn more about Program
+                                </Link>
+                            </Interaction2>
                         </div>
                     </div>
                     <div className='flex md:justify-end justify-center items-center'>

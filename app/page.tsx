@@ -16,7 +16,7 @@ export default function Home() {
       <Others />
       <MentalLoad />
       <StepsFour />
-      <ReadyToTake/>
+      <ReadyToTake />
       <div className="py-30">
         <GotQuestion />
       </div>
