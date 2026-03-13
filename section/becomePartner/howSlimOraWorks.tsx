@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import Interaction from "@/component/microInteraction"
+import Interaction2 from "@/component/microInteraction2"
+
 export default function HowSlimOraWorks() {
     const steps = [
         {
@@ -24,7 +27,9 @@ export default function HowSlimOraWorks() {
             <div className='max-width'>
                 <div className='pt-[70px] pb-[140px]'>
                     <div className='pb-[119px] md:pb-[144px]'>
-                        <h2 className='text-[#FFFFFF] text-[24px] lg:text-[50px] lg:leading-[54px] font-bold text-center'>How does the SlimOra Balloon work?</h2>
+                        <Interaction>
+                            <h2 className='text-[#FFFFFF] text-[24px] lg:text-[50px] lg:leading-[54px] font-bold text-center'>How does the SlimOra Balloon work?</h2>
+                        </Interaction>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-[76px] md:gap-[100px]'>
                         {steps.map((item, index) => (
@@ -33,8 +38,10 @@ export default function HowSlimOraWorks() {
                                     <Image alt={item.title}
                                         src={item.image} fill className='object-cover' />
                                 </div>
-                                <h2 className='text-[#FFFFFF] text-[24px] md:text-[22px] font-bold pb-[11px] pt-[28px] md:pt-[30px] md:pb-[14px] lg:py-[22px]'>{item.title}</h2>
-                                <p className='text-[12px] md:text-[16px] leading-[18px] md:leading-[24px] text-justify'>{item.desc}</p>
+                                <Interaction2>
+                                    <h2 className='text-[#FFFFFF] text-[24px] md:text-[22px] font-bold pb-[11px] pt-[28px] md:pt-[30px] md:pb-[14px] lg:py-[22px]'>{item.title}</h2>
+                                    <p className='text-[12px] md:text-[16px] leading-[18px] md:leading-[24px] text-justify'>{item.desc}</p>
+                                </Interaction2>
                             </div>
                         ))}
                     </div>

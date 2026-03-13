@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Interaction from "@/component/microInteraction"
+import Interaction2 from "@/component/microInteraction2"
 
 export default function SlimOraProgramImpact() {
     return (
@@ -11,12 +13,16 @@ export default function SlimOraProgramImpact() {
                         <Image src="/images/become-partner/three.png" alt='Three' fill className='object-contain' />
                     </div>
                     <div className=''>
-                        <h2 className='text-[#FFFFFF] text-[24px] md:text-[40px] font-bold text-justify'>The SlimOra Program is addressing the unmet needs of your patients.</h2>
+                        <Interaction>
+                            <h2 className='text-[#FFFFFF] text-[24px] md:text-[40px] font-bold text-justify'>The SlimOra Program is addressing the unmet needs of your patients.</h2>
                         <p className='text-[#B5B5B5] text-[12px] md:text-[22px] leading-[18px] md:leading-[28px] pt-[16px] md:pt-[13px]'>more patients would consider the SlimOra Balloon compared to the number who would consider bariatric surgery.</p>
+                        </Interaction>
                         <div className='pt-[42px] md:pt-[37px] text-center md:text-left px-4 md:px-0'>
-                            <Link href="/eligibility-check" className='border border-[#8EA94D] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] md:text-[11px] text-center px-8 w-full md:w-auto inline-block'>
-                                Learn about the Program
-                            </Link>
+                            <Interaction2>
+                                <Link href="/eligibility-check" className='border border-[#8EA94D] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] px-8 whitespace-nowrap inline-block'>
+                                    Learn about the Program
+                                </Link>
+                            </Interaction2>
                         </div>
                     </div>
                 </div>
