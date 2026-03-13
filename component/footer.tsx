@@ -1,5 +1,47 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Interaction from "./microInteraction";
+import Interaction2 from "./microInteraction2";
+
+const navLinks1 = [
+  {
+    title: "Get Started",
+    href: "/get-started",
+  },
+  {
+    title: "Am I Eligible ?",
+    href: "/am-i-eligible",
+  },
+  {
+    title: "Find a Clinic",
+    href: "/find-a-clinic",
+  },
+  {
+    title: "Blog",
+    href: "/blog",
+  },
+];
+
+const navLinks2 = [
+  {
+    title: "How It Works",
+    href: "/how-it-works",
+  },
+  {
+    title: "The Programme",
+    href: "/the-programme",
+  },
+  {
+    title: "The Technology",
+    href: "/the-technology",
+  },
+  {
+    title: "Eligibility Check",
+    href: "/eligibility-check",
+  },
+];
 
 const Footer = () => {
   return (
@@ -60,57 +102,47 @@ const Footer = () => {
                   </h3>
                   <div className="flex md:justify-center gap-12">
                     <div className="space-y-[15px]">
-                      <Link
-                        href="/get-started"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                      >
-                        Get Started
-                      </Link>
-                      <Link
-                        href="/am-i-eligible"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                      >
-                        Am I Eligible ?
-                      </Link>
-                      <Link
-                        href="/find-a-clinic"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                      >
-                        Find a Clinic
-                      </Link>
-                      <Link
-                        href="/blog"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
-                      >
-                        Blog
-                      </Link>
+                      {navLinks1.map((link, index) => (
+                        <motion.div
+                          initial={{ opacity: 0, y: 40 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{
+                            ease: "easeInOut",
+                            duration: 0.5,
+                            delay: index * 0.15,
+                          }}
+                        >
+                          <Link
+                            href={link.href}
+                            className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                          >
+                            {link.title}
+                          </Link>
+                        </motion.div>
+                      ))}
                     </div>
 
                     <div className="space-y-[15px]">
-                      <Link
-                        href="/how-it-works"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                      >
-                        How It Works
-                      </Link>
-                      <Link
-                        href="/the-programme"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                      >
-                        The Programme
-                      </Link>
-                      <Link
-                        href="/the-technology"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                      >
-                        The Technology
-                      </Link>
-                      <Link
-                        href="/eligibility-check"
-                        className="block text-[#FFFFFF] hover:text-[#A4B84C] transition  md:text-[15px] text-[12px]"
-                      >
-                        Eligibility Check
-                      </Link>
+                      {navLinks2.map((link, index) => (
+                        <motion.div
+                          initial={{ opacity: 0, y: 40 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{
+                            ease: "easeInOut",
+                            duration: 0.5,
+                            delay: index * 0.25,
+                          }}
+                        >
+                          <Link
+                            href={link.href}
+                            className="block text-[#FFFFFF] hover:text-[#A4B84C] transition md:text-[15px] text-[12px]"
+                          >
+                            {link.title}
+                          </Link>
+                        </motion.div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -121,24 +153,28 @@ const Footer = () => {
                     Contact Us
                   </h3>
                   <div className="md:space-y-[15px] space-y-[9px] md:text-[15px] text-[12px] text-[#FFFFFF]">
-                    <p>
-                      E-mail:{" "}
-                      <a
-                        href="mailto:info@allurion.com"
-                        className="hover:text-[#A4B84C] transition"
-                      >
-                        info@allurion.com
-                      </a>
-                    </p>
-                    <p>
-                      Phone:{" "}
-                      <a
-                        href="tel:+91 2603 509 400"
-                        className="hover:text-[#A4B84C] transition"
-                      >
-                        +91 2603 509 400
-                      </a>
-                    </p>
+                    <Interaction>
+                      <p>
+                        E-mail:{" "}
+                        <a
+                          href="mailto:info@allurion.com"
+                          className="hover:text-[#A4B84C] transition"
+                        >
+                          info@allurion.com
+                        </a>
+                      </p>
+                    </Interaction>
+                    <Interaction2>
+                      <p>
+                        Phone:{" "}
+                        <a
+                          href="tel:+91 2603 509 400"
+                          className="hover:text-[#A4B84C] transition"
+                        >
+                          +91 2603 509 400
+                        </a>
+                      </p>
+                    </Interaction2>
                   </div>
                 </div>
               </div>
@@ -150,7 +186,13 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-between items-center pt-4">
-            <Image src="/images/digital_experience33.png" alt="" width={200} height={35} className="w-[84px] sm:w-[200px] h-[15px] sm:h-[35px]" />
+            <Image
+              src="/images/digital_experience33.png"
+              alt=""
+              width={200}
+              height={35}
+              className="w-[84px] sm:w-[200px] h-[15px] sm:h-[35px]"
+            />
             <p className="text-[#8EA94D] text-[16px] text-center md:pt-[10px] pt-[16px]">
               © SlimOra 2026
             </p>
