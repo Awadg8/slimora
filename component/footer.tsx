@@ -112,6 +112,7 @@ const Footer = () => {
                             duration: 0.5,
                             delay: index * 0.15,
                           }}
+                          key={index}
                         >
                           <Link
                             href={link.href}
@@ -134,6 +135,7 @@ const Footer = () => {
                             duration: 0.5,
                             delay: index * 0.25,
                           }}
+                          key={index}
                         >
                           <Link
                             href={link.href}
