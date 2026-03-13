@@ -6,6 +6,7 @@ import Banner from "@/section/home/banner";
 import GotQuestion from "@/section/home/gotQuestion";
 import Others from "@/section/home/others";
 import Disclaimer from "@/component/dislaimer";
+import ReadyToTake from "@/section/home/readyToTake";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Others />
       <MentalLoad />
       <StepsFour />
+      <ReadyToTake/>
       <div className="py-30">
         <GotQuestion />
       </div>
