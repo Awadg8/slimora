@@ -33,13 +33,13 @@ export default function GotQuestion() {
       <div className="max-width">
         <div className="space-y-[19px] md:space-y-[17px]">
           <Interaction>
-            <h2 className="text-[24px] md:text-[50px] leading-[100%] md:leading-[57px] font-bold text-center md:text-left">
+            <h2 className="text-[24px] md:text-[40px] leading-[100%] md:leading-[57px] font-bold text-center md:text-left">
               Got questions? We've got <br className="block md:hidden" />
               answers.
             </h2>
           </Interaction>
           <Interaction2>
-            <p className="text-[12px] md:text-[20px] leading-[18px] md:leading-[24px] text-center md:text-left">
+            <p className="text-[12px] md:text-[18px] leading-[18px] md:leading-[24px] text-center md:text-left">
               From how SlimOra Gastric Balloon Systems works to clinical access,
               get the facts on the <br className="hidden md:block" /> world's
               first procedure less gastric balloon and digital care ecosystem.
@@ -55,9 +55,9 @@ export default function GotQuestion() {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center md:py-5 py-3 text-[#B5B5B5] cursor-pointer"
+                className="w-full flex justify-between items-center py-3 text-[#B5B5B5] cursor-pointer"
               >
-                <span className="text-[#FFFFFF] text-[10px] md:text-[32px] font-semibold text-left">
+                <span className="text-[#FFFFFF] text-[10px] md:text-[24px] font-semibold text-left">
                   {item.question}
                 </span>
                 <span
@@ -74,9 +74,8 @@ export default function GotQuestion() {
                 </span>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-800 ease-in-out ${
-                  openIndex === index ? "max-h-50 md:max-h-96" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-800 ease-in-out ${openIndex === index ? "max-h-50 md:max-h-96" : "max-h-0"
+                  }`}
               >
                 <div className="text-[10px] md:text-[18px] text-[#B5B5B5] leading-[14px] md:leading-[30px] text-justify pb-5">
                   {item.answer}
