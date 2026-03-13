@@ -3,13 +3,13 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+type Item = 'get-started' | 'how-it-works' | null;
+
 const Header = () => {
   const [isGetStartedOpen, setIsGetStartedOpen] = useState(false);
   const [isHowItWorksOpen, setIsHowItWorksOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const [isMobileGetStartedOpen, setIsMobileGetStartedOpen] = useState(false);
-  const [isMobileHowItWorksOpen, setIsMobileHowItWorksOpen] = useState(false);
+  const [isMobileItemOpen, setIsMobileItemOpen] = useState<Item>(null);
 
   return (
     <div className="w-full flex flex-col items-center sticky top-0 z-50">
@@ -53,10 +53,10 @@ const Header = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-[59px] right-0 h-[93%] w-[85%] max-w-[400px] bg-[#0000001F] z-106 transition-transform duration-500 lg:hidden flex flex-col backdrop-blur-xl
+        className={`fixed top-[59px] bottom-0 right-0 h-full w-[85%] max-w-[400px] bg-[#0000001F] z-999 transition-transform duration-500 lg:hidden flex flex-col backdrop-blur-xl
           ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full  overflow-hidden">
           {/* Drawer Header with Logo */}
           <Link href="/" className="px-8 pt-8 pb-12">
             <Image
@@ -69,23 +69,23 @@ const Header = () => {
           </Link>
 
           {/* Menu Items */}
-          <div className="flex flex-col flex-grow">
-            <div className="px-8 flex flex-col text-white font-Urbanist">
+          <div className="flex flex-col flex-grow h-[70%] overflow-scroll">
+            <div className="px-8 flex flex-col text-white font-Urbanist oveflow-y-scroll">
               {/* Get Started Dropdown */}
               <div className="border-b border-white/10">
                 <button
                   className="w-full py-6 text-xl text-left flex justify-between items-center"
-                  onClick={() => setIsMobileGetStartedOpen(!isMobileGetStartedOpen)}
+                  onClick={() => isMobileItemOpen === 'get-started' ? setIsMobileItemOpen(null) : setIsMobileItemOpen('get-started')}
                 >
                   Get Started
                   <svg
-                    className={`transition-transform duration-300 ${isMobileGetStartedOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-300 ${isMobileItemOpen === "get-started" ? "rotate-180" : ""}`}
                     xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 9 5" fill="none"
                   >
                     <path d="M4.7758 4.61389C4.39167 4.97215 3.79583 4.97215 3.4117 4.61389L0.32093 1.73131C-0.342952 1.11214 0.0951777 0 1.00298 0H7.18452C8.09232 0 8.53045 1.11214 7.86657 1.73131L4.7758 4.61389Z" fill="#D9D9D9" />
                   </svg>
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ${isMobileGetStartedOpen ? "max-h-[200px] mb-4" : "max-h-0"}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${isMobileItemOpen === "get-started" ? "max-h-[200px] mb-4" : "max-h-0"}`}>
                   <Link href="/get-started" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
                     Get Started
                   </Link>
@@ -99,17 +99,18 @@ const Header = () => {
               <div className="border-b border-white/10">
                 <button
                   className="w-full py-6 text-xl text-left flex justify-between items-center"
-                  onClick={() => setIsMobileHowItWorksOpen(!isMobileHowItWorksOpen)}
+                  onClick={() => isMobileItemOpen === 'how-it-works' ? setIsMobileItemOpen(null) : setIsMobileItemOpen('how-it-works')}
+
                 >
                   How it Works?
                   <svg
-                    className={`transition-transform duration-300 ${isMobileHowItWorksOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-300 ${isMobileItemOpen === "how-it-works" ? "rotate-180" : ""}`}
                     xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 9 5" fill="none"
                   >
                     <path d="M4.7758 4.61389C4.39167 4.97215 3.79583 4.97215 3.4117 4.61389L0.32093 1.73131C-0.342952 1.11214 0.0951777 0 1.00298 0H7.18452C8.09232 0 8.53045 1.11214 7.86657 1.73131L4.7758 4.61389Z" fill="#D9D9D9" />
                   </svg>
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ${isMobileHowItWorksOpen ? "max-h-[300px] mb-4" : "max-h-0"}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${isMobileItemOpen === "how-it-works" ? "max-h-[300px] mb-4" : "max-h-0"}`}>
                   <Link href="/how-it-works" className="block py-3 pl-4 text-[18px] text-white/80 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
                     How it Works
                   </Link>
@@ -137,7 +138,7 @@ const Header = () => {
           </div>
 
           {/* Footer Items */}
-          <div className="px-8 pb-12 flex flex-col items-center space-y-8">
+          <div className="px-8 py-12 flex flex-col items-center space-y-8 mb-6">
             <div className="flex space-x-6 items-center">
               {/* LinkedIn Icon */}
               <a href="#" className="text-white hover:text-[#a3d43b] transition-colors">
