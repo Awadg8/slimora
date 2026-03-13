@@ -5,6 +5,7 @@ import SlimOraVirtualCareSuite from '@/section/becomePartner/slimOraVirtualCareS
 import  HowSlimOraWorks  from '@/section/becomePartner/howSlimOraWorks';
 import SlimOraProgramImpact  from '@/section/becomePartner/slimOraProgramImpact';
 import SlimOraBenefits from '@/section/becomePartner/slimOraBenefits';
+import OtherProfessionals from '@/section/becomePartner/otherProfessionals';
 import Footer from "@/component/footer";
 export default function page() {
     return (
@@ -15,6 +16,7 @@ export default function page() {
             <HowSlimOraWorks/>
             <SlimOraProgramImpact/>
             <SlimOraBenefits/>
+            <OtherProfessionals/>
             <Footer />
         </div>
     )
