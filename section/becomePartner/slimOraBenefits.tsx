@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Interaction from "@/component/microInteraction"
@@ -36,14 +35,14 @@ export default function SlimOraBenefits() {
                             <h2 className='text-[#FFFFFF] text-[24px] md:text-[25px] lg:text-[37px] lg:leading-[54px] font-bold'>How does the SlimOra Balloon work?</h2>
                         </Interaction>
                         <Interaction2>
-                            <Link href="/eligibility-check" className='border border-[#8EA94D] bg-[#0A1D20] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] px-8 whitespace-nowrap'>
+                            <Link href="#" className='border border-[#8EA94D] bg-[#0A1D20] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] px-8 whitespace-nowrap'>
                                 See SlimOra Clinical Evidence
                             </Link>
                         </Interaction2>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-3 gap-[76px] md:gap-[100px] text-center md:text-left'>
                         {steps.map((item, index) => (
-                            <div className='flex flex-col items-center'>
+                            <div key={index} className='flex flex-col items-center'>
                                 <div className='relative w-[80px] h-[80px]'>
                                     <Image alt={item.title}
                                         src={item.image} fill className='object-cover' />

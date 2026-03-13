@@ -19,7 +19,7 @@ export default function SlimOraProgramImpact() {
                         </Interaction>
                         <div className='pt-[42px] md:pt-[37px] text-center md:text-left px-4 md:px-0'>
                             <Interaction2>
-                                <Link href="/eligibility-check" className='border border-[#8EA94D] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] px-8 whitespace-nowrap inline-block'>
+                                <Link href="/the-programme" className='border border-[#8EA94D] text-[#FFFFFF] py-2 rounded-[39px] text-[14px] lg:text-[18px] px-8 whitespace-nowrap inline-block'>
                                     Learn about the Program
                                 </Link>
                             </Interaction2>
