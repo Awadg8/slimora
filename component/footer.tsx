@@ -22,6 +22,10 @@ const navLinks1 = [
     title: "Blog",
     href: "/blog",
   },
+   {
+    title: "Learn More",
+    href: "/learn-more",
+  },
 ];
 
 const navLinks2 = [
@@ -40,6 +44,10 @@ const navLinks2 = [
   {
     title: "Eligibility Check",
     href: "/eligibility-check",
+  },
+  {
+    title: "Become Partner",
+    href: "/become-partner",
   },
 ];
 
