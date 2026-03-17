@@ -69,7 +69,7 @@ export default function PartnerModal({ isOpen, onClose }: PartnerModalProps) {
       onClick={onClose}
     >
       <div
-        className="bg-black/20 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative"
+        className="bg-black/80 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
