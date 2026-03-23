@@ -138,7 +138,7 @@ const ResultThatCapture = () => {
       title: "Support from your Digital Tools",
       description:
         "On the day of your balloon placement, you will receive the SlimOra Connected Scale and the SlimOra App. Use them to track your progress, share updates with your care team, and get support when you need it. They help you stay on track throughout your SlimOra Program.",
-      image: "/images/how_it_works/more_than3.jpg",
+      image: "/images/how_it_works/devices.jpg",
       imageLeft: false,
       link: "/the-technology",
       linkLabel: "Learn More about Tools",

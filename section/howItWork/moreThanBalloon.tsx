@@ -17,7 +17,7 @@ const programmeFeatures = [
     imagePosition: "right" as const,
   },
   {
-    image: "/images/how_it_works/more_than3.jpg",
+    image: "/images/how_it_works/devices.jpg",
     title: "Digital tools powered by AI",
     description:
       "Track your progress and stay connected to your care team with tools like the SlimOra Connected Scale and SlimOra App.",

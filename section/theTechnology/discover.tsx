@@ -122,9 +122,9 @@ const Discover = () => {
         {/* Feature 2: Application */}
         <div className="flex flex-col md:flex-row-reverse items-center justify-between md:gap-20 mb-20 md:mb-10">
           <div className="w-full md:w-1/2">
-            <div className="relative overflow-hidden mx-auto h-[320px] md:h-[600px] w-[270px] md:w-[600px]">
+            <div className="relative overflow-hidden mx-auto h-[420px] md:h-[600px] w-full md:w-[600px]">
               <Image
-                src="/images/the_technology/application.png"
+                src="/images/the_technology/app.png"
                 alt="SlimOra Application"
                 fill
                 className="w-full h-auto object-cover"

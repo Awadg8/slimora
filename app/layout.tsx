@@ -130,6 +130,18 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  openGraph: {
+    images: [
+      {
+        url: "/images/slimOraLogo.png",
+        alt: "SlimOra Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/slimOraLogo.png"],
+  },
 };
 
 export default function RootLayout({
