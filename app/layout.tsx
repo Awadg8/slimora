@@ -123,6 +123,7 @@ const markpro = localFont({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://slimora-meril.vercel.app"),
   title: "SlimOra - Advanced Gastric Balloon for Sustainable Weight Loss",
   description: "Discover SlimOra, a non-surgical gastric balloon system designed to help adults achieve significant weight loss through a monitored nutrition and behavior program.",
   keywords: ["SlimOra", "Allurion", "gastric balloon", "weight loss", "non-surgical weight loss", "obesity treatment", "medical device", "BMI reduction", "weight management"],
@@ -131,16 +132,25 @@ export const metadata: Metadata = {
     follow: false,
   },
   openGraph: {
+    title: "SlimOra - Advanced Gastric Balloon for Sustainable Weight Loss",
+    description: "Discover SlimOra, a non-surgical gastric balloon system designed to help adults achieve significant weight loss through a monitored nutrition and behavior program.",
+    url: "https://slimora-meril.vercel.app",
+    siteName: "SlimOra",
     images: [
       {
-        url: "/images/slimOraLogo.png",
-        alt: "SlimOra Logo",
+        url: "https://slimora-meril.vercel.app/images/the_technology/banner.png",
+        width: 1066,
+        height: 876,
+        alt: "SlimOra Banner",
       },
     ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/slimOraLogo.png"],
+    title: "SlimOra - Advanced Gastric Balloon for Sustainable Weight Loss",
+    description: "Discover SlimOra, a non-surgical gastric balloon system designed to help adults achieve significant weight loss through a monitored nutrition and behavior program.",
+    images: ["https://slimora-meril.vercel.app/images/the_technology/banner.png"],
   },
 };
 
