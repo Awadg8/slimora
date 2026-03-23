@@ -68,6 +68,7 @@ const Footer = () => {
                 className="object-cover"
               />
             </Link>
+            
             <div className="relative md:h-[61px] md:w-[125px] w-[80px] h-[38px]">
               <Image
                 alt="Logo"
