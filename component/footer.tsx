@@ -68,7 +68,7 @@ const Footer = () => {
                 className="object-cover"
               />
             </Link>
-            
+
             <div className="relative md:h-[61px] md:w-[125px] w-[80px] h-[38px]">
               <Image
                 alt="Logo"
@@ -195,7 +195,6 @@ const Footer = () => {
           <div className="md:pt-[65px] pt-[32px]">
             <hr className="w-full border-[#8EA94D]" />
           </div>
-
           <div className="flex justify-between items-center pt-4">
             <Image
               src="/images/digital_experience33.png"
