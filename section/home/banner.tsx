@@ -66,6 +66,7 @@ export default function Banner() {
           fill
           objectFit="cover"
           alt="Check Eligiblity Banner"
+          fetchPriority="high"
         />
       </div>
       <div className="relative w-full h-[300px] block sm:hidden">
